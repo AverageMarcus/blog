@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  {{>head }}
+
+  <body>
+    {{> header }}
+
+    <div class="container">
+      <div class="home">
+
+        <ul class="post-list">
+          {{#each pagination.files }}
+            <li>
+              <article class="post">
+                <div class="post-meta feather_type">
+                  <span>
+                    <time datetime="{{moment this.date 'YYY-MM-DD' }}">
+                      {{moment this.date 'dddd, Do MMMM YYYY' }}
+                    </time>
+                  </span>
+                </div>
+
+                <h2>
+                  <a class="post-link" href="/{{ this.path }}">{{ this.title }}</a>
+                </h2>
+                <div>{{{ markdown this.summary }}}</div>
+              </article>
+            </li>
+          {{/each}}
+        </ul>
+
+        <div class="pagination">
+          {{#if pagination.previous}}
+            <a href="/{{pagination.previous.path}}">&larr; Newer Posts</a>
+
+            {{#if pagination.next}}
+              |
+            {{/if}}
+          {{/if}}
+          {{#if pagination.next}}
+            <a href="/{{pagination.next.path}}">Older Posts &rarr;</a>
+          {{/if}}
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

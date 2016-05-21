@@ -1,0 +1,150 @@
+---
+layout: post.html
+title:  "NodeBots"
+date:   2014-08-24
+tags: JavaScript JSOxford
+summary: "This weekend hosted the final event of [@JSOxford](https://twitter.com/JSOxford)'s [Summer of Hacks](http://jsoxford.com/2014/summer-of-hacks/) - **NodeBots**."
+---
+
+ > **Disclaimer:** No robot uprising occurred in the making of this blog post.
+
+This weekend hosted the final event of [@JSOxford](https://twitter.com/JSOxford)'s [Summer of Hacks](http://jsoxford.com/2014/summer-of-hacks/) - **NodeBots** kindly hosted at the [@WhiteOctober](https://twitter.com/whiteoctober) offices.
+
+The day was aimed at learning to program various bits of hardware, predominantly in JavaScript.
+This included a whole bunch of Arduinos, some wifi controlled cars, some quad-copters and various other little board such as a [Tessel](https://tessel.io/) and [Espruino](http://www.espruino.com/).
+
+We were given free rain over what we create. Everyone was there to help each other out, in true community spirit.
+
+{{> tweet id='503181282353119232' }}
+
+The amount of kit made available to us was incredible. 10 Ardunio Experimentation Kits, a whole host of sensors and motors, boxes full of Lego & k'nex and plenty of varied electronics to build whatever we wanted.
+
+{{> tweet id='502792423152836608' }}
+
+I didn't have any goal going in. I wasn't sure what I wanted to build. A full blown robot was a bit much so I decided to focus on trying my hand at building ancillary systems.
+
+But before all that we all, obviously, had to do the hardware equivalent of ["Hello World"](http://en.wikipedia.org/wiki/Hello_world_program) - make an LED blink.
+
+One of the main things I did learn at this early stage was to make sure Linux is correctly set up. By default the port the Arduino is set to (likely `/dev/ttyacm0`) has permissions that prevent users from accessing it. Resolve this by either adding yourself to the correct group or by `chmod`ing it to be more permissive.
+
+To program against ardunio using JavaScript we were advised to use a library call [johnny-five](ttps://github.com/rwaldron/johnny-five). I highly recommend it is you are planning on doing any hardware programming as it does support a range of different boards. There is also a **LOT** of examples so it is pretty easy to get up and running with whatever you want.
+
+So with this all set up I started playing with some of the sensors available. A nice easy one to start with was the temperature sensor. It was easy to wire up, all it needed was 5v in, a ground and a data cable. Once wired up, the code is pretty simple.
+
+<pre><code class="javascript">
+var five = require("johnny-five"),
+    board = new five.Board(),
+    sensor,
+    temp = { c: 0, f:0 };
+
+board.on("ready", function() {
+  sensor = new five.Sensor("A0");
+
+  function analogToCelsius(analogValue) {
+    return ((analogValue * 0.004882814) - 0.5) * 100;
+  }
+
+  function analogToFahrenheit(analogValue) {
+    return analogToCelsius(analogValue) * ( 9/5 ) + 32;
+  }
+
+  sensor.on("data", function() {
+    var celsiusValue, fahrenheitValue;
+    // Obtain temperature from current analog value
+    celsiusValue    = analogToCelsius(this.value);
+    fahrenheitValue = analogToFahrenheit(this.value);
+    temp.c = celsiusValue;
+    temp.f = fahrenheitValue;
+  });
+});
+
+setInterval(function(){
+  console.log(Math.round(temp.c) + "c | "+Math.round(temp.f)+"f");
+}, 1000);
+</code></pre>
+
+This sets up the board and the sensor and gets the appropriate value from the sensor upon detecting a change in temperature, which is pretty much constant due to how many decimal places it monitors to. I have set up a function that is called every second and outputs current values recorded from the sensor.
+
+{{> tweet id='503494610464047104' }}
+
+As you can see, a nice 21°c at the White October offices.
+
+Then I came across an ultrasonic sensor. This looked fun!
+
+I thought it could be useful as some kind of collision detection to prevent a robotic car from crashing. There is a nice johnny-five example for these so I wired it up, copied over some of the code and took a look at the results. The first thing I realised was the sensor was a little flaky sometimes and the value occasionally jumped up/down. It also couldn't correctly detect something closer than 3cm, it suddenly thinks its about 700cm away.
+
+So I had distance values, time to do something with them. I decided that I would have it respond to things getting too close (people walking past my desk) so I started wiring up a piezo and an LED which would be triggered. When something was detected closer than 90cm the bright red LED started flashing and the piezo started beeping annoyingly to let everyone know.
+
+This was good, but it needed something more, something cute. How about an Octocat?
+
+So, with a little help of a stepper motor, some k'nex and a GitHub sticker, I had a cute l'il Octocat that greeted people as they passed by my station.
+
+{{> tweet id='503501014792953856' }}
+
+My final code can be found below, don't just it wasn't meant to be pretty. You may also notice that I also had a light sensor that turned on a super bright LED when it got too dark. I did have to make sure to move the LED away from the sensor on the breadboard though...
+
+<pre><code class="javascript">
+var five = require("johnny-five"),
+    board, ping, led, piezo, photoresistor, whiteLED, servo, motor, digitalWrite;
+
+board = new five.Board();
+
+board.on("ready", function() {
+  var that = this;
+  piezo = new five.Piezo(3);
+  led = new five.Led(13);
+  whiteLED = new five.Led(5);
+  servo = new five.Servo(10);
+
+  board.repl.inject({
+    piezo: piezo,
+    pot: photoresistor,
+    servo: servo
+  });
+
+  photoresistor = new five.Sensor({
+    pin: "A2",
+    freq: 250
+  });
+
+  ping = new five.Ping(7);
+
+  ping.on("change", function( err, value ) {
+
+    if(this.cm < 90){
+      piezo.tone( 150, 50 );
+      led.strobe(50);
+      wave(true);
+    }else {
+      piezo.noTone();
+      led.stop();
+      led.off();
+      wave(false);
+    }
+  });
+
+  photoresistor.on("data", function() {
+    if(this.value > 350){
+      console.log("Oh no! It's too dark");
+      whiteLED.on();
+    }else{
+      whiteLED.off();
+    }
+  });
+
+});
+
+function wave(wave){
+  if(wave){
+      servo.to(0);
+  }else if(!wave){
+    setTimeout(function(){
+      servo.to(90);
+    }, 500);
+  }
+}
+</code></pre>
+
+All-in-all it was a really good day which I think everyone enjoyed. Lots was learnt. Laughs were had. I eagerly look forward to the next one.
+
+Thanks to everyone involved in organising it, [White October](http://www.whiteoctober.co.uk/) for hosting it and the various sponsors that allowed it to happen (as well as provide us with some awesome pastries and [burritos](http://missionburrito.co.uk/)).

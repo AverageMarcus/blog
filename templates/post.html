@@ -1,0 +1,31 @@
+<html>
+{{> head }}
+<body>
+  {{> header }}
+
+  <div class="container">
+    <section>
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+        <div class="post-meta feather_type">
+          <span>
+            <time datetime="{{moment this.date 'YYY-MM-DD' }}">
+              {{moment this.date 'dddd, Do MMMM YYYY' }}
+            </time>
+          </span>
+        </div>
+
+        <h2 itemprop="name headline">
+          <a class="post-link" href="{{ path }}">{{ title }}</a>
+        </h2>
+        <div class="post-body" itemprop="articleBody">
+          {{{ contents }}}
+        </div>
+
+      </article>
+    </section>
+  </div>
+
+  {{> footer }}
+</body>
+</html>

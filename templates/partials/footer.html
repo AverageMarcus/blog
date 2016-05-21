@@ -1,0 +1,21 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
+<script>
+  var tweets = document.querySelectorAll(".tweet");
+  for(var i=0; i<tweets.length; i++) {
+    var tweet = tweets[i];
+    var id = tweet.getAttribute("tweetID");
+
+    twttr.widgets.createTweet(
+      id, tweet,
+      {
+        conversation : 'none',
+        cards: 'visible',
+        linkColor: '#cc0000',
+        theme: 'light',
+        align: 'center'
+      });
+  }
+
+</script>
