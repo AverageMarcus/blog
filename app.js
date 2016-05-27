@@ -2,6 +2,7 @@
 const fs = require('fs');
 const https = require('https');
 const express = require('express');
+const compress = require('compression');
 const app = express();
 const Metalsmith = require('metalsmith');
 const inplace = require('metalsmith-in-place');
@@ -20,6 +21,7 @@ const moment = require('moment');
 const port = process.env.PORT || 8000;
 
 app.use(express.static(__dirname + '/build'));
+app.use(compress());
 
 var md = markdown('commonmark', {html: true});
 md.parser.use(emoji);
@@ -51,6 +53,11 @@ Metalsmith(__dirname)
     },
     pages: {
       pattern: 'pages/*'
+    },
+    experience: {
+      pattern: 'experience/*',
+      sortBy: 'start',
+      reverse: true
     }
   }))
   .use(inplace({
