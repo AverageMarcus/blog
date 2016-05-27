@@ -19,9 +19,10 @@ const emoji = require('markdown-it-emoji');
 const moment = require('moment');
 
 const port = process.env.PORT || 8000;
+const oneDay = 86400000;
 
-app.use(express.static(__dirname + '/build'));
 app.use(compress());
+app.use(express.static(__dirname + '/build', {maxAge: oneDay}));
 
 var md = markdown('commonmark', {html: true});
 md.parser.use(emoji);
