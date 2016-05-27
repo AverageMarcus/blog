@@ -189,7 +189,7 @@ nav {
         position: absolute;
         display: block;
         border: .9em solid $border-color;
-        box-shadow: 0px 1px 0px rgba(0,0,0,0.4);
+        box-shadow: 0.1px 1px 0px rgba(0,0,0,0.4);
         z-index: -2;
         left: -1.2em;
         border-right-width: .75em;
@@ -202,7 +202,7 @@ nav {
         position: absolute;
         display: block;
         border: 0.9em solid rgba(9, 39, 64, 0.72);
-        box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+        box-shadow: -0.1px 1px 0px rgba(0, 0, 0, 0.4);
         z-index: -2;
         right: -1.2em;
         border-left-width: .75em;
@@ -218,7 +218,7 @@ nav {
         border-color: #000 transparent transparent transparent;
         z-index:-1;
         left: 0;
-        border-width: .5em 0 0 .5em;
+        border-width: .55em 0 0 .4em;
     }
     span::after{
         content: "";
@@ -229,7 +229,7 @@ nav {
         border-color: #000 transparent transparent transparent;
         z-index: -1;
         right: 0;
-        border-width: .5em .5em 0 0;
+        border-width: .55em .4em 0 0;
     }
 }
 

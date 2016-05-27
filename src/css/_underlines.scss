@@ -33,7 +33,7 @@
     no-repeat,
     no-repeat,
     repeat-x;
-  background-position: 0% 1.08em, 100% 1.08em, 0% 1.08em;
+  background-position: 0% 1.02em, 100% 1.02em, 0% 1.02em;
 
   &::selection {
     @include textShadowToCropUnderline($selectionColor);
