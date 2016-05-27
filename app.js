@@ -14,6 +14,7 @@ const pagination = require('metalsmith-pagination');
 const define = require('metalsmith-define');
 const feed = require('metalsmith-feed');
 const sass = require('metalsmith-sass');
+const date = require('metalsmith-build-date');
 const Handlebars = require('handlebars');
 const emoji = require('markdown-it-emoji');
 const moment = require('moment');
@@ -22,7 +23,7 @@ const port = process.env.PORT || 8000;
 const oneDay = 86400000;
 
 app.use(compress());
-app.use(express.static(__dirname + '/build', {maxAge: oneDay}));
+app.use(express.static(__dirname + '/build', {maxAge: oneDay * 365}));
 
 var md = markdown('commonmark', {html: true});
 md.parser.use(emoji);
@@ -43,6 +44,7 @@ Metalsmith(__dirname)
       url: 'https://blog.marcusnoble.co.uk'
     }
   }))
+  .use(date())
   .use(collections({
     posts: {
       pattern: 'posts/*',
