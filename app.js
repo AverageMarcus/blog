@@ -14,9 +14,11 @@ const pagination = require('metalsmith-pagination');
 const define = require('metalsmith-define');
 const feed = require('metalsmith-feed');
 const sass = require('metalsmith-sass');
+const imagemin = require('metalsmith-imagemin');
 const Handlebars = require('handlebars');
 const emoji = require('markdown-it-emoji');
 const moment = require('moment');
+const imageminMozjpeg = require('imagemin-mozjpeg');
 
 const port = process.env.PORT || 8000;
 const oneDay = 86400000;
@@ -99,6 +101,11 @@ Metalsmith(__dirname)
     partials: 'templates/partials'
   }))
   .use(sass())
+  .use(imagemin({
+    plugins: [
+      imageminMozjpeg({progressive: true})
+    ]
+  }))
   .build(function(err) {
     if (err) throw err;
 
