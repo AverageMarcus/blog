@@ -41,13 +41,18 @@ Metalsmith(__dirname)
     site: {
       title: 'Marcus Noble',
       description: 'Awesomeness with a side of geek',
-      url: 'https://blog.marcusnoble.co.uk'
+      url: 'http://localhost:8000' // 'https://blog.marcusnoble.co.uk'
     }
   }))
   .use(date())
   .use(collections({
     posts: {
       pattern: 'posts/*',
+      sortBy: 'date',
+      reverse: true,
+    },
+    drafts: {
+      pattern: 'drafts/*',
       sortBy: 'date',
       reverse: true,
     },
@@ -76,6 +81,10 @@ Metalsmith(__dirname)
       {
         match: { collection: 'pages' },
         pattern: ':title'
+      },
+      {
+        match: { collection: 'drafts' },
+        pattern: 'drafts/:title'
       }
     ]
   }))

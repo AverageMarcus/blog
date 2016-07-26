@@ -37,6 +37,7 @@ a {
 
 pre code {
   overflow: scroll;
+  padding-bottom: 15px;
 }
 
 figure p {
@@ -237,13 +238,17 @@ nav {
   margin-bottom: 100px;
 
   a {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   img{
     display: block;
     max-width: 100%;
     margin: 0 auto;
+  }
+
+  p > code {
+    border: 1px dotted;
   }
 }
 
