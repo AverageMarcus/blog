@@ -29,6 +29,7 @@ var md = markdown('commonmark', {html: true});
 md.parser.use(emoji);
 
 Handlebars.registerHelper('markdown', function(text) {
+  if(!text) return;
   return md.parser.render(text);
 });
 Handlebars.registerHelper('moment', function(date, format) {
