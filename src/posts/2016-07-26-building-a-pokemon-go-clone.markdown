@@ -1,6 +1,6 @@
 ---
 layout: post.html
-title:  "Building a Pokémon Go clone"
+title:  "Building a Pokemon Go clone"
 date:   2016-07-26
 tags:
 summary: "Last Saturday was [@JSOxford](https://twitter.com/jsoxford)'s second [Summer of Hacks 2016](http://summerofhacks.io/) event - [Game Dev Day](http://gamedevday.club/).
