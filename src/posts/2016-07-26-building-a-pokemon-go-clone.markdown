@@ -16,7 +16,7 @@ My plan for the day? To make a [Pokémon Go](http://www.pokemongo.com/) clone us
 
 {{> picture alt="Pushermon Go" url="/images/pushermon-go.jpg" }}
 
-_⚠️ Warning: I used a fair amount of ES6 features while builing this so it's likely it'll only work in modern browsers (possibly only Chrome as that's what I used)._
+_⚠️ Warning: I used a fair amount of ES6 features while building this so it's likely it'll only work in modern browsers (possibly only Chrome as that's what I used)._
 
 The game is built using [Mapbox](https://www.mapbox.com/) for the maps, [Pokéapi](https://pokeapi.co/) for the Pokémon data and sprites and [Pusher](https://pusher.com/) to handle sending out the locations to all players.
 
