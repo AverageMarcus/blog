@@ -18,9 +18,13 @@ Conway's Game of Life is a 0-player turn based simulation of life. The "game" fo
 The rules of the game are as follows:
 
 <blockquote markdown="1">
+
 * Any live cell with fewer than two live neighbours dies, as if caused by under-population.
+
 * Any live cell with two or three live neighbours lives on to the next generation.
+
 * Any live cell with more than three live neighbours dies, as if by overcrowding.
+
 * Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
 <cite>Wikipedia - http://en.wikipedia.org/wiki/Conway's_Game_of_Life</cite>
@@ -67,8 +71,8 @@ This is the approach I used last night. I have struggled on effectively calculat
 # Final Code
 
 <figure class="center" markdown="1">
-<a href="/ConwaysGameOfLife.html">
-![Conway's Game of Life]({{ site.url }}/images/conways-game-of-life.PNG)
+<a href="{{ site.url }}/Conways-Game-Of-Life" target="_blank">
+  <img src="{{site.url}}/images/conways-game-of-life.PNG" alt="Conway's Game of Life">
 </a>
 <figcaption>They LIVE!!!</figcaption>
 </figure>
@@ -178,7 +182,7 @@ init();
 </code></pre>
 
 
-You can check out the [final version](/ConwaysGameOfLife.html) or take a look at the [gist](https://gist.github.com/AverageMarcus/f5e34825ef89e11443be).
+You can check out the [final version](/Conways-Game-Of-Life) or take a look at the [gist](https://gist.github.com/AverageMarcus/f5e34825ef89e11443be).
 
 As always, if you have any comments <a href="https://twitter.com/intent/tweet?screen_name=Marcus_Noble_" class="twitter-contact-link" data-related="Marcus_Noble_" data-dnt="true" target="_blank"><i class="icon-twitter"></i>Tweet @Marcus\_Noble_</a>.
 
