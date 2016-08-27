@@ -31,7 +31,7 @@ title: "Conways Game Of Life"
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <div id="gameBoard"></div>
 <p>
-	Read my blog post regarding <a href="14-07-2014-conways-game-of-life/">Conway's Game of Life</a>
+	Read my blog post regarding <a href="/2014-07-14-conway-s-game-of-life/">Conway's Game of Life</a>
 </p>
 
 <script type="text/javascript">

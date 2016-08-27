@@ -71,7 +71,7 @@ This is the approach I used last night. I have struggled on effectively calculat
 # Final Code
 
 <figure class="center" markdown="1">
-<a href="{{ site.url }}/Conways-Game-Of-Life" target="_blank">
+<a href="{{ site.url }}/conways-game-of-life" target="_blank">
   <img src="{{site.url}}/images/conways-game-of-life.PNG" alt="Conway's Game of Life">
 </a>
 <figcaption>They LIVE!!!</figcaption>
@@ -182,7 +182,7 @@ init();
 </code></pre>
 
 
-You can check out the [final version](/Conways-Game-Of-Life) or take a look at the [gist](https://gist.github.com/AverageMarcus/f5e34825ef89e11443be).
+You can check out the [final version](/conways-game-of-life) or take a look at the [gist](https://gist.github.com/AverageMarcus/f5e34825ef89e11443be).
 
 As always, if you have any comments <a href="https://twitter.com/intent/tweet?screen_name=Marcus_Noble_" class="twitter-contact-link" data-related="Marcus_Noble_" data-dnt="true" target="_blank"><i class="icon-twitter"></i>Tweet @Marcus\_Noble_</a>.
 
