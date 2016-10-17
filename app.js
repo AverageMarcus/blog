@@ -18,6 +18,7 @@ const date = require('metalsmith-build-date');
 const Handlebars = require('handlebars');
 const emoji = require('markdown-it-emoji');
 const moment = require('moment');
+const striptags = require('striptags');
 
 const port = process.env.PORT || 8000;
 const oneDay = 86400000;
@@ -34,6 +35,9 @@ Handlebars.registerHelper('markdown', function(text) {
 });
 Handlebars.registerHelper('moment', function(date, format) {
   return new moment(date).format(format);
+});
+Handlebars.registerHelper("striptags", function(text){
+	return striptags(text);
 });
 
 
