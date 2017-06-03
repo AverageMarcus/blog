@@ -13,6 +13,10 @@
           {{#each pagination.files }}
             <li>
               <article class="post">
+                <h2 class="post-title">
+                  <a class="post-link" href="/{{ this.path }}">{{ this.title }}</a>
+                </h2>
+
                 <div class="post-meta feather_type">
                   <span>
                     <time datetime="{{moment this.date 'YYY-MM-DD' }}">
@@ -21,10 +25,7 @@
                   </span>
                 </div>
 
-                <h2>
-                  <a class="post-link" href="/{{ this.path }}">{{ this.title }}</a>
-                </h2>
-                <div>{{{ markdown this.summary }}}</div>
+                <div class="post-preview">{{{ markdown this.summary }}}</div>
               </article>
             </li>
           {{/each}}
@@ -44,6 +45,7 @@
         </div>
 
       </div>
+      {{> footer }}
     </div>
   </body>
 </html>

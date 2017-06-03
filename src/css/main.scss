@@ -1,14 +1,14 @@
-$border-color: rgba(9, 39, 64, 0.72);
 $link-color: #AD4E4E;
-$nav-height: 40px;
 $selectionColor: #D2D2D2;
-$background-color: #F4F5F6;
+$background-color: #FFF;
 
 @import "_underlines.scss";
 
+
 body {
-  padding-top: $nav-height;
-  background: $background-color;
+  margin: 0;
+  padding: 0;
+  overflow: none;
 }
 
 * {
@@ -21,9 +21,8 @@ body {
 }
 
 a {
-  color: #4a4a4a;
+  color: $link-color;
   transition: color ease .3s;
-  margin: 0 3px;
 
   &:hover {
     color: $link-color;
@@ -40,8 +39,17 @@ pre code {
   padding-bottom: 15px;
 }
 
-figure p {
-  margin: 0;
+figure {
+  max-width: 100%;
+  margin: 0 auto;
+
+  img {
+    max-width: 100%;
+  }
+
+  p {
+    margin: 0;
+  }
 }
 
 iframe {
@@ -55,250 +63,79 @@ iframe {
   margin: 0 !important;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: $nav-height;
-  display: block;
-  font-size: 1.2em;
-  background: $border-color;
-  border-bottom: 2px solid saturate($border-color, 60%);
-  z-index: 10;
-  text-align: center;
-
-  .github-icon {
-    position: fixed;
-    top: 0;
-    right: 10px;
-  }
-
-  .twitter-icon {
-    position: fixed;
-    top: 0;
-    right: 40px;
-  }
-
-  a {
-    line-height: $nav-height;
-    height: $nav-height;
-    padding: 0 5px;
-    color: #fff;
-    display: inline-block;
-    border: none;
-
-    svg {
-      height: $nav-height / 2;
-      vertical-align: text-bottom;
-      margin: 10px auto;
-    }
-  }
-
-  a:hover {
-    background: #fff;
-    color: $border-color;
-    border-bottom: 2px solid saturate($border-color, 60%);
-
-    svg path {
-      fill: $border-color;
-    }
-  }
-}
-
-#logo {
-  text-align: center;
-  img {
-    width: 200px;
-    border: 2px solid $border-color;
-    border-radius: 100px;
-    padding: 0;
-    margin: 0 auto;
-    box-shadow: 3px 3px 5px 3px #ccc;
-  }
-}
-
-.header, .post-list li article {
-  border-bottom: 1px solid rgba($border-color, .2);
-  position: relative;
-}
-
-.header::after, .post-list li article::after {
-  display: block;
-  content: "";
-  width: 7px;
-  height: 7px;
-  border: 1px solid $border-color;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  margin-left: -5px;
-  background: #fff;
-  border-radius: 100%;
-  box-shadow: rgba(232,232,232,.5) 0 0 0 5px;
-}
-
-.right {
-  float: right !important;
-}
-
-.center {
-  text-align: center;
+.container {
+  max-width: 732px;
+  margin: 0 auto;
 }
 
 .post-list {
   list-style: none;
+  padding: 0;
 }
 
-.post, .page {
-  padding: 0 7px;
-
-  a {
-    @include linkUnderlines($background-color, #4a4a4a, $link-color);
-  }
-}
-
-
-
-.post-meta {
-    display: inline-block;
-    margin: 15px -7px 5px -7px;
-    font-size: 1.5rem;
-    color: #fff;
-    padding:4px 20px 4px 20px;
-    position: relative;
-    box-shadow: inset 0px 1px 0px rgba(255,255,255,.3),
-        inset 0px 0px 20px rgba(0,0,0,0.1),
-        0px 1px 1px rgba(0,0,0,0.4);
-    background: $border-color;
-    width: 100%;
-    text-align: left;
-
-    a {
-        color: #9EABB3;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    &::before {
-        content: "";
-        width: .2em;
-        bottom: -.45em;
-        position: absolute;
-        display: block;
-        border: .9em solid $border-color;
-        box-shadow: 0.1px 1px 0px rgba(0,0,0,0.4);
-        z-index: -2;
-        left: -1.2em;
-        border-right-width: .75em;
-        border-left-color: transparent;
-    }
-    &::after {
-        content: "";
-        width: .2em;
-        bottom: -.45em;
-        position: absolute;
-        display: block;
-        border: 0.9em solid rgba(9, 39, 64, 0.72);
-        box-shadow: -0.1px 1px 0px rgba(0, 0, 0, 0.4);
-        z-index: -2;
-        right: -1.2em;
-        border-left-width: .75em;
-        border-right-color: transparent;
-    }
-
-    span::before{
-        content:"";
-        bottom:-.5em;
-        position:absolute;
-        display:block;
-        border-style:solid;
-        border-color: #000 transparent transparent transparent;
-        z-index:-1;
-        left: 0;
-        border-width: .55em 0 0 .4em;
-    }
-    span::after{
-        content: "";
-        bottom: -.5em;
-        position: absolute;
-        display: block;
-        border-style: solid;
-        border-color: #000 transparent transparent transparent;
-        z-index: -1;
-        right: 0;
-        border-width: .55em .4em 0 0;
-    }
-}
-
-.post-body {
-  margin-bottom: 100px;
-
-  a {
-    font-size: 1.2em;
-  }
-
-  img{
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  p > code {
-    border: 1px dotted;
-  }
+.post-preview {
+  opacity: 0.6;
 }
 
 .pagination {
   text-align: center;
-  margin: 30px;
+}
+.pagination a {
+  font-size: 1.4mem;
+  color: #000;
 }
 
+.back-to-blog {
+  font-size: 2.5em;
+  text-decoration: none !important;
+  background: none !important;
+  text-shadow: none !important;
+}
 
+.post {
+  font-family: 'Lucida Grande', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 2px 8px;
 
+  a {
+    @include linkUnderlines($background-color, #4a4a4a, $link-color);
+  }
 
+  .post-title {
+    color: #000;
+    font-size: 32px;
+    line-height: 34px;
+    margin: 21px 0 0;
+    font-weight: 700;
 
-@media (max-width: 768px) {
-  nav {
-    display: block;
-    height: auto;
-
-    .nav-right {
-      position: fixed;
-      top: 0;
-      right: 0;
-
-      span {
-        display: none;
-      }
+    a {
+      color: #000;
+      text-decoration: none;
+      margin: 0;
     }
   }
-}
 
-
-.card {
-  display:block;
-  border: 1px solid $border-color;
-  border-radius: 0.3em;
-  padding: 10px;
-  box-shadow: 1px 1px 2px $border-color;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-}
-
-.experience-list {
-  h3 {
-    font-size: 2em;
+  .post-meta {
+    color: #79828B;
+    font-size: 15px;
+    line-height: 17px;
+    margin: 0 0 12px 0;
   }
 }
 
-.project-image {
-  width: 100%;
-  height: 100px;
-  background-size: cover;
-  background-position: center;
+footer {
+  margin: 20px 0 10px;
+  color: #79828B;
+  text-align: center;
+}
+.social-icons {
+  a {
+    text-decoration: none !important;
+    background: none !important;
+    text-shadow: none !important;
+  }
+  a svg {
+    height: 40px;
+  }
 }
