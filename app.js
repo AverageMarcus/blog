@@ -46,7 +46,7 @@ Metalsmith(__dirname)
     site: {
       title: 'Marcus Noble',
       description: 'Awesomeness with a side of geek',
-      url: 'https://blog.marcusnoble.co.uk'
+      url: 'https://marcusnoble.co.uk'
     }
   }))
   .use(date())
