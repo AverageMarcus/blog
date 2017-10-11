@@ -39,8 +39,24 @@ a {
 }
 
 pre code {
-  overflow: scroll;
+  overflow-x: auto;
+  overflow-y: auto;
   padding-bottom: 15px;
+  font-size: 0.85em;
+}
+
+p > code {
+  background-color: #3f3f3f;
+  color: #dcdcdc;
+  font-size: 0.9em;
+  padding: 2px;
+}
+
+blockquote {
+  border-left: 8px solid rgba(121, 130, 139, 0.52);
+  margin-left: 0;
+  padding-left: 1em;
+  color: #79828B;
 }
 
 figure {
@@ -68,7 +84,7 @@ iframe {
 }
 
 .container {
-  max-width: 732px;
+  max-width: 1020px;
   margin: 0 auto;
 }
 
