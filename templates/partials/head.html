@@ -34,4 +34,11 @@
 
   <link rel="stylesheet" href="/css/main.css?{{moment date 'YYYYMMDDHHMM'}}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js', { scope: '/' });
+      });
+    }
+  </script>
 </head>
