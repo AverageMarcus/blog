@@ -9,7 +9,7 @@
         <a href="/" class="back-to-blog" title="Return to all posts">←</a>
 
         <h2 class="post-title" itemprop="name headline">
-          <a class="post-link" href="{{ path }}">{{ title }}</a> {{> share }}
+          <a class="post-link" href="{{ path }}">{{ title }}</a>
         </h2>
 
         <div class="post-meta feather_type">
@@ -63,7 +63,7 @@
           event.preventDefault();
           navigator.share({
             title: document.title,
-            url: window.location.url
+            url: window.location.href
           });
         });
       });
