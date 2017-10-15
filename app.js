@@ -24,7 +24,7 @@ const port = process.env.PORT || 8000;
 const oneDay = 86400000;
 
 app.use(compress());
-app.use(express.static(__dirname + '/build', {maxAge: oneDay * 365}));
+app.use(express.static(__dirname + '/build'));
 
 var md = markdown('commonmark', {html: true});
 md.parser.use(emoji);
