@@ -78,3 +78,4 @@ function fetchAndCache(event) {
 }
 ```
 
+To read about other strategies I highly recommend reading [Jake Archibald](https://twitter.com/jaffathecake)'s post [offline cookbook](https://jakearchibald.com/2014/offline-cookbook)
