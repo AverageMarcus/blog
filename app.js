@@ -39,6 +39,12 @@ Handlebars.registerHelper('moment', function(date, format) {
 Handlebars.registerHelper("striptags", function(text){
 	return striptags(text);
 });
+Handlebars.registerHelper("buildTitle", function(title, siteTitle){
+	if (title.indexOf(siteTitle) < 0) {
+    title = `'${title}' by ${siteTitle}`;
+  }
+  return title;
+});
 
 
 Metalsmith(__dirname)
