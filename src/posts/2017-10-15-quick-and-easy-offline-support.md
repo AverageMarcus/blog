@@ -52,8 +52,7 @@ self.addEventListener('fetch', function(event) {
 function cacheBust(request) {
   var url = request.url;
   if (url.indexOf(self.location.origin) >= 0) {
-    if (url.indexOf('.') < 0 && url[url.length - 1] !== '/') {
-      // When dealing with directories make sure we append a trailing slash
+    if (url[url.length - 1] !== '/' && (url.indexOf('.') < 0 || url.lastIndexOf('.') < self.location.origin.length)) {
       url += `/`;
     }
     return `${url}?${Math.random()}`;
