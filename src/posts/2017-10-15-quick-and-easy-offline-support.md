@@ -36,4 +36,46 @@ function fetchAndCache(event) {
 }
 ```
 
-**NOTE:** Make sure you have cache headers appropriately set. I spent a good chunk of time trying to debug why the cache wasn't updating and realised it was due to a high `max-age` header being set on the resource.
+> **NOTE:** Make sure you have cache headers appropriately set. I spent a good chunk of time trying to debug why the cache wasn't updating and realised it was due to a high `max-age` header being set on the resource.
+
+You can get around a misguided `max-age` issue by implementing some cache-busting within the service worker. When calling out to the network for the resource you can append a random string to force the browser to go to the server to a fresh copy.
+
+```javascript
+/* 📄 service-worker.js */
+var CACHE = 'v1';
+
+// Intercept all network requests
+self.addEventListener('fetch', function(event) {
+  event.respondWith(fetchAndCache(event));
+});
+
+function cacheBust(request) {
+  var url = request.url;
+  if (url.indexOf(self.location.origin) >= 0) {
+    if (url.indexOf('.') < 0 && url[url.length - 1] !== '/') {
+      // When dealing with directories make sure we append a trailing slash
+      url += `/`;
+    }
+    return `${url}?${Math.random()}`;
+  } else {
+    return request;
+  }
+}
+
+function fetchAndCache(event) {
+  return caches.open(CACHE).then(function (cache) {
+    return cache.match(event.request).then(function(response) {
+      // Fetch from the network regardless of a cached resource
+      var fetchResponse = fetch(cacheBust(event.request))
+        .then(function(networkResponse) {
+          // Cache the up-to-date resource
+          cache.put(event.request, networkResponse.clone());
+          return networkResponse;
+        });
+      // Return the cached response if it exists or fallback to the network
+      return response || fetchResponse;
+    });
+  });
+}
+```
+
