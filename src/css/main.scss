@@ -159,3 +159,25 @@ footer {
     height: 40px;
   }
 }
+
+
+.share {
+  background: transparent;
+  border: none;
+  display: none;
+  cursor: pointer;
+
+  &.show {
+    display: initial;
+  }
+
+  &:hover, &:active {
+    fill: $link-color;
+    color: $link-color;
+  }
+
+  svg {
+    height: 20px;
+    vertical-align: bottom;
+  }
+}
