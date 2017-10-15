@@ -6,13 +6,13 @@ self.addEventListener('fetch', function(event) {
 
 function fetchAndCache(event) {
   return caches.open(CACHE).then(function (cache) {
-    return fetch(event.request)
-      .then(function(response) {
-        cache.put(event.request, response.clone());
-        return response;
-      })
-      .catch(function() {
-        return cache.match(event.request);
-      });
+    return cache.match(event.request).then(response => {
+      var fetchResponse = fetch(event.request)
+        .then(function(networkResponse) {
+          cache.put(event.request, networkResponse.clone());
+          return networkResponse;
+        });
+      return response || fetchResponse;
+    });
   });
 }
