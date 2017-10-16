@@ -4,3 +4,4 @@ npm-debug.log
 .DS_store
 .travis/*.key*
 !.travis/deploy.key.enc
+package-lock.json
