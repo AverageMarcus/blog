@@ -3,7 +3,7 @@ layout: post.html
 title: Simple sharing
 date: 2017-10-16
 tags:
-summary:
+summary: "The line between the web and native applications is becoming more and more blurred. One of the latest goodies to land in browsers that gives our users a consistent, seamless experience is the [Web Share API](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share) currently only [available in Chrome](https://caniuse.com/#feat=web-share)."
 ---
 The line between the web and native applications is becoming more and more blurred. One of the latest goodies to land in browsers that gives our users a consistent, seamless experience is the [Web Share API](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share) currently only [available in Chrome](https://caniuse.com/#feat=web-share).
 
