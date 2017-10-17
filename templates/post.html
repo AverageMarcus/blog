@@ -57,7 +57,7 @@
   </script>
   <script>
     if (navigator.share) {
-      [...document.querySelectorAll('.share')].forEach(function(shareButton) {
+      [].slice.call(document.querySelectorAll('.share')).forEach(function(shareButton) {
         shareButton.classList.add('show');
         shareButton.addEventListener('click', function(event) {
           event.preventDefault();
