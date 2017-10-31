@@ -3,7 +3,7 @@ layout: post.html
 title:  "Hackathonarama 3: with great power comes great hacks"
 date:   2017-10-31
 tags: hackathon
-summary: ""
+summary: "For the third year running I attended [Hackference](https://2017.hackference.co.uk/) again. Once again, a 1 day conference followed by a 24 hour hackathon and as always a really great weekend."
 ---
 For the third year running I attended [Hackference](https://2017.hackference.co.uk/) again. Once again, a 1 day conference followed by a 24 hour hackathon and as always a really great weekend.
 
