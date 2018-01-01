@@ -78,6 +78,13 @@ iframe {
   overflow: scroll;
 }
 
+hr {
+  border: 0;
+  height: 2px;
+  background: rgba(121, 130, 139, 0.52);
+  width: 80%;
+}
+
 .emoji {
   display: inline !important;
   margin: 0 !important;
@@ -137,7 +144,7 @@ iframe {
   }
 
   .post-meta {
-    color: #79828B;
+    color: #3d4145;
     font-size: 15px;
     line-height: 17px;
     margin: 0 0 12px 0;
