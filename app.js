@@ -110,7 +110,6 @@ Metalsmith(__dirname)
       first: 'index.html',
       noPageOne: true,
       path: 'page:num/index.html',
-      filter: 'draft === undefined',
       pageMetadata: {
         title: 'Posts'
       }
