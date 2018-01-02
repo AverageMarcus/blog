@@ -3,7 +3,7 @@ layout: post.html
 title:  "My Journey of DevOps Discovery"
 date:   2018-01-02
 tags: devops
-summary: ""
+summary: "I'm going to take you on a journey. This is the journey of my career thus far and the discoveries that have made dealing with DevOps more pleasant."
 ---
 I'm going to take you on a journey. This is the journey of my career thus far and the discoveries that have made dealing with DevOps more pleasant.
 
