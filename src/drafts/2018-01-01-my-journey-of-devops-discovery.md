@@ -29,7 +29,7 @@ The next logical step was to put those manually typed commands into a bash or ba
 
 Bash scripts also have the added documentation of being self-documenting (sort-of). If you want to know how a server is configured and setup you can just read the code in the bash script and get an understanding of what was run.
 
-But this is still time consuming - rather than copy & pasting these commands into a terminal window we are putting them into a script instead (often both as we want to check it actually works first). These scripts are hard to maintain as it's very rare they can be re-run on the same machine without unwanted side-affects. Emergency hotfixes applied directly to production machines can quite easily be forgotten about and not back-ported to other machines or scripts.
+But this is still time consuming - rather than copy & pasting these commands into a terminal window we are putting them into a script instead (often both as we want to check it actually works first). These scripts are hard to maintain as it's very rare they can be re-run on the same machine without unwanted side-effects. Emergency hotfixes applied directly to production machines can quite easily be forgotten about and not back-ported to other machines or scripts.
 
 Clearly we need to do more.
 
@@ -100,7 +100,7 @@ Having our infrastructure in code gives us all the same benefits as with our sou
  - infrastructure can be stored alongside our application code and can be used by our <abbr title="Continuous Integration">CI</abbr> tools to automate creation of new resources.
  - self-documenting.
 
-This is where I was at the start of the year. It's a good place to be as it takes a lot of the stress out of managing servers. When you start working with hundreds of microservices though, it can become an new kind of headache. Depending on how you structure your infrastructure you could end up with the same infrastructure code repeated again and again for each of your microservices - each with their own machine instance, their own load balancer and auto scaling group. You end up with a LOT of infrastructure to manage and all the financial costs that come with that.
+This is where I was at the start of last year. It's a good place to be as it takes a lot of the stress out of managing servers. When you start working with hundreds of microservices though, it can become a new kind of headache. Depending on how you structure your infrastructure you could end up with the same infrastructure code repeated again and again for each of your microservices - each with their own machine instance, their own load balancer and auto scaling group. You end up with a LOT of infrastructure to manage and all the financial costs that come with that.
 
 So where do we go next?
 
