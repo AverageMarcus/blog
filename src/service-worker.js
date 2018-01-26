@@ -1,4 +1,8 @@
-var CACHE = 'v2';
+var CACHE = 'v3';
+
+self.addEventListener('install', function() {
+  return self.skipWaiting();
+})
 
 self.addEventListener('fetch', function(event) {
   event.respondWith(fetchAndCache(event));
@@ -18,13 +22,14 @@ function cacheBust(request) {
 
 function fetchAndCache(event) {
   return caches.open(CACHE).then(function (cache) {
-    return cache.match(event.request).then(response => {
-      var fetchResponse = fetch(cacheBust(event.request))
-        .then(function(networkResponse) {
-          cache.put(event.request, networkResponse.clone());
-          return networkResponse;
-        });
-      return response || fetchResponse;
+    return fetch(event.request)
+    .then(function(networkResponse) {
+      cache.put(event.request, networkResponse.clone());
+      return networkResponse;
+    })
+    .catch(function(err) {
+      console.log(err)
+      return caches.match(event.request);
     });
   });
 }
