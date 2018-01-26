@@ -1,7 +1,7 @@
 ---
 layout: post.html
 title:  "Getters and Setters in JavaScript"
-date:   2018-01-27
+date:   2018-01-26
 tags: JavaScript
 summary: "I was recently asked by [Ruth](https://twitter.com/rumyra) to explain what the purpose of getters and setters are in JavaScript and how to use them. This led to me somewhat ramble about all I know on the subject in the [JSOxford](https://jsoxford.com) channel of the [Digital Oxford Slack](http://slack.digitaloxford.com/). People seemed to find what I said useful so I thought it best to write a more coherent version."
 ---
