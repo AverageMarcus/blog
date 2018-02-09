@@ -12,7 +12,7 @@ In 2015 JavaScript had [classes](https://developer.mozilla.org/en-US/docs/Web/Ja
 
 So how can we go about protecting data that shouldn't change during runtime? Let's take a look at some options.
 
-> Throughout this post I will reuse an example class that is used to build a shape. It's width and height can only be set when initialised and provides a property to get the area.
+> Throughout this post I will reuse an example class that is used to build a shape. Its width and height can only be set when initialised and provides a property to get the area.
 > For more information on the `get` keyword used in these examples take a look at my last post on [Getters and Setters](/2018-01-26-getters-and-setters-in-javascript)
 
 ## Naming convention
@@ -154,7 +154,7 @@ console.log(square.width);            // undefined
 console.log(square instanceof Shape); // true
 ```
 
-Alternatively, we can set the instances prototype to have `this` as it's prototype allowing us to use both `instanceof` and `get`. In the example below we have a prototype chain of `Object -> Outer Shape -> Inner Shape Prototype -> Inner Shape`.
+Alternatively, we can set the instances prototype to have `this` as its prototype allowing us to use both `instanceof` and `get`. In the example below we have a prototype chain of `Object -> Outer Shape -> Inner Shape Prototype -> Inner Shape`.
 
 ```js
 function Shape() {
