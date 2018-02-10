@@ -38,6 +38,52 @@ a {
   text-align: center;
 }
 
+header {
+  font-family: 'Lucida Grande', Arial, sans-serif;
+  font-size: .8em;
+
+  a:not(.social) {
+    @include linkUnderlines($background-color, #4a4a4a, $link-color);
+  }
+
+  h1 {
+    font-weight: normal;
+    margin: .8em 0 .8em 8px;
+
+    img {
+      height: 1.2em;
+      float: left;
+      border-radius: 20px;
+    }
+
+    a {
+      color: #000 !important;
+      text-decoration: none;
+      margin: 0;
+    }
+
+    .social {
+      text-decoration: none;
+
+      svg {
+        height: 20px;
+      }
+
+      &:hover svg path,
+      &:hover svg rect {
+        fill: $link-color !important;
+      }
+    }
+  }
+
+  hr {
+    margin: 0 auto;
+    width: 95%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, .2);
+  }
+}
+
 pre code {
   overflow-x: auto;
   overflow-y: auto;
@@ -112,13 +158,6 @@ hr {
   color: #000;
 }
 
-.back-to-blog {
-  font-size: 2.5em;
-  text-decoration: none !important;
-  background: none !important;
-  text-shadow: none !important;
-}
-
 .post {
   font-family: 'Lucida Grande', Arial, sans-serif;
   font-size: 18px;
@@ -156,6 +195,7 @@ footer {
   color: #79828B;
   text-align: center;
 }
+
 .social-icons {
   a {
     text-decoration: none !important;
@@ -166,7 +206,6 @@ footer {
     height: 40px;
   }
 }
-
 
 .share {
   background: transparent;
