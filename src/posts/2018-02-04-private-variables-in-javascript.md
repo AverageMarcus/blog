@@ -6,6 +6,8 @@ tags: JavaScript
 summary: "JavaScript has had a lot of improvements lately with new syntax and features being added all the time. But some things don't change, everything is still an object, pretty much everything can be altered at runtime and there is no concept of public/private properties. But there are some tricks we can use to change some of this ourselves, in this post I am going to look at the various ways in which we can implement private properties."
 ---
 
+> Updated 23<sup>rd</sup> February 2018 - Chrome Canary now supports private fields behind an experimental flag.
+
 JavaScript has had a lot of improvements lately with new syntax and features being added all the time. But some things don't change, everything is still an object, pretty much everything can be altered at runtime and there is no concept of public/private properties. But there are some tricks we can use to change some of this ourselves, in this post I am going to look at the various ways in which we can implement private properties.
 
 In 2015 JavaScript had [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) introduced that provided a familiar way of working with objects for those coming from more classical C-based languages like Java and C#. It becomes quickly apparent though that these classes aren't quite like what you are used to - there are no modifiers for properties to control access and all properties need to be defined within functions.
@@ -390,6 +392,12 @@ console.log(square.#width);           // Error: Private fields can only be refer
 ```
 
 If you're interested you can read the [full proposal](https://tc39.github.io/proposal-class-fields/) to get all the nitty-gritty details. The bit that I found interesting was that private fields would need to be defined up-front and cannot be created or destroyed ad-hoc. This feels like a very alien concept in JavaScript to me so would be interesting to see how that develops as the proposal moves forward. Currently the proposal focuses on private class properties and not private functions or private members of object literals, these may come later.
+
+### _Update_
+
+Chrome Canary has [just shipped with support for private fields](https://twitter.com/_gsathya/status/967110676463239169) behind the "[experimental Javascript](chrome://flags/#enable-javascript-harmony)" flag. If you're running Canary the above code will look a bit like this in DevTools...
+
+{{> picture alt="Private fields in Chrome Canary" caption="Private fields in Chrome Canary" url="/images/PrivateFieldsChromeCanary.png" }}
 
 ## NPM Package - Privatise
 
