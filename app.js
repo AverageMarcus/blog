@@ -26,7 +26,7 @@ const oneDay = 86400000;
 app.use(compress());
 app.use(express.static(__dirname + '/build'));
 
-var md = markdown('commonmark', {html: true});
+var md = markdown({html: true});
 md.parser.use(emoji);
 
 Handlebars.registerHelper('markdown', function(text) {
