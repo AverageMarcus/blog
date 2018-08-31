@@ -48,11 +48,11 @@ When recording a talk at JSOxford we actually produce two videos for each talk.
 
 The first video comes from the Zoom Q2n camera that we have pointed at the speaker. This is useful for getting any body language used during a talk, such as pointing at something on the projector. We also use this to capture the audio as the Zoom Q2n has a very nice microphone designed for musicians which picks up our speakers nicely (just remember to turn the volume up when recording otherwise be ready for a lot of post-processing volume boosting). As our venue has a microphone / speaker setup we position the camera close to the speaker to get the best sound quality. We record this at 720p as we found the camera had some trouble writing to the SD card we were using when set to 1080p.
 
-The second video is captured by the "AVerMedia Live Gamer Portable" capture card. This grabs a video of the output from the speakers laptop as it's being sent to the projector / TV. This makes the actual presentation much clearer and allows speakers to be able to do live-coding, show off demos, etc. and still have it captured clearly.
+The second video is captured by the "AVerMedia Live Gamer Portable" capture card. This grabs a video of the output from the speakers laptop as it's being sent to the projector / TV. This makes the actual presentation much clearer and allows speakers to be able to do live-coding, show off demos, etc., and still have it captured clearly.
 
 Some laptops (Macs mainly) have a form of DRM that can prevent the capture card from being able to record, to get around this we use the HDMI splitter in between the laptop and the capture card. This strips off the DRM before sending it on to the capture card. We don't actually use the second output.
 
-From the capture card we then output to the HDMI switch that then outputs directly to the projector / TV. We have a second laptop connected to this switch so we can use it for intro presentations etc. and switch over to the speakers laptop with the press of a button.
+From the capture card we then output to the HDMI switch that then outputs directly to the projector / TV. We have a second laptop connected to this switch so we can use it for intro presentations, etc., and switch over to the speakers laptop with the press of a button.
 
 # How things connect together
 
