@@ -3,11 +3,11 @@ layout: post.html
 title:  "Conway's Game of Life"
 date:   2014-07-14
 tags: JavaScript Programming
-summary: "As I [mentioned previously](/12-07-2014-jsoxford-code-retreat/), last week at the JSOxford Code Retreat we spent a lot of time (all the time) developing [Conway's Game of Life](http://en.wikipedia.org/wiki/Conway's_Game_of_Life) in various ways. As the code retreat was focusing on different coding methods and perfecting code rather than producing something that works I never got a fully working version. So last night I sat down and got to it!"
+summary: "As I [mentioned previously](/2014-07-12-jsoxford-code-retreat-or-how-to-use-an-apple-keyboard/), last week at the JSOxford Code Retreat we spent a lot of time (all the time) developing [Conway's Game of Life](http://en.wikipedia.org/wiki/Conway's_Game_of_Life) in various ways. As the code retreat was focusing on different coding methods and perfecting code rather than producing something that works I never got a fully working version. So last night I sat down and got to it!"
 
 ---
 
-As I [mentioned previously](/12-07-2014-jsoxford-code-retreat/), last week at the JSOxford Code Retreat we spent a lot of time (all the time) developing [Conway's Game of Life](http://en.wikipedia.org/wiki/Conway's_Game_of_Life) in various ways. As the code retreat was focusing on different coding methods and perfecting code rather than producing something that works I never got a fully working version. So last night I sat down and got to it!
+As I [mentioned previously](/2014-07-12-jsoxford-code-retreat-or-how-to-use-an-apple-keyboard/), last week at the JSOxford Code Retreat we spent a lot of time (all the time) developing [Conway's Game of Life](http://en.wikipedia.org/wiki/Conway's_Game_of_Life) in various ways. As the code retreat was focusing on different coding methods and perfecting code rather than producing something that works I never got a fully working version. So last night I sat down and got to it!
 
 # About
 
