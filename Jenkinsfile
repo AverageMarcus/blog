@@ -44,5 +44,18 @@ pipeline {
       }
     }
 
+    stage('Mirror to GitHub') {
+      when { branch 'master' }
+      environment {
+        GITHUB_TOKEN = credentials('Github_token')
+      }
+      steps {
+        sh """
+          git remote add github https://${GITHUB_TOKEN}:@github.com/AverageMarcus/blog.git
+          git push github master
+          """
+      }
+    }
+
   }
 }
