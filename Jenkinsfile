@@ -52,7 +52,7 @@ pipeline {
       steps {
         sh """
           git remote add github https://${GITHUB_TOKEN}:@github.com/AverageMarcus/blog.git
-          git push github master
+          git push github HEAD:master
           """
       }
     }
