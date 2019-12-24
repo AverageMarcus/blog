@@ -22,7 +22,23 @@ pipeline {
         container('docker') {
           sh """
             docker login docker.cloud.cluster.fun -u $DOCKER_CREDS_USR -p $DOCKER_CREDS_PSW
+            docker tag docker.cloud.cluster.fun/averagemarcus/blog:${env.GIT_COMMIT} docker.cloud.cluster.fun/averagemarcus/blog:latest
             docker push docker.cloud.cluster.fun/averagemarcus/blog:${env.GIT_COMMIT}
+            docker push docker.cloud.cluster.fun/averagemarcus/blog:latest
+            """
+        }
+      }
+    }
+
+    stage('Restart deployment') {
+      when { branch 'master' }
+      steps {
+        container('kubectl') {
+          sh """
+            set +x
+            mkdir -p ~/.kube/
+            printf "\$CLOUD_KUBECONFIG" > ~/.kube/config
+            kubectl --kubeconfig ~/.kube/config rollout restart deployment/blog --namespace default
             """
         }
       }
