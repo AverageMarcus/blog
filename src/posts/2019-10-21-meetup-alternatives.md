@@ -542,6 +542,41 @@ This is yet another service that I encountered issues with, I was unable to regi
 
 ---
 
+## Tech Talks
+
+[https://techtalks.io/](https://techtalks.io/)
+
+<div style="display: flex;flex-direction: row;flex-wrap: wrap;">
+  <div style="width: 50%;min-width: 400px;">
+
+### Pros
+
+- A focus on tech events.
+- Generous free tier offering unlimited events and members.
+- Big focus on supporting and fostering the tech community.
+- Great support for both virtual and physical events.
+- Includes a profile for speakers to include their talks slides and videos which can be used by other event organisers to discover new speakers for their events.
+- A strong focus on making the content from events available by including videos from events.
+- Also provides a tier aimed at those running a conference.
+- Communities also have a place for discussions and <abbr title="Today I Learnt">TIL's</abbr> with a very nice rich text editor.
+- Communities can have multiple organisers.
+  </div>
+  <div style="width: 50%;min-width: 400px;">
+
+### Cons
+
+- Limited branding available (colour, logo and header).
+- Limitation on avatar and logo sizes - uploaded image must be square, no option to crop.
+- No ability to create draft or hidden events.
+  </div>
+</div>
+
+### Comments
+
+I'm really liking TechTalks and think it has a lot of potential. It's set up by [Adam Butler](https://twitter.com/labfoo) who wrote the blog post several years back that I linked to in the into section. With the focus on fostering community and providing a focused place to tech-related events I think this has a lot of promise to be a much sought after replacement for Meetup for a log of events.
+
+---
+
 # Wrap up
 
 I don't see any clear winner that will suit everyone as a replacement to Meetup but I do think there is something in this list for everyone. There's a lot of strong contenders here (especially if you already have a website where you post events) and even more with future potential. The major thing all these options lack is the discoverability that Meetup provides but I feel this is likely to change as people more to alternatives.
@@ -549,3 +584,4 @@ I don't see any clear winner that will suit everyone as a replacement to Meetup 
 # _Changelog_
 
 * 2019-10-21 - Migrated from a [Notion page](https://www.notion.so/jsoxford/Meetup-Alternatives-36d73649d34f4bba9e2065f1fa8cd03f) to my blog. Added Eventsyay, Mixily and Helm.
+* 2020-09-30 - Added section covering TechTalks.io.
