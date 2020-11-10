@@ -25,7 +25,11 @@
                   </span>
                 </div>
 
-                <div class="post-preview">{{{ markdown this.summary }}}</div>
+                <div class="post-preview">
+                  {{{ markdown this.summary }}}
+                  <a class="full-post-link" href="/{{ this.path }}">Continue reading...</a>
+                </div>
+
               </article>
             </li>
           {{/each}}
