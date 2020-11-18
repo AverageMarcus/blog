@@ -6,7 +6,7 @@ tags: nodejs node npm javascript truncatise ghost
 summary: "Today I finally got around to modifying my <a href='https://ghost.org/' target='_blank'>Ghost</a> blog to make use of my new Node Module <a href='//blog.marcusnoble.co.uk/publishing-my-first-npm-module/'>Truncatise</a>.<br/><br/>This didn't go as smoothly as I hoped."
 ---
 
-Today I finally got around to modifying my [Ghost](https://ghost.org/) blog to make use of my new Node Module [Truncatise](/10-29-2013-publishing-my-first-npm-module/).
+Today I finally got around to modifying my [Ghost](https://ghost.org/) blog to make use of my new Node Module [Truncatise](/29-10-2013-publishing-my-first-npm-module/).
 
 This didn't go as smoothly as I hoped.
 
