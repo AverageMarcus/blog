@@ -29,6 +29,10 @@ app.use(express.static(__dirname + '/build'));
 // Lets try and slow down some of those exploit crawlers
 app.use("/", require('./filterRoutes'))
 
+app.get("/robots.txt", function(reg, res) {
+  res.send("User-agent: * Disallow: ")
+})
+
 var md = markdown({html: true});
 md.parser.use(emoji);
 
