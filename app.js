@@ -26,6 +26,9 @@ const oneDay = 86400000;
 app.use(compress());
 app.use(express.static(__dirname + '/build'));
 
+// Lets try and slow down some of those exploit crawlers
+app.use("/", require('./filterRoutes'))
+
 var md = markdown({html: true});
 md.parser.use(emoji);
 
