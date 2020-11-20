@@ -134,7 +134,7 @@ I've tried to find other examples of these non-Latin Unicode characters being us
 
 After posting this it was suggested to me to try the [big list of naughty strings](https://github.com/minimaxir/big-list-of-naughty-strings) to see how many of them Go can handle. This list is a collection of strings that often cause problems for programs in one way or another.
 
-I put together a [fairly simple test case](https://share.cluster.fun/golangnaughtystringstest.js) that used each string as a variable and then tested if the code could build. To ensure as many strings from the list could be attempted I removed all spaces from the strings.
+I put together a test case that used each string as a variable and then tested if the code could build. To ensure as many strings from the list could be attempted I removed all spaces from the strings.
 
 The results were a bit surprising...
 
