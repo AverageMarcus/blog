@@ -33,6 +33,10 @@ app.get("/robots.txt", function(reg, res) {
   res.send("User-agent: * Disallow: ")
 })
 
+app.get(/\/(feed|rss)\/?$/, function(reg, res) {
+  res.redirect('/feed.xml');
+})
+
 var md = markdown({html: true});
 md.parser.use(emoji);
 
