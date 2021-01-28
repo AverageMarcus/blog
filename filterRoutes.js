@@ -1,5 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const blackHole = function (req, res) {};
+
 router.all('(/*)?/wp-admin/', blackHole);
 router.all(/.*\.php$/, blackHole);
 router.all(/.*\.aspx$/, blackHole);
@@ -13,6 +15,5 @@ router.post('*', blackHole);
 router.put('*', blackHole);
 router.delete('*', blackHole);
 
-const blackHole = function (req, res) {};
 
 module.exports = router
