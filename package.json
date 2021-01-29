@@ -21,6 +21,7 @@
     "metalsmith-pagination": "^1.4.0",
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-sass": "^1.7.0",
+    "metalsmith-sitemap": "^1.2.2",
     "moment": "^2.13.0",
     "striptags": "^2.1.1"
   },

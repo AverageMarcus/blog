@@ -15,6 +15,7 @@ const define = require('metalsmith-define');
 const feed = require('metalsmith-feed');
 const sass = require('metalsmith-sass');
 const date = require('metalsmith-build-date');
+const sitemap = require('metalsmith-sitemap');
 const Handlebars = require('handlebars');
 const emoji = require('markdown-it-emoji');
 const moment = require('moment');
@@ -83,11 +84,6 @@ Metalsmith(__dirname)
     },
     pages: {
       pattern: 'pages/*'
-    },
-    experience: {
-      pattern: 'experience/*',
-      sortBy: 'start',
-      reverse: true
     }
   }))
   .use(inplace({
@@ -113,6 +109,10 @@ Metalsmith(__dirname)
   .use(feed({
     collection: 'posts',
     destination: 'feed.xml'
+  }))
+  .use(sitemap({
+    hostname: 'https://marcusnoble.co.uk',
+    modifiedProperty: 'date'
   }))
   .use(pagination({
     'collections.posts': {
