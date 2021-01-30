@@ -11,6 +11,10 @@ router.all('/.env', blackHole);
 router.all('/autodiscover/autodiscover.xml', blackHole)
 router.all('/.well-known/autoconfig(/.*)?', blackHole)
 router.all('/admin(/.*)?', blackHole)
+router.all('/wordpress/', blackHole);
+router.all('/wp(2)?/', blackHole);
+router.all('/backup/', blackHole);
+router.all('/bak/', blackHole);
 router.post('*', blackHole);
 router.put('*', blackHole);
 router.delete('*', blackHole);
