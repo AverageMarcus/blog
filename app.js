@@ -57,7 +57,9 @@ Handlebars.registerHelper("buildTitle", function(title, siteTitle){
   }
   return title;
 });
-
+Handlebars.registerHelper("jointags", function(tags){
+	return (tags || '').split(' ').join(',');
+});
 
 Metalsmith(__dirname)
   .use(define({
