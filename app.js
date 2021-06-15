@@ -22,20 +22,23 @@ const moment = require('moment');
 const striptags = require('striptags');
 
 const port = process.env.PORT || 8000;
-const oneDay = 86400000;
 
 app.use(compress());
 app.use(express.static(__dirname + '/build'));
 
 // Lets try and slow down some of those exploit crawlers
-app.use("/", require('./filterRoutes'))
+app.use("/", require('./filterRoutes'));
 
-app.get("/robots.txt", function(reg, res) {
-  res.send("User-agent: * Disallow: ")
+app.get("/robots.txt", function(req, res) {
+  res.send("User-agent: * Disallow: ");
 })
 
-app.get(/\/(feed|rss)\/?$/, function(reg, res) {
+app.get(/\/(feed|rss)\/?$/, function(req, res) {
   res.redirect('/feed.xml');
+})
+
+app.get("/healthz", function(req, res) {
+  res.sendStatus(200);
 })
 
 var md = markdown({html: true});
