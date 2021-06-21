@@ -5,6 +5,7 @@ const blackHole = function (req, res) {};
 router.all('(/*)?/wp-admin/', blackHole);
 router.all(/.*\.php$/, blackHole);
 router.all(/.*\.aspx$/, blackHole);
+router.all(/.*\.gz$/, blackHole);
 router.all('(/*)?/wp-includes/(*)?', blackHole);
 router.all('/.git/*?', blackHole);
 router.all('/.env', blackHole);
