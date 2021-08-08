@@ -170,7 +170,7 @@ The last issue I hit was when trying to add an ARM based machine (either a local
 
 To get ARM-based instances working we need to make a few changes to the `multicloud-init.sh` script provided by Scaleway. Below you can see the diff of the changes I used to get an ARM instance running on Equinix Metal.
 
-```diff
+```
 7a8,12
 > os_arch="amd64"
 > if [[ "$(arch)" != "x86_64" ]]; then
