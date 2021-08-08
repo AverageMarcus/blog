@@ -6,6 +6,12 @@ tags: Kubernetes Cloud
 summary: "I've been using Scaleway's [Kapsule](https://www.scaleway.com/en/kubernetes-kapsule/) managed Kubernetes offering for my personal projects for a while now (this blog is running on it) so I was pretty excited when they announced a new managed Kubernetes offering dubbed [Kosmos](https://blog.scaleway.com/k8s-multi-cloud/). What makes Kosmos _really_ interesting is it's sold as a multi-cloud Kubernetes offering."
 ---
 
+<details>
+<summary>Changelog</summary>
+
+2021-08-08: Added latency details
+</details>
+
 I've been using Scaleway's [Kapsule](https://www.scaleway.com/en/kubernetes-kapsule/) managed Kubernetes offering for my personal projects for a while now (this blog is running on it) so I was pretty excited when they announced a new managed Kubernetes offering dubbed [Kosmos](https://blog.scaleway.com/k8s-multi-cloud/). What makes Kosmos _really_ interesting is it's sold as a multi-cloud Kubernetes offering.
 
 > Kubernetes Kosmos is the first-ever managed Kubernetes engine, allowing you to attach an instance or dedicated server from any cloud provider to a Scaleway’s Kubernetes control plane.
@@ -199,6 +205,64 @@ This currently only works with 64-bit ARM instances (so not all Raspberry Pis) b
 </figure>
 
 There is still one small issue with ARM instances after using this modified script - the `node-problem-detector` DaemonSet used by Scaleway currently only targets x86 so will fail to run on our new ARM instance.
+
+## Cross-cloud latency
+
+[Mark Boost](https://twitter.com/markboost) asked on Twitter about the general performance and latency involved with multi-cloud clusters so I did a quick and dirty test to see how things generally behave.
+
+My test involved 4 different node pools, each with a single instance:
+
+* Scaleway - par1 = 1x DEV1_M
+* Scaleway - ams1 = 1x DEV1_M
+* Civo - lon1 = 1x Small
+* Civo - nyc1 = 1x Small
+
+(Note: The Kosmos control plane is hosted in Scaleway par1 region)
+
+```
+✨ k get nodes --output custom-columns=Name:.metadata.name,Cloud:".metadata.labels.topology\.kubernetes\.io/region"
+Name                                             Cloud
+scw-multicloud-civo-lon-00a1d7529f8340109990e1   civo-lon1
+scw-multicloud-civo-lon-8deec4c46be0445fb89c2f   civo-nyc1
+scw-multicloud-scaleway-ams1-6d6b9ac4eeed4f50b   nl-ams
+scw-multicloud-scaleway-par1-fd031cee6aa64843b   fr-par
+```
+
+For my test case I'm leveraging [Linkerd](https://linkerd.io/) along with their emojivoto demo application. The Linkerd pods are running on one of the two Scaleway instances and for each test I will target a different node for the emojivoto deployments. Each test is only run for a very short period of time (a few minutes) so results are very much ballpark figures and not to be given _too_ much weight.
+
+My main reason for this approach is that I'm lazy and Linkerd gives a fairly nice set of dashboard for latency with very little effort.
+
+Ok, now for the results...
+
+First up we have all deployments scheduled onto the **Scaleway-ams1** node:
+
+![](/images/kosmos/Latency-1.png)
+
+You can see this is fairly bumpy to start with as the pods get started but all fairly low as we'd expect.
+
+Next up we have all pods scheduled onto the **Scaleway-par1** node:
+
+![](/images/kosmos/Latency-2.png)
+
+This is the same region as our control plane. All the latencies are very low with only a little bit of fluctuation.
+
+We then have the first of our external nodes - **Civo-lon1**:
+
+![](/images/kosmos/Latency-3.png)
+
+This seems to have much more fluctuation in the latency but overall still showing as very low with a lot of requests still inline with those nodes hosted on Scaleway.
+
+The last node to try is **Civo-nyc1**:
+
+![](/images/kosmos/Latency-4.png)
+
+This one looks to be trending slightly slower but still within the same sort of range as the other nodes. It's worth pointing out that this node is physically located the furthest away with all the other nodes located within Europe.
+
+Finally, as we have 4 nodes and 4 different deployments, I wanted to test how things would look with the application spread over all the available nodes. This next result shows the latencies with each of the deployments scheduled to a different node:
+
+![](/images/kosmos/Latency-5.png)
+
+Right away you can see that this have much more latency with the Y-axis being at least double that of any of the previous results. That being said, it is still all within 100ms and for this very small test at least within an acceptable range.
 
 ## Final Thoughts
 

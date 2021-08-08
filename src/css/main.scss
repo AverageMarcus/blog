@@ -131,6 +131,20 @@ hr {
   width: 80%;
 }
 
+details {
+  font-size: 0.8em;
+  border: 1px dashed #79828B;
+  padding: 2px 8px;
+
+  summary {
+    cursor: pointer;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
 .emoji {
   display: inline !important;
   margin: 0 !important;
