@@ -68,7 +68,9 @@ Think one laptop, with one person on the keys, and a group of people gathered ar
 Having 8 people trying to decide what to code, without any prior spec or discussion went about as well as you'd expect. The code jumped around a bit and we had to backtrack at some point but the biggest challenged we faced was getting to grips with a MacBook keyboard. Who knew that they didn't have all the keys needed?
 
 <figure class="center" markdown="1">
+
 ![MacBook symbol]({{ site.url }}/images/macbook-alt-symbol.PNG)
+
 <figcaption>WTF is this supposed to be?</figcaption>
 </figure>
 
