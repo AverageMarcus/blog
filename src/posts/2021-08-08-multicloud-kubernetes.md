@@ -236,31 +236,56 @@ Ok, now for the results...
 
 First up we have all deployments scheduled onto the **Scaleway-ams1** node:
 
+<figure class="center" markdown="1">
+
 ![](/images/kosmos/Latency-1.png)
+
+<figcaption>Scaleway ams1</figcaption>
+</figure>
 
 You can see this is fairly bumpy to start with as the pods get started but all fairly low as we'd expect.
 
 Next up we have all pods scheduled onto the **Scaleway-par1** node:
 
+<figure class="center" markdown="1">
+
 ![](/images/kosmos/Latency-2.png)
+
+<figcaption>Scaleway par1</figcaption>
+</figure>
 
 This is the same region as our control plane. All the latencies are very low with only a little bit of fluctuation.
 
 We then have the first of our external nodes - **Civo-lon1**:
 
+<figure class="center" markdown="1">
+
 ![](/images/kosmos/Latency-3.png)
+
+<figcaption>Civo lon1</figcaption>
+</figure>
 
 This seems to have much more fluctuation in the latency but overall still showing as very low with a lot of requests still inline with those nodes hosted on Scaleway.
 
 The last node to try is **Civo-nyc1**:
 
+<figure class="center" markdown="1">
+
 ![](/images/kosmos/Latency-4.png)
+
+<figcaption>Civo nyc1</figcaption>
+</figure>
 
 This one looks to be trending slightly slower but still within the same sort of range as the other nodes. It's worth pointing out that this node is physically located the furthest away with all the other nodes located within Europe.
 
 Finally, as we have 4 nodes and 4 different deployments, I wanted to test how things would look with the application spread over all the available nodes. This next result shows the latencies with each of the deployments scheduled to a different node:
 
+<figure class="center" markdown="1">
+
 ![](/images/kosmos/Latency-5.png)
+
+<figcaption>Spread over all nodes</figcaption>
+</figure>
 
 Right away you can see that this have much more latency with the Y-axis being at least double that of any of the previous results. That being said, it is still all within 100ms and for this very small test at least within an acceptable range.
 

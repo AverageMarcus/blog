@@ -67,6 +67,12 @@
         });
       });
     }
+
+    [...document.querySelectorAll('figure img')].forEach(function(img) {
+      img.addEventListener('click', function() {
+        window.open(img.getAttribute("src"), "_blank");
+      });
+    });
   </script>
 </body>
 </html>
