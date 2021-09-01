@@ -8,6 +8,12 @@ summary: "Docker has [recently announced](https://www.docker.com/blog/updating-p
 There has been quite a bit of reaction to this news..."
 ---
 
+<details>
+<summary>Changelog</summary>
+
+2021-09-01: Added note about socket bugfix PR
+</details>
+
 Docker has [recently announced](https://www.docker.com/blog/updating-product-subscriptions/) that Docker Desktop will soon require a subscription and, based on the size of your company, may require a paid subscription. (It remains free for personal use)
 
 There has been quite a bit of reaction to this news:
@@ -89,6 +95,8 @@ panic: interface conversion: net.Conn is nil, not *net.UnixConn
 ```
 
 This seems to happen (for me at least) when I've previously run `podman machine stop`. It looks like the sock file isn't correctly being removed. Doing an `rm` on that file mentioned in the error message will be enough to get you going again.
+
+> UPDATE: Looks like this will be fixed in an upcoming release. - [PR](https://github.com/containers/podman/pull/11342)
 
 ```sh
 Error: error creating build container: short-name resolution enforced but cannot prompt without a TTY
