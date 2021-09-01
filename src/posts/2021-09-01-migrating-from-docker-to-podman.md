@@ -52,7 +52,7 @@ So, lets give it a whirl...
     Downloading VM image: fedora-coreos-34.20210821.1.1-qemu.x86_64.qcow2.xz: done
     Extracting compressed file
 
-     took 2m44s
+    🕙 took 2m44s
     ```
 
 4. Start the virtual machine and set up the connection to Podman:
@@ -66,7 +66,7 @@ So, lets give it a whirl...
     Waiting for VM ...
     qemu-system-x86_64: warning: host doesn't support requested feature: CPUID.80000001H:ECX.svm [bit 2]
 
-     took 34s
+    🕙 took 34s
     ```
 
 5. `alias docker=podman` (Add this to your `.bashrc` (if using Bash), `.zshrc` (if using ZSH) or whatever the correct file for your shell is)
