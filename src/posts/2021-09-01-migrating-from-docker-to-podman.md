@@ -12,6 +12,8 @@ There has been quite a bit of reaction to this news..."
 <summary>Changelog</summary>
 
 2021-09-01: Added note about socket bugfix PR
+
+2021-09-01: Added troubleshooting section about port forwarding bug
 </details>
 
 Docker has [recently announced](https://www.docker.com/blog/updating-product-subscriptions/) that Docker Desktop will soon require a subscription and, based on the size of your company, may require a paid subscription. (It remains free for personal use)
@@ -97,6 +99,27 @@ panic: interface conversion: net.Conn is nil, not *net.UnixConn
 This seems to happen (for me at least) when I've previously run `podman machine stop`. It looks like the sock file isn't correctly being removed. Doing an `rm` on that file mentioned in the error message will be enough to get you going again.
 
 > UPDATE: Looks like this will be fixed in an upcoming release. - [PR](https://github.com/containers/podman/pull/11342)
+
+```sh
+✨ podman run --rm -it --publish 8000:80 docker.io/library/nginx:latest &
+✨ curl http://localhost:8000
+
+curl: (7) Failed to connect to localhost port 8000: Connection refused
+```
+
+The current latest version of Podman ([v3.3.1](https://github.com/containers/podman/releases/tag/v3.3.1)) has a bug where the automatic port forwarding from host to VM when publishing a port with the `-p / --publish` flag doesn't work.
+
+There's currently a couple workarounds for this:
+
+The first is passing in the `--network bridge` flag to the podman command, e.g.
+
+```sh
+✨ podman run --rm -it --publish 8000:80 --network bridge docker.io/library/nginx:latest
+```
+
+The other, more perminant option is to add `rootless_networking = "cni"` under the `[containers]` section of your `~/.config/containers/containers.conf` file.
+
+To follow the progress of this bug, please refer to the [issue](https://github.com/containers/podman/issues/11396).
 
 ```sh
 Error: error creating build container: short-name resolution enforced but cannot prompt without a TTY
