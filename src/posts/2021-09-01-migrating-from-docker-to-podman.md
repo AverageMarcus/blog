@@ -84,11 +84,15 @@ So, lets give it a whirl...
 
 Ok, so it's not all *completely* pain free, there are a few issues you might hit...
 
+### Failed to parse config
+
 ```sh
 Error: failed to parse query parameter 'X-Registry-Config': "n/a": error storing credentials in temporary auth file (server: "https://index.docker.io/v1/", user: ""): key https://index.docker.io/v1/ contains http[s]:// prefix
 ```
 
 Podman seems more strict than Docker when parsing the config file, check the `~/.docker/config.json` file for the key with the `https://` prefix (as mentioned in the error message) and remove it.
+
+### Sock already exists
 
 ```sh
 ✨ podman machine start
@@ -99,6 +103,8 @@ panic: interface conversion: net.Conn is nil, not *net.UnixConn
 This seems to happen (for me at least) when I've previously run `podman machine stop`. It looks like the sock file isn't correctly being removed. Doing an `rm` on that file mentioned in the error message will be enough to get you going again.
 
 > UPDATE: Looks like this will be fixed in an upcoming release. - [PR](https://github.com/containers/podman/pull/11342)
+
+### Automatic published port forwarding
 
 ```sh
 ✨ podman run --rm -it --publish 8000:80 docker.io/library/nginx:latest &
@@ -121,13 +127,13 @@ The other, more perminant option is to add `rootless_networking = "cni"` under t
 
 To follow the progress of this bug, please refer to the [issue](https://github.com/containers/podman/issues/11396).
 
+## short-name resolution
+
 ```sh
 Error: error creating build container: short-name resolution enforced but cannot prompt without a TTY
 ```
 
 Ok, this is the big one and the major issue you'll likely hit making the switch today from Docker to Podman. Lets dive into it in a bit more detail...
-
-## short-name resolution
 
 First we need to understand what a short-name is in this context. It refers to container images that don't have a full domain name prefixed. You've likely come across these quite a lot before - e.g. `alpine:latest`, `ubuntu:12`, `giantswarm/pause:latest`, etc.
 
