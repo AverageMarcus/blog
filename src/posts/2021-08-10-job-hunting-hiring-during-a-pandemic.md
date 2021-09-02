@@ -6,6 +6,12 @@ tags: Job Career
 summary: "I’ve recently accepted a new job offer and wanted to share a little about my experience job hunting during a global pandemic. Even after more than a year it was clear that some companies still hadn’t adjusted or taken the time to stop and look at the approach they were taking and the effect it had on the interview candidate. Hopefully some of this will be of use to someone looking to hire during similar situations.<br/>Most of what’s to come is aimed at those doing the hiring rather than the hunting but I think it could be of benefit for both sides to be aware of what might come up."
 ---
 
+<details>
+<summary>Changelog</summary>
+
+2021-09-02: Added resources
+</details>
+
 I’ve recently accepted a new job offer and wanted to share a little about my experience job hunting during a global pandemic. Even after more than a year it was clear that some companies still hadn’t adjusted or taken the time to stop and look at the approach they were taking and the effect it had on the interview candidate. Hopefully some of this will be of use to someone looking to hire during similar situations.
 
 Most of what’s to come is aimed at those doing the hiring rather than the hunting but I think it could be of benefit for both sides to be aware of what might come up.
@@ -105,3 +111,8 @@ All-in-all the process wasn’t _too_ bad. Being able to do all the interviews i
 I'm not sure how different the situation would be if I wasn't in this privileged position but I can't imagine it being pleasant. It's worth keeping in mind when you're hiring that you may be automatically excluding some quality candidates due to either dragging out the whole process or not being flexible enough. A "we embrace diversity" message at the bottom of your job spec isn't enough.
 
 If anyone is currently in the process of job hunting (or hiring) and wants to chat about any of this or just get some general advice I'm always happy to help where I can (though I'm far from an expert). Feel free to message me on [Twitter](https://twitter.com/Marcus_Noble_) (DMs open).
+
+## Bonus: Resources for those job hunting
+
+* [De-Coding the Technical Interview Process](https://technicalinterviews.dev/) by [Emma Bostian](https://twitter.com/EmmaBostian) fantastic book (although examples are web dev based) outlining a lot of what to expect in the interview process.
+* [Tech Interview Handbook](https://techinterviewhandbook.org/) - Wish I'd come across this sooner. Lots of great information (especially liking the [Questions to ask](https://techinterviewhandbook.org/questions-to-ask/) page) but does seem fairly USA centric.
