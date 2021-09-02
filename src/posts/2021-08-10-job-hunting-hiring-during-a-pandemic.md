@@ -18,7 +18,7 @@ In a world where we’ve all been forced to work remotely it’s good to know wh
 
 Is the role you’re advertising a permanent remote position? If it is, is it fully remote or are some days in the office expected / required?
 
-Be clear about _where_ you can hire remotely. Are there any legal or financial reasons why you can or can’t employ someone in a given country? Is so, state those up front and save everyone some time.
+Be clear about _where_ you can hire remotely. Are there any legal or financial reasons why you can or can’t employ someone in a given country? If so, state those up front and save everyone some time.
 
 I’d say it’s also good to mention any “core hours” or the time zones the majority of the team work in. Not everyone will be comfortable either with the asynchronous communication or having to shift their working day earlier or later. On a similar note, make sure to mention if contact with external people is part of the role and if there are any time constraints around that.
 
@@ -44,9 +44,9 @@ One thing that really struck me was how important it was that the audio worked, 
 
 While the video does allow both parties to pick up on non-verbal cues, it’s much more important that both can hear each other clearly so neither misunderstand.
 
-Google Meet is especially bad in this area from my experience. When the connection degrades it’s both the video and the audio that suffers, leading to several "sorry, can you repeat that please?”. In contrast I’ve found Zoom to fair quite well in this area as in a [default setup the audio is prioritised slightly higher than video and screen share traffic](https://support.zoom.us/hc/en-us/articles/207368756-Using-QoS-DSCP-Marking).
+Google Meet is especially bad in this area from my experience. When the connection degrades it’s both the video and the audio that suffers, leading to several "sorry, can you repeat that please?”. In contrast I’ve found Zoom to fare quite well in this area as in a [default setup the audio is prioritised slightly higher than video and screen share traffic](https://support.zoom.us/hc/en-us/articles/207368756-Using-QoS-DSCP-Marking).
 
-If free / open source is more your thing then [Jitsi Meet](https://jitsi.org/jitsi-meet/) prioritises audio, even to the point where it’ll stop the video is required.
+If free / open source is more your thing then [Jitsi Meet](https://jitsi.org/jitsi-meet/) prioritises audio, even to the point where it’ll stop the video if required.
 
 On a similar note, make sure you have a stable internet connection and try to avoid tethering from a mobile where possible. If unavoidable make sure to let the other person know at the start and suggest switching to audio only.
 
@@ -64,7 +64,7 @@ Knowing exactly what to expect and when means the candidate can just focus on sh
 
 ## Have a single contact person
 
-I noticed that there was the vast number of different people that were involved in the whole interviewing process. It wasn’t uncommon to interact with a technical recruiter, the hiring manager and multiple different people from various teams. Having a single person to contact if needed and knowing that from the start goes a long way to reliving some stress on the candidates side.
+I noticed that there was the vast number of different people that were involved in the whole interviewing process. It wasn’t uncommon to interact with a technical recruiter, the hiring manager and multiple different people from various teams. Having a single person to contact if needed and knowing that from the start goes a long way to relieving some stress on the candidates side.
 
 ## Scheduling is hard
 
@@ -84,7 +84,7 @@ Not wiling to share your salary? Then ask the candidates what they’re looking 
 
 ## LinkedIn
 
-I’ve not had much look with LinkedIn but your mileage may vary.
+I’ve not had much luck with LinkedIn but your mileage may vary.
 
 Most of the people contacting me on there were just automatic messages and largely irrelevant to what I was looking for.
 
