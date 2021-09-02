@@ -50,8 +50,8 @@ In terms of useful resources, tools and libraries I use a lot:
 
 ## 🧑‍💻 Suggested by others
 
-* https://github.com/quii/learn-go-with-tests - Learn Go with TDD.
-* https://gobyexample.com/ - Common program examples.
-* https://changelog.com/gotime - Good podcast on the Go community.
+* [https://github.com/quii/learn-go-with-tests](https://github.com/quii/learn-go-with-tests) - Learn Go with TDD.
+* [https://gobyexample.com/](https://gobyexample.com/) - Common program examples.
+* [https://changelog.com/gotime](https://changelog.com/gotime) - Good podcast on the Go community.
 
 If anyone has any other resources they recommend I'd love to hear about them and update this list. Please feel free to reach out to me on Twitter at [@Marcus_Noble_](https://twitter.com/Marcus_Noble_).
