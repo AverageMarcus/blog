@@ -20,6 +20,8 @@ There has been quite a bit of reaction to this news..."
 2021-09-04: Added update about port forwarding PR
 
 2021-09-04: Added note about M1 Mac support
+
+2021-09-04: Added volume mount limitation
 </details>
 
 Docker has [recently announced](https://www.docker.com/blog/updating-product-subscriptions/) that Docker Desktop will soon require a subscription and, based on the size of your company, may require a paid subscription. (It remains free for personal use)
@@ -115,6 +117,19 @@ panic: interface conversion: net.Conn is nil, not *net.UnixConn
 This seems to happen (for me at least) when I've previously run `podman machine stop`. It looks like the sock file isn't correctly being removed. Doing an `rm` on that file mentioned in the error message will be enough to get you going again.
 
 > UPDATE: Looks like this will be fixed in an upcoming release. - [PR](https://github.com/containers/podman/pull/11342)
+
+### Volume mounts
+
+```sh
+✨ podman run --rm -it -v $(pwd):/usr/share/nginx/html:ro --publish 8000:80 docker.io/library/nginx:latest
+Error: statfs /Users/marcus/web: no such file or directory
+```
+
+Podman machine currently has now support for mounting volumes from the host machine (your Mac) into the container on the virtual machine. Instead, it attepts to mount a directory matching what you specified from the _virtual machine_ rather than your Mac.
+
+This is a fairly big issue if you're looking for a smooth transition from Docker Desktop.
+
+There's currently a fairly active [issue](https://github.com/containers/podman/issues/8016) about this limitation but as of right now there doesn't seem to be a nice workaround or solution.
 
 ### Automatic published port forwarding
 
