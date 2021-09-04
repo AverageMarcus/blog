@@ -16,6 +16,10 @@ There has been quite a bit of reaction to this news..."
 2021-09-01: Added troubleshooting section about port forwarding bug
 
 2021-09-04: Added note about switching to Podman on Windows
+
+2021-09-04: Added update about port forwarding PR
+
+2021-09-04: Added note about M1 Mac support
 </details>
 
 Docker has [recently announced](https://www.docker.com/blog/updating-product-subscriptions/) that Docker Desktop will soon require a subscription and, based on the size of your company, may require a paid subscription. (It remains free for personal use)
@@ -51,6 +55,8 @@ Depending on which side your opinions lie, you might be looking for alternatives
 So, lets give it a whirl...
 
 ## Replacing Docker with Podman (on Mac)
+
+> Note: This currently doesn't work for Macs with an M1 CPU. I've come across this post in my search - [Running Podman Machine on the Mac M1](https://www.cloudassembler.com/post/podman-machine-mac-m1/) - but I've not confirmed if it works or  not.
 
 1. `brew install podman`
 2. Wait while brew downloads, builds and installs...
@@ -131,7 +137,7 @@ The first is passing in the `--network bridge` flag to the podman command, e.g.
 
 The other, more perminant option is to add `rootless_networking = "cni"` under the `[containers]` section of your `~/.config/containers/containers.conf` file.
 
-To follow the progress of this bug, please refer to the [issue](https://github.com/containers/podman/issues/11396).
+To follow the progress of this bug, please refer to the [issue](https://github.com/containers/podman/issues/11396). **UPDATE**: This has now been merged and is expected to be released in v3.3.2 in the next few days or so.
 
 ## short-name resolution
 
