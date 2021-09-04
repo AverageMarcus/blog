@@ -14,6 +14,8 @@ There has been quite a bit of reaction to this news..."
 2021-09-01: Added note about socket bugfix PR
 
 2021-09-01: Added troubleshooting section about port forwarding bug
+
+2021-09-04: Added note about switching to Podman on Windows
 </details>
 
 Docker has [recently announced](https://www.docker.com/blog/updating-product-subscriptions/) that Docker Desktop will soon require a subscription and, based on the size of your company, may require a paid subscription. (It remains free for personal use)
@@ -79,6 +81,10 @@ So, lets give it a whirl...
 
 5. `alias docker=podman` (Add this to your `.bashrc` (if using Bash), `.zshrc` (if using ZSH) or whatever the correct file for your shell is)
 6. 🎉
+
+## Replacing Docker with Podman (on Windows)
+
+I don't currently have access to a Windows machine where I can test this out but [Frank](https://twitter.com/frank_k_p) sent me this [on Twitter](https://twitter.com/frank_k_p/status/1433490007088668672) that covers the process needed for those on Windows with WLS2 - [How to run Podman on Windows with WSL2](https://www.redhat.com/sysadmin/podman-windows-wsl2).
 
 ## Troubleshooting
 
