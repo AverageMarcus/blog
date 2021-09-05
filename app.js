@@ -23,6 +23,7 @@ const striptags = require('striptags');
 
 const port = process.env.PORT || 8000;
 
+app.disable('x-powered-by');
 app.use(compress());
 app.use(express.static(__dirname + '/build'));
 
