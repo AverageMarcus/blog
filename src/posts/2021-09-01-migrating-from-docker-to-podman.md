@@ -22,12 +22,13 @@ There has been quite a bit of reaction to this news..."
 2021-09-04: Added note about M1 Mac support
 
 2021-09-04: Added volume mount limitation
+
+2021-09-04: Added podman-macos utility
 </details>
 
 Docker has [recently announced](https://www.docker.com/blog/updating-product-subscriptions/) that Docker Desktop will soon require a subscription and, based on the size of your company, may require a paid subscription. (It remains free for personal use)
 
 There has been quite a bit of reaction to this news:
-
 
 <figure class="center" markdown="1">
 
@@ -35,7 +36,6 @@ There has been quite a bit of reaction to this news:
 
 <figcaption>Corey isn't too impressed with the news</figcaption>
 </figure>
-
 
 <figure class="center" markdown="1">
 
@@ -45,7 +45,6 @@ There has been quite a bit of reaction to this news:
 </figure>
 
 Depending on which side your opinions lie, you might be looking for alternatives. Well it just so happens that [Podman](https://podman.io) posted this well-timed tweet:
-
 
 <figure class="center" markdown="1">
 
@@ -218,6 +217,17 @@ unqualified-search-registries = ["registry.fedoraproject.org", "registry.access.
 This property contains a list of all the registries that will be checked (in order) when looking up a short name image. **Be sure the values in here are ones that you trust!**
 
 With that change made we can `exit` from the virtual machine and Podman should then search for any short name images using these registries from now on.
+
+## GUI Replacement
+
+For those that like to have a graphical UI to manage / monitor their running containers [Victor](https://github.com/heyvito) has released [podman-macos](https://github.com/heyvito/podman-macos) that provides a tiny taskbar utility for Podman.
+
+<figure class="center" markdown="1">
+
+![](/images/podman-macos.png)
+
+<figcaption>Podman GUI for MacOS</figcaption>
+</figure>
 
 ## Wrap Up
 
