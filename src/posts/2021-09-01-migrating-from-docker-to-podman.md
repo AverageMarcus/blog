@@ -124,7 +124,7 @@ This seems to happen (for me at least) when I've previously run `podman machine 
 Error: statfs /Users/marcus/web: no such file or directory
 ```
 
-Podman machine currently has now support for mounting volumes from the host machine (your Mac) into the container on the virtual machine. Instead, it attepts to mount a directory matching what you specified from the _virtual machine_ rather than your Mac.
+Podman machine currently has no support for mounting volumes from the host machine (your Mac) into the container on the virtual machine. Instead, it attepts to mount a directory matching what you specified from the _virtual machine_ rather than your Mac.
 
 This is a fairly big issue if you're looking for a smooth transition from Docker Desktop.
 
