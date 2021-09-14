@@ -14,12 +14,21 @@ There has been quite a bit of reaction to this news..."
 2021-09-01: Added note about socket bugfix PR
 
 2021-09-01: Added troubleshooting section about port forwarding bug
+
+2021-09-04: Added note about switching to Podman on Windows
+
+2021-09-04: Added update about port forwarding PR
+
+2021-09-04: Added note about M1 Mac support
+
+2021-09-04: Added volume mount limitation
+
+2021-09-04: Added podman-macos utility
 </details>
 
 Docker has [recently announced](https://www.docker.com/blog/updating-product-subscriptions/) that Docker Desktop will soon require a subscription and, based on the size of your company, may require a paid subscription. (It remains free for personal use)
 
 There has been quite a bit of reaction to this news:
-
 
 <figure class="center" markdown="1">
 
@@ -27,7 +36,6 @@ There has been quite a bit of reaction to this news:
 
 <figcaption>Corey isn't too impressed with the news</figcaption>
 </figure>
-
 
 <figure class="center" markdown="1">
 
@@ -37,7 +45,6 @@ There has been quite a bit of reaction to this news:
 </figure>
 
 Depending on which side your opinions lie, you might be looking for alternatives. Well it just so happens that [Podman](https://podman.io) posted this well-timed tweet:
-
 
 <figure class="center" markdown="1">
 
@@ -49,6 +56,8 @@ Depending on which side your opinions lie, you might be looking for alternatives
 So, lets give it a whirl...
 
 ## Replacing Docker with Podman (on Mac)
+
+> Note: This currently doesn't work for Macs with an M1 CPU. I've come across this post in my search - [Running Podman Machine on the Mac M1](https://www.cloudassembler.com/post/podman-machine-mac-m1/) - but I've not confirmed if it works or  not.
 
 1. `brew install podman`
 2. Wait while brew downloads, builds and installs...
@@ -80,6 +89,10 @@ So, lets give it a whirl...
 5. `alias docker=podman` (Add this to your `.bashrc` (if using Bash), `.zshrc` (if using ZSH) or whatever the correct file for your shell is)
 6. 🎉
 
+## Replacing Docker with Podman (on Windows)
+
+I don't currently have access to a Windows machine where I can test this out but [Frank](https://twitter.com/frank_k_p) sent me this [on Twitter](https://twitter.com/frank_k_p/status/1433490007088668672) that covers the process needed for those on Windows with WLS2 - [How to run Podman on Windows with WSL2](https://www.redhat.com/sysadmin/podman-windows-wsl2).
+
 ## Troubleshooting
 
 Ok, so it's not all *completely* pain free, there are a few issues you might hit...
@@ -104,6 +117,19 @@ This seems to happen (for me at least) when I've previously run `podman machine 
 
 > UPDATE: Looks like this will be fixed in an upcoming release. - [PR](https://github.com/containers/podman/pull/11342)
 
+### Volume mounts
+
+```sh
+✨ podman run --rm -it -v $(pwd):/usr/share/nginx/html:ro --publish 8000:80 docker.io/library/nginx:latest
+Error: statfs /Users/marcus/web: no such file or directory
+```
+
+Podman machine currently has no support for mounting volumes from the host machine (your Mac) into the container on the virtual machine. Instead, it attepts to mount a directory matching what you specified from the _virtual machine_ rather than your Mac.
+
+This is a fairly big issue if you're looking for a smooth transition from Docker Desktop.
+
+There's currently a fairly active [issue](https://github.com/containers/podman/issues/8016) about this limitation but as of right now there doesn't seem to be a nice workaround or solution.
+
 ### Automatic published port forwarding
 
 ```sh
@@ -125,7 +151,7 @@ The first is passing in the `--network bridge` flag to the podman command, e.g.
 
 The other, more perminant option is to add `rootless_networking = "cni"` under the `[containers]` section of your `~/.config/containers/containers.conf` file.
 
-To follow the progress of this bug, please refer to the [issue](https://github.com/containers/podman/issues/11396).
+To follow the progress of this bug, please refer to the [issue](https://github.com/containers/podman/issues/11396). **UPDATE**: This has now been merged and is expected to be released in v3.3.2 in the next few days or so.
 
 ## short-name resolution
 
@@ -191,6 +217,17 @@ unqualified-search-registries = ["registry.fedoraproject.org", "registry.access.
 This property contains a list of all the registries that will be checked (in order) when looking up a short name image. **Be sure the values in here are ones that you trust!**
 
 With that change made we can `exit` from the virtual machine and Podman should then search for any short name images using these registries from now on.
+
+## GUI Replacement
+
+For those that like to have a graphical UI to manage / monitor their running containers [Victor](https://github.com/heyvito) has released [podman-macos](https://github.com/heyvito/podman-macos) that provides a tiny taskbar utility for Podman.
+
+<figure class="center" markdown="1">
+
+![](/images/podman-macos.png)
+
+<figcaption>Podman GUI for MacOS</figcaption>
+</figure>
 
 ## Wrap Up
 

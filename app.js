@@ -23,18 +23,30 @@ const striptags = require('striptags');
 
 const port = process.env.PORT || 8000;
 
+app.disable('x-powered-by');
 app.use(compress());
 app.use(express.static(__dirname + '/build'));
 
 // Lets try and slow down some of those exploit crawlers
 app.use("/", require('./filterRoutes'));
 
+// Handle some iOS icon 404s
+app.get("/apple-touch-icon*", function(req, res) {
+  res.sendFile(__dirname + '/build/images/favico/' + req.url, () => {
+    res.sendFile(__dirname + '/build/images/favico/apple-touch-icon.png');
+  });
+});
+
+app.get("/favicon.png", function(req, res) {
+  res.sendFile(__dirname + '/build/images/favico/apple-touch-icon.png');
+});
+
 app.get("/robots.txt", function(req, res) {
   res.send("User-agent: * Disallow: ");
 })
 
-app.get(/\/(feed|rss)\/?$/, function(req, res) {
-  res.redirect('/feed.xml');
+app.get(/(\/(feeds?|rss|atom)\/?|feed.xml|rss.xml|index.rss|feed.rss)$/, function(req, res) {
+  res.redirect(301, '/feed.xml');
 })
 
 app.get("/healthz", function(req, res) {
