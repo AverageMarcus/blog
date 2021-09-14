@@ -141,11 +141,11 @@ When using Docker, these images are actually first prefixed with `docker.io` (or
 
 Podman doesn't have this as a default. It can work in the same way as Docker but needs a bit of configuring.
 
-It's worth breifly pausing here to explain _why_ this behavior is different. Podman takes the **secure by default** attitude to configuration and installation, and this difference is a prime example of that mindset. You've likely heard in the news over the past few years about some of the supply chain hacks that have had a big impact on some companies and projects. One of the common attack vectors is tricking users into installing what they think is a legitimate package but actually contains malicious code. The use of short names for images opens up the risk of accidentally pulling the wrong image from the wrong registry.
+It's worth briefly pausing here to explain _why_ this behavior is different. Podman takes the **secure by default** attitude to configuration and installation, and this difference is a prime example of that mindset. You've likely heard in the news over the past few years about some of the supply chain hacks that have had a big impact on some companies and projects. One of the common attack vectors is tricking users into installing what they think is a legitimate package but actually contains malicious code. The use of short names for images opens up the risk of accidentally pulling the wrong image from the wrong registry.
 
 To mitigate this risk Podman has a feature where it will prompt you asking which registry you'd like to pull the shot named image from and will then save that choice to speed things up later. (On a side note, there's a repo where the community is trying to collate a collection of some of the most widely used shortcodes - https://github.com/containers/shortnames)
 
-So, Podman has this handy feature to help out with security so why are we seeing an error? Well, when running Podman on MacOS (or Windows) we're actually running it in a Linux VM and remotely connecting to Podman running in that machine. Because of this we don't have an interactive terminal with the underlying Podman engine so it is unable to recieve our choice if it asked us which registry to use.
+So, Podman has this handy feature to help out with security so why are we seeing an error? Well, when running Podman on MacOS (or Windows) we're actually running it in a Linux VM and remotely connecting to Podman running in that machine. Because of this we don't have an interactive terminal with the underlying Podman engine so it is unable to receive our choice if it asked us which registry to use.
 
 ### Fix
 
