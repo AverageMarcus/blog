@@ -20,15 +20,16 @@
     "metalsmith-markdownit": "^0.3.0",
     "metalsmith-pagination": "^1.4.0",
     "metalsmith-permalinks": "^0.5.0",
-    "metalsmith-sass": "^1.7.0",
+    "metalsmith-sass": "^2.0.0",
     "metalsmith-sitemap": "^1.2.2",
     "moment": "^2.13.0",
+    "node-sass": "^6.0.0",
     "striptags": "^2.1.1"
   },
   "devDependencies": {
     "nodemon": "^1.12.1"
   },
   "engines": {
-    "node": "12"
+    "node": "16"
   }
 }
