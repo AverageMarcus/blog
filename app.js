@@ -86,7 +86,7 @@ Metalsmith(__dirname)
   .use(define({
     site: {
       title: 'Marcus Noble',
-      description: 'Awesomeness with a side of geek',
+      description: 'The blog of Marcus Noble, self-described tinkerer, platform engineer and all round average guy!',
       url: 'https://marcusnoble.co.uk'
     }
   }))
