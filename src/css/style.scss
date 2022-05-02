@@ -1,0 +1,228 @@
+/* Light Theme */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --primary: #fd7e0b;
+  --primary-hover: #326ce5;
+  --primary-focus: #fefefe;
+  --primary-inverse: #d6efff;
+  --color: #131b23;
+  --text-color: #131b23;
+}
+
+/* Dark Theme */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --primary: #fd7e0b;
+    --primary-hover: #326ce5;
+    --primary-focus: #131b23;
+    --primary-inverse: #d6efff;
+    --color: #fefefe;
+    --text-color: #fefefe;
+  }
+}
+[data-theme="dark"] {
+  --primary: #fd7e0b;
+  --primary-hover: #326ce5;
+  --primary-focus: #131b23;
+  --primary-inverse: #d6efff;
+  --color: #fefefe;
+  --text-color: #fefefe;
+}
+
+:root:not([data-theme="dark"]),
+:root:not([data-theme="light"]){
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+  --blockquote-border-color: var(--primary-hover);
+
+  --font-family: 'Orkney', system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
+    "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+// Links
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: var(--text-color)
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+@media only screen and (prefers-color-scheme: light) {
+  a.social {
+    svg {
+      opacity: 0.5;
+    }
+  }
+}
+[data-theme="light"] {
+  a.social {
+    svg {
+      opacity: 0.5;
+    }
+  }
+}
+a.social {
+  svg {
+    margin: 4px;
+    fill: var(--text-color);
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    svg {
+      animation: shift 1.5s ease-in-out infinite;
+    }
+  }
+}
+
+// Layout
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0 !important;
+
+  & + main {
+    padding-top: 0;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0 !important;
+}
+
+article {
+  margin-top: 0;
+  padding-top: 1.5em;
+
+  blockquote, dl, figure, form, ol, p, pre, table, ul {
+    font-size: calc(var(--font-size) + 2px) !important;
+  }
+
+  a {
+    display: inline-block;
+  }
+}
+
+figure p,
+blockquote p,
+blockquote ul {
+  margin: 0;
+}
+
+figure a:hover {
+  text-shadow: initial;
+  animation: none;
+}
+
+details {
+  font-size: 0.8em;
+  border: 1px dashed #79828B;
+  padding: 2px 8px;
+
+  summary {
+    cursor: pointer;
+
+    &::after {
+      float: unset;
+      display: inline-block;
+      height: 10px;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+code, kbd, pre {
+  color: #dcdcdc;
+  background-color: #3f3f3f;
+}
+
+hr {
+  margin: 1em auto;
+  padding: 0;
+  border: 0;
+  border-top: solid 3px #57688d;
+  text-align: center;
+  width: 60%;
+  position: relative;
+
+
+  &::after {
+    content: "✨";
+    display: inline-block;
+    position: absolute;
+    top: -0.7em;
+    padding: 0 5px;
+    font-size: 2rem;
+    filter: grayscale(70%);
+    transform: translateX(-50%);
+  }
+
+  &::before {
+    content: ' ';
+    background-color: var(--background-color);
+    display: inline-block;
+    position: absolute;
+    top: -1.2em;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 23px;
+    transform: translateX(-50%);
+
+    article & {
+      background-color: var(--card-background-color) !important;
+    }
+  }
+}
+
+section:last-of-type hr {
+  display: none;
+}
+
+// Custom Classes
+
+.site-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-meta {
+  font-size: 0.7em;
+  font-family: 'OrkneyLight';
+  vertical-align: text-bottom;
+  margin-bottom: 0.5em;
+
+  &::before {
+    content: "📆 ";
+    filter: grayscale(70%);
+  }
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+@import "_utils.scss";
+@import "_glitch.scss";

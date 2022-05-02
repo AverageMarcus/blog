@@ -5,8 +5,13 @@ date: 2020-05-27
 tags: golang
 summary: "With Go being a relatively modern programming language, first released in 2009, it is not unsurprising that it has great support for Unicode strings. What is surprising is just how far this support goes."
 ---
-_Updated 2020-05-28: Added big list of naughty strings test_
 
+<details>
+<summary>Changelog</summary>
+
+2020-05-28: Added big list of naughty strings test
+
+</details>
 
 With Go being a relatively modern programming language, first released in 2009, it is not unsurprising that it has great support for Unicode strings. What is surprising is just how far this support goes.
 
@@ -169,7 +174,7 @@ func main() {
 	if !true() {
 		fmt.Println(false)
 	}
-	
+
 	fmt.Println(nil)
 }
 

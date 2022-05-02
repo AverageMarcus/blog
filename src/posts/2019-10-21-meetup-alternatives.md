@@ -6,6 +6,17 @@ tags: Meetup
 summary: "A look at the various alternatives to Meetup.com after recent online backlash to their proposed new pricing model."
 ---
 
+<details>
+<summary>Changelog</summary>
+
+2019-10-21: Migrated from a [Notion page](https://www.notion.so/jsoxford/Meetup-Alternatives-36d73649d34f4bba9e2065f1fa8cd03f) to my blog.
+
+2019-10-21: Added Eventsyay, Mixily and Helm.
+
+2020-09-30: Added section covering TechTalks.io.
+
+</details>
+
 # Intro
 
 Meetup.com recently has suffered from some [backlash](https://twitter.com/securestep9/status/1183798804371386369) to some [new pricing models](https://www.meetup.com/lp/payment-test-20191016) it proposed. They have since [backpedaled](https://www.meetup.com/lp/paymentchanges?mpId=9038) but for many the damage has already been done and the trust has been damaged. This comes two years after Meetup [made some changes](https://lab.io/articles/2017/11/08/dear-meetup/) that made it significantly worse for organisers to manage their communities as well as being taken over by WeWork who are currently facing financial difficulties - something many have suggested as the reason for exploring new profitability strategies with Meetup.com. Following Meetup rescinding their proposed payment model I have since received an email informing me that my organiser subscription will be increasing from $14.99/month to $16.49/month.
@@ -66,7 +77,7 @@ Would be really nice for one-off / less frequent events (conference, workshop, e
 
 ### Pros
 
-- Open source ([https://github.com/GetTogetherComm/GetTogether](https://github.com/GetTogetherComm/GetTogether))
+- [Open source](https://github.com/GetTogetherComm/GetTogether)
 - Community built
 - Easy signup + social logins
 - UI isn't the most intuitive
@@ -241,7 +252,7 @@ Great option for those that like stats and keeping track of how their event is d
 ### Pros
 
 - Self hosted
-- Open source ([https://github.com/Attendize/Attendize](https://github.com/Attendize/Attendize))
+- [Open source](https://github.com/Attendize/Attendize)
 - Rich event description editing
 - Message attendees
 - Limited styling of tickets
@@ -278,7 +289,7 @@ Uses a Attribution Assurance Licence so event pages must display "Powered by Att
 ### Pros
 
 - Self hosted
-- Open source ([https://github.com/alfio-event/alf.io](https://github.com/alfio-event/alf.io))
+- [Open source](https://github.com/alfio-event/alf.io)
 - Checkin support
 - Google analytics support
   </div>
@@ -581,7 +592,4 @@ I'm really liking TechTalks and think it has a lot of potential. It's set up by 
 
 I don't see any clear winner that will suit everyone as a replacement to Meetup but I do think there is something in this list for everyone. There's a lot of strong contenders here (especially if you already have a website where you post events) and even more with future potential. The major thing all these options lack is the discoverability that Meetup provides but I feel this is likely to change as people more to alternatives.
 
-# _Changelog_
 
-* 2019-10-21 - Migrated from a [Notion page](https://www.notion.so/jsoxford/Meetup-Alternatives-36d73649d34f4bba9e2065f1fa8cd03f) to my blog. Added Eventsyay, Mixily and Helm.
-* 2020-09-30 - Added section covering TechTalks.io.

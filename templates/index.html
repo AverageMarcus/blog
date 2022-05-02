@@ -9,31 +9,28 @@
     <div class="container">
       <div class="home">
 
-        <ul class="post-list">
-          {{#each pagination.files }}
-            <li>
-              <article class="post">
-                <h2 class="post-title">
-                  <a class="post-link" href="/{{ this.path }}/">{{ this.title }}</a>
-                </h2>
+        {{#each pagination.files }}
+          <section class="post">
+            <h2 class="post-title">
+              <a class="post-link" href="/{{ this.path }}/">{{ this.title }}</a>
+            </h2>
 
-                <div class="post-meta feather_type">
-                  <span>
-                    <time datetime="{{moment this.date 'YYYY-MM-DD' }}">
-                      {{moment this.date 'dddd, Do MMMM YYYY' }}
-                    </time>
-                  </span>
-                </div>
+            <div class="post-meta feather_type">
+              <span>
+                <time datetime="{{moment this.date 'YYYY-MM-DD' }}">
+                  {{moment this.date 'dddd, Do MMMM YYYY' }}
+                </time>
+              </span>
+            </div>
 
-                <div class="post-preview">
-                  {{{ markdown this.summary }}}
-                  <a class="full-post-link" href="/{{ this.path }}/">Continue reading...</a>
-                </div>
+            <div>
+              {{{ markdown this.summary }}}
+              <a href="/{{ this.path }}/"><small>Continue reading...</small></a>
+            </div>
 
-              </article>
-            </li>
-          {{/each}}
-        </ul>
+            <hr/>
+          </section>
+        {{/each}}
 
         <div class="pagination">
           {{#if pagination.previous}}

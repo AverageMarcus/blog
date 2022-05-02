@@ -55,6 +55,12 @@ app.get("/healthz", function(req, res) {
 
 var md = markdown({html: true});
 md.parser.use(emoji);
+const proxy = (tokens, idx, options, env, self) => self.renderToken(tokens, idx, options);
+const defaultTableOpenRenderer = md.parser.renderer.rules.table_open || proxy;
+md.parser.renderer.rules.table_open = function(tokens, idx, options, env, self) {
+  tokens[idx].attrJoin("role", "grid");
+  return defaultTableOpenRenderer(tokens, idx, options, env, self)
+};
 
 Handlebars.registerHelper('markdown', function(text) {
   if(!text) return;

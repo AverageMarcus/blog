@@ -35,29 +35,11 @@
   <link rel="stylesheet" href="/css/zenburn.css" async defer>
   <script type="text/javascript" src="/js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
-  <script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
-  <script>
-    var tweets = document.querySelectorAll(".tweet");
-    for(var i=0; i<tweets.length; i++) {
-      var tweet = tweets[i];
-      var id = tweet.getAttribute("tweetID");
 
-      twttr.widgets.createTweet(
-        id, tweet,
-        {
-          conversation : 'none',
-          cards: 'visible',
-          linkColor: '#cc0000',
-          theme: 'light',
-          align: 'center'
-        });
-    }
-
-  </script>
   <script>
     if (navigator.share) {
       [].slice.call(document.querySelectorAll('.share')).forEach(function(shareButton) {
-        shareButton.classList.add('show');
+        shareButton.classList.remove('hide');
         shareButton.addEventListener('click', function(event) {
           event.preventDefault();
           navigator.share({
@@ -69,6 +51,7 @@
     }
 
     [...document.querySelectorAll('figure img')].forEach(function(img) {
+      img.style.cursor = "pointer";
       img.addEventListener('click', function() {
         window.open(img.getAttribute("src"), "_blank");
       });
