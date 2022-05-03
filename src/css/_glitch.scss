@@ -1,12 +1,15 @@
+.glitch-image:hover, .glitch:hover, a:hover {
+  animation-iteration-count: infinite
+}
 
 .glitch-image {
-  animation: shift 3s ease-in-out infinite alternate;
+  animation: shift 3s ease-in-out .2s alternate;
 }
 
 .glitch, a:hover {
   position: relative;
   text-shadow: 0.05em 0 0 var(--primary-hover), -0.03em -0.04em 0 var(--primary), 0.025em 0.04em 0 var(--primary-inverse);
-  animation: glitch 2s ease alternate infinite, shift 2s ease alternate infinite;
+  animation: glitch 2s ease alternate, shift 2s ease alternate;
 
   &::before, &::after {
     position: absolute;
