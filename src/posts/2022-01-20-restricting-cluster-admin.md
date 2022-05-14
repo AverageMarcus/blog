@@ -1,5 +1,5 @@
 ---
-layout: post.html
+la///yout: post.html
 title:  "Restricting cluster-admin Permissions"
 date:   2022-01-20
 tags: Kubernetes Kyverno RBAC
