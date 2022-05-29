@@ -1,5 +1,5 @@
 ---
-la///yout: post.html
+layout: post.html
 title:  "Restricting cluster-admin Permissions"
 date:   2022-01-20
 tags: Kubernetes Kyverno RBAC
@@ -32,11 +32,11 @@ rules:
 
 There's very good reason for this, an admin generally needs to be able to setup and manage the cluster, including the ability to define and assign roles. But what if we need to _block_ an action performed by cluster admins? We can't do it with RBAC, it only allows for **adding** of permissions, not taking them away.
 
-Well, recently at [Giant Swarm](https://giantswarm.io/) we had an [issue in one of our CLIs](https://github.com/giantswarm/kubectl-gs/pull/632) used by cluster admins that incorrectly deleted more resources than intended. This was causing issues authenticating with the cluster and we needed to get a fix in place _fast_. The problem was we had no control over when people would update their CLI even once we'd released the fix. 
+Well, recently at [Giant Swarm](https://giantswarm.io/) we had an [issue in one of our CLIs](https://github.com/giantswarm/kubectl-gs/pull/632) used by cluster admins that incorrectly deleted more resources than intended. This was causing issues authenticating with the cluster and we needed to get a fix in place _fast_. The problem was we had no control over when people would update their CLI even once we'd released the fix.
 
 We couldn't hot-fix this by updating RBAC rules as we couldn't subtract the specific permission, but what we could do was leverage an [**admission controller**](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/) to block the request to the API.
 
-At Giant Swarm we're pretty big users of [Kyverno](https://kyverno.io/) (which deploys an admission controller) and use it for a lot of validation and defaulting of resources in all our clusters. Not only can Kyverno validate and block based on a resource's values but it can also validate the _operation_ being performed, and by who. 
+At Giant Swarm we're pretty big users of [Kyverno](https://kyverno.io/) (which deploys an admission controller) and use it for a lot of validation and defaulting of resources in all our clusters. Not only can Kyverno validate and block based on a resource's values but it can also validate the _operation_ being performed, and by who.
 
 With this functionality available we were able to deploy a cluster policy that would block cluster-admin (and anyone else) from performing the specific delete all action that was causing us issues.
 
