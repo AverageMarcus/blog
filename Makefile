@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := default
 
-IMAGE ?= docker.cluster.fun/averagemarcus/blog:latest
+IMAGE ?= rg.fr-par.scw.cloud/averagemarcus/blog:latest
 
 .PHONY: test # Run all tests, linting and format checks
 test: lint check-format run-tests
@@ -47,7 +47,7 @@ ci:
 
 .PHONY: release # Release the latest version of the application
 release:
-	@kubectl --namespace blog set image deployment blog web=docker.cluster.fun/averagemarcus/blog:$(SHA)
+	@kubectl --namespace blog set image deployment blog web=rg.fr-par.scw.cloud/averagemarcus/blog:$(SHA)
 
 .PHONY: help # Show this list of commands
 help:
