@@ -121,7 +121,7 @@ If you want to get started with some `kubectl` plugins you can take a look at th
 * [outdated](https://github.com/replicatedhq/outdated) - Find containers with outdated images
 * [gs](https://github.com/giantswarm/kubectl-gs) - Giant Swarm’s plugin for working with our managed clusters
 
-## #6 - `kshell` / `kubcetl debug`
+## #6 - `kshell` / `kubectl debug`
 
 There are many times where I need to launch a temporary pod in a cluster to aid with debugging, usually related to networking issues. To help with this I have a handy Bash alias to easily launch a temporary pod and drop me right into its shell.
 
