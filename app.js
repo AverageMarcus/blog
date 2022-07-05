@@ -30,6 +30,9 @@ app.use(express.static(__dirname + '/build'));
 // Lets try and slow down some of those exploit crawlers
 app.use("/", require('./filterRoutes'));
 
+// Redirects
+app.use("/", require('./redirects'));
+
 // Handle some iOS icon 404s
 app.get("/apple-touch-icon*", function(req, res) {
   res.sendFile(__dirname + '/build/images/favico/' + req.url, () => {
