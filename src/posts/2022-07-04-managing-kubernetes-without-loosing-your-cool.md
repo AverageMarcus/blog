@@ -1,7 +1,7 @@
 ---
 layout: post.html
 date:  2022-07-04
-title: Managing Kubernetes without loosing your cool
+title: Managing Kubernetes without losing your cool
 tags: kubernetes
 summary: |
   This post is based on a [webinar i've previously given](https://www.youtube.com/watch?v=SLysG0QWiG4) where I go through some of my favourite tips for working with Kubernetes clusters all day long. The goal of all of these techniques is to make my life easier and (hopefully) less error prone. I start off with the first 5 tips being applicable to anyone working with Kubernetes and can be picked up right away. From there I move on to a couple that would benefit from having some old-skool Linux sys-admin experience. Finally I finish of with some more advanced techniques that require some previous programming experience.
