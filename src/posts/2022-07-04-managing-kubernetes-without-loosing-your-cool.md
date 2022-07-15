@@ -7,6 +7,13 @@ summary: |
   This post is based on a [webinar i've previously given](https://www.youtube.com/watch?v=SLysG0QWiG4) where I go through some of my favourite tips for working with Kubernetes clusters all day long. The goal of all of these techniques is to make my life easier and (hopefully) less error prone. I start off with the first 5 tips being applicable to anyone working with Kubernetes and can be picked up right away. From there I move on to a couple that would benefit from having some old-skool Linux sys-admin experience. Finally I finish of with some more advanced techniques that require some previous programming experience.
 ---
 
+<details>
+<summary>Changelog</summary>
+
+2022-07-15: Added tweet from Ian Coldwater with `nsenter` example
+
+</details>
+
 This post is based on a [webinar i've previously given](https://www.youtube.com/watch?v=SLysG0QWiG4) where I go through some of my favourite tips for working with Kubernetes clusters all day long. The goal of all of these techniques is to make my life easier and (hopefully) less error prone. I start off with the first 5 tips being applicable to anyone working with Kubernetes and can be picked up right away. From there I move on to a couple that would benefit from having some old-skool Linux sys-admin experience. Finally I finish of with some more advanced techniques that require some previous programming experience.
 
 ## #0 - Pay someone else to do it
@@ -228,6 +235,14 @@ There are some caveats though:
 * You require enough permissions to launch pods with privileged securityContext - RBAC, PSPs and Admission Controllers could all potentially block this. (This could also be considered a benefit to this approach over traditional SSH)
 * Not a real SSH session
 
+Shortly after I posted this blog post, [Ian Coldwater](https://twitter.com/IanColdwater) tweeted out a version of this technique that's small enough to fit in a tweet! 🤯
+
+<figure class="center" markdown="1">
+
+![kubectl run h0nk  --rm -it --image alpine --privileged --overrides '{"spec":{"hostPID": true}}' --command nsenter -- --mount=/proc/1/ns/mnt -- /bin/bash](https://tweet.cluster.fun/1545061887246745602)
+
+<figcaption>Timely Tweet by Ian Colwater</figcaption>
+</figure>
 
 ## #8 - Admission Webhooks
 
