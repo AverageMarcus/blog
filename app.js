@@ -39,6 +39,9 @@ app.get("/apple-touch-icon*", function(req, res) {
     res.sendFile(__dirname + '/build/images/favico/apple-touch-icon.png');
   });
 });
+app.get("/images/favico/*.png", function(req, res) {
+  res.sendFile(__dirname + '/build/images/favico/apple-touch-icon.png');
+});
 
 app.get("/favicon.png", function(req, res) {
   res.sendFile(__dirname + '/build/images/favico/apple-touch-icon.png');
