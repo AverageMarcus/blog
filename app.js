@@ -53,11 +53,15 @@ app.get("/robots.txt", function(req, res) {
 
 app.get(/(\/(feeds?|rss|atom)\/?|feed.xml|rss.xml|index.rss|feed.rss)$/, function(req, res) {
   res.redirect(301, '/feed.xml');
-})
+});
+
+app.get(/.+\/manifest.json$/, function(req, res) {
+  res.redirect(301, '/manifest.json');
+});
 
 app.get("/healthz", function(req, res) {
   res.sendStatus(200);
-})
+});
 
 var md = markdown({html: true});
 md.parser.use(emoji);
