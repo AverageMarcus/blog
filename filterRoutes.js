@@ -15,6 +15,7 @@ router.all(/.*\.sql$/, blackHole);
 router.all('(/*)?/wp-includes/?(*)?', blackHole);
 router.all('/.git/*?', blackHole);
 router.all('/.env', blackHole);
+router.all('/data/owncloud.log', blackHole);
 router.all('/autodiscover/autodiscover.xml', blackHole)
 router.all('/.well-known/autoconfig(/.*)?', blackHole)
 router.all('/admin(/.*)?', blackHole)
