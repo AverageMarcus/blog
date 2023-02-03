@@ -239,9 +239,11 @@ Shortly after I posted this blog post, [Ian Coldwater](https://twitter.com/IanCo
 
 <figure class="center" markdown="1">
 
-![kubectl run h0nk  --rm -it --image alpine --privileged --overrides '{"spec":{"hostPID": true}}' --command nsenter -- --mount=/proc/1/ns/mnt -- /bin/bash](https://tweet.cluster.fun/1545061887246745602)
+```
+kubectl run h0nk  --rm -it --image alpine --privileged --overrides '{"spec":{"hostPID": true}}' --command nsenter -- --mount=/proc/1/ns/mnt -- /bin/bash
+```
 
-<figcaption>Timely Tweet by Ian Colwater</figcaption>
+<figcaption>Timely Tweet by Ian Colwater (no longer available)</figcaption>
 </figure>
 
 ## #8 - Admission Webhooks

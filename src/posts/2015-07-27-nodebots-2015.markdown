@@ -8,11 +8,11 @@ summary: "Last Saturday was [International NodeBots Day](https://github.com/node
 
 Last Saturday was [International NodeBots Day](https://github.com/nodebots/nodebotsday) and [JS Oxford](http://JSOxford.com) was yet again hosting a hack day. We had a really good turn out with about 30 very enthusiastic people showing up. I belive this was, in no small part, due to the fact we had [Gordon Williams](https://twitter.com/espruino), the man behind the [Espruino](http://www.espruino.com/), on hand to help us build some awesome little robot cars made possible by the Expruino Pico and a PCB made especially for the day.
 
-{{> tweet id='624872341206642688' }}
+[Tweet no longer available]
 
 I have been looking forward to this event for a long time now. [Last year's NodeBot event](https://blog.marcusnoble.co.uk/2014-08-24-nodebots/) was one of the main reasons I fell in love with JS Oxford. It was lots of fun and really spurred my interest in microcontrollers (Arduinos, Espruinos, etc.). I may have been a little too keen...
 
-{{> tweet id='624607801277427712' }}
+[![](/images/tweets/624607801277427712.svg)](https://twitter.com/tweet/status/624607801277427712)
 
 The day started out with an intro from Ryan and Gordon talking about the pre-designed project that was available (or we could make whatever we wanted) and a brief overview of the many components laid out in front of us.
 
@@ -20,7 +20,7 @@ The day started out with an intro from Ryan and Gordon talking about the pre-des
 
 I started off working with [Tom](https://twitter.com/neverontarget) and [Katy](https://twitter.com/katyemoe) following the [instructions](https://github.com/espruino/EspruinoDocs/blob/master/devices/RobotPCB.md) to build a small Espruino Pico car that can be built upon. After shorting out our first board we eventually had something that worked...
 
-{{> tweet id='624913165864857600' }}
+[Tweet no longer available]
 
 At this point I decided I wanted to have a go with some of the kit I had brought, specifically one of [these](http://www.ebay.co.uk/itm/Hot-sale-Motor-Smart-Robot-Car-Chassis-Speed-Encoder-Battery-Box-For-Arduino-DDS/391198705451) I got off eBay. The main difference between this and the small cars we'd been building was the motors on this were considerably hungrier, requiring ~5v to work rather than 3.3v. This posed a problem as the pins on the controllable Espruino Pico all output at 3.3v with the only way to get 5v is the use the constant 5v out pin. After some (repeated) chatting with Gordon I was advised to make use of a transistor to have a controllable switch for the 5v power. I used two of these to have individually controllable wheels and threw together some code that would have the car randomly drive around.
 
@@ -58,11 +58,11 @@ function go(){
 
 The end result is quite entertaining...
 
-{{> tweet id='624950235509456896' }}
+[Tweet no longer available]
 
 All in all it was a very successfull event with many [awesome](https://twitter.com/danielthepope/status/624969982934392832) [robots](https://twitter.com/roylinesuk/status/625029819550564352) being built.
 
-{{> tweet id='624964081691324416' }}
+[![](/images/tweets/624964081691324416.svg)](https://twitter.com/tweet/status/624964081691324416)
 
 With the day over, a robot uprising in effect and a lot of tired people it was time for some celebratory food and drinks at [Joe Perks](http://joeperksandco.co.uk/).
 

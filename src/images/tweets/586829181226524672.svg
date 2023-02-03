@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="499px" height="208px">
+<foreignObject x="0" y="0" width="499px" height="100%" fill="#eade52">
+	<style>
+		.tweetsvg{clear:none;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;}
+		.tweetsvg.text{font-size: 23px;}
+		a.tweetsvg{color: rgb(27, 149, 224); text-decoration:none;}
+		.tweetsvg a { color: #1da1f2; }
+		blockquote.tweetsvg{margin:1px; background-color:#fefefe; border-radius:2%; border-style:solid; border-width:.1em; border-color:#ddd; padding:1em; font-family:sans; width:29rem}
+		blockquote.subtweet{width:26rem; padding:0.8em;}
+		.avatar-tweetsvg{float:left; width:4rem; height:4rem; border-radius:50%;margin-right:.5rem;;margin-bottom:.5rem;border-style: solid; border-width:.1em; border-color:#ddd;}
+		h1.tweetsvg{margin:0;font-size:15px;text-decoration:none;color:#000;}
+		h2.tweetsvg{margin:0;font-size:15px;font-weight:normal;text-decoration:none;color:rgb(101, 119, 134);}
+		p.tweetsvg{font-size:1rem; clear:both;}
+		hr.tweetsvg{color:#ddd;}
+		.media-tweetsvg{border-radius:2%; max-width:100%;border-radius: 2%; border-style: solid; border-width: .1em; border-color: #ddd;}
+		time.tweetsvg{font-size:15px;margin:0;margin-left: 2px;padding-bottom:1rem;color:rgb(101, 119, 134);text-decoration:none;}
+		.tweetsvg.reply{font-size:15px;color:rgb(110, 118, 125);}
+		.tweetsvg.footer{display:block;}
+	</style>
+	<blockquote class="tweetsvg" xmlns="http://www.w3.org/1999/xhtml">
+	<a rel="noopener" target="_blank" class="tweetsvg" href="https://twitter.com/Marcus_Noble_/"><img class="avatar-tweetsvg" alt="" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gKgSUNDX1BST0ZJTEUAAQEAAAKQbGNtcwQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwQVBQTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWxjbXMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtkZXNjAAABCAAAADhjcHJ0AAABQAAAAE53dHB0AAABkAAAABRjaGFkAAABpAAAACxyWFlaAAAB0AAAABRiWFlaAAAB5AAAABRnWFlaAAAB&#43;AAAABRyVFJDAAACDAAAACBnVFJDAAACLAAAACBiVFJDAAACTAAAACBjaHJtAAACbAAAACRtbHVjAAAAAAAAAAEAAAAMZW5VUwAAABwAAAAcAHMAUgBHAEIAIABiAHUAaQBsAHQALQBpAG4AAG1sdWMAAAAAAAAAAQAAAAxlblVTAAAAMgAAABwATgBvACAAYwBvAHAAeQByAGkAZwBoAHQALAAgAHUAcwBlACAAZgByAGUAZQBsAHkAAAAAWFlaIAAAAAAAAPbWAAEAAAAA0y1zZjMyAAAAAAABDEoAAAXj///zKgAAB5sAAP2H///7ov///aMAAAPYAADAlFhZWiAAAAAAAABvlAAAOO4AAAOQWFlaIAAAAAAAACSdAAAPgwAAtr5YWVogAAAAAAAAYqUAALeQAAAY3nBhcmEAAAAAAAMAAAACZmYAAPKnAAANWQAAE9AAAApbcGFyYQAAAAAAAwAAAAJmZgAA8qcAAA1ZAAAT0AAACltwYXJhAAAAAAADAAAAAmZmAADypwAADVkAABPQAAAKW2Nocm0AAAAAAAMAAAAAo9cAAFR7AABMzQAAmZoAACZmAAAPXP/bAEMABQMEBAQDBQQEBAUFBQYHDAgHBwcHDwsLCQwRDxISEQ8RERMWHBcTFBoVEREYIRgaHR0fHx8TFyIkIh4kHB4fHv/bAEMBBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/CABEIADAAMAMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAADBAYFAgH/xAAZAQACAwEAAAAAAAAAAAAAAAAAAgEEBQP/2gAMAwEAAhADEAAAAffOxUdHgbUvMUy4HwdVFlujx5zc57TbUlsPUSzzdnBBm1WNqG1qBxa3/8QAIRAAAwACAgICAwAAAAAAAAAAAQIDAAQREwUSFBUhIiT/2gAIAQEAAQUCDNQpNngVojIoGS4yiPUmUfbr2BNZgOdqvZrhdhEmTlARlm/XsGa3xHa7TNJ8HKH8M6rlKO&#43;S3NVQuy/ZNzy1eUs59ifXJatbr6V7VFFnVABoTnTc2fG6lU&#43;LABdP&#43;vyiD6z/xAAfEQABBAICAwAAAAAAAAAAAAACAAEDBAURITEiQVH/2gAIAQMBAT8B2vfabSZNibIDt27V3Hy1fIulWJhlFy&#43;q/lTk4h4U98pYHjJl/8QAGREAAgMBAAAAAAAAAAAAAAAAAAECEBEh/9oACAECAQE/AcrphJiqKQ&#43;M/8QAKBAAAQQCAQMEAQUAAAAAAAAAAQACAxESIVETIjEEMkFhIzNCUmKB/9oACAEBAAY/AmtkiLW1yjlG4C705PbHE57SPOaBwky4tSZxOHzt3yml8RHHcmxmJvaK8ox4w4XyiIgwa5Rkh9Owhvk2j6jpsDjsXymtkjixQp13/VEjnxSJxI1wr/DiBTsjSkwFC9GkPaQm4huXztO0A6/5LRpCV8Fyj60ieSgW/wCdy3kO7zYRrKudIIPbI1mRpgP7l0sbe07CEjmlo&#43;2o9lb9vTQa9nZXjGkwNZhXnFRhrv0hTdfdqX1HU3IePC7jkWuFL//EACEQAQACAgICAgMAAAAAAAAAAAEAESExQVFhcYGRscHR/9oACAEBAAE/IVYyo6hAnjwbrUznGEa31LKv3iWpYjfA2dITVBNBuAIClyC2GVneh2xA41b&#43;0IqXJS4vdhNOfJLxV7w53mYIf06iWFisbpNGPQ3gvqBCwOJyvUIqN0WuZU2SwfrEqEZVbPM6IFYlRD0FMu7gWtjWSnONwcCpSNAWNqyrlxXhhYjwA2vRBE0r8UNTBpTPgiHUONLUZmeyvuMgFrLcwF8Ea/Zf5gLw3q0HUsW8XHuf/9oADAMBAAIAAwAAABC5Vu3&#43;VRF7/8QAHxEAAgEEAgMAAAAAAAAAAAAAAREAITFBUZHwYXHR/9oACAEDAQE/EEpF0&#43;QoqKEDWdBVe9RMkkUxu6NpUqAA8FwGCEc4PIMZ2tU3Yz3zP//EABsRAQEAAwADAAAAAAAAAAAAAAEAESFRQYHw/9oACAECAQE/EMrxo&#43;9sgdROBMTBOiBtmZu3/8QAIBABAQADAAMAAwEBAAAAAAAAAREAITFBUWFxgaGRsf/aAAgBAQABPxC4i&#43;GgolOLqtw/bYoJgCEn5wtowUwi19AYmbqqkSDry5wLRCs1nXbkzs0ZUw1vaGF09t&#43;yBzdxQ6n5B512Z1Zq3wOj9kxom67PNH1u/OsEacVKFJT3/uKkNi/fD73HG2LCkBbb84qGBtH339Ypx90gkKN/eIYJ8FUCOx0c/mbcXYOic/MwpxQF1fdn9fONR1WQ6aN/OMioTFS8v3ICRhBVD64UoFLImqcP6ZXMqqBWw9dwkbUnZm0RPjiUHBbMjAnjz&#43;se5RADe63vEdgFbwhju6GG4aFJcvl0YEiUCSO/ibynyjb7/ofWHYt2ZR/4av3KqXqUEmn7ZlM43qUCNr75iSZK0QCqlFSv1hoKIiDg9mj/ADPfgk20mvlz/9kgICAgICAgICAgICAg" /></a>
+
+		<a rel="noopener" target="_blank" class="tweetsvg" href="https://twitter.com/Marcus_Noble_/"><h1 class="tweetsvg">Marcus Noble</h1></a>
+
+		<a rel="noopener" target="_blank" class="tweetsvg" href="https://twitter.com/Marcus_Noble_/"><h2 class="tweetsvg">@Marcus_Noble_</h2></a>
+
+		
+
+		<p class="tweetsvg text">I'm writing in C at the <a rel="noopener" target="_blank" href="https://twitter.com/JSOxford/">@JSOxford</a> <a rel="noopener" target="_blank" href="https://twitter.com/hashtag/RTHack">#RTHack</a>. Oh the horror!</p>
+
+		
+
+		
+		
+		
+
+		<a rel="noopener" target="_blank" class="tweetsvg footer" href="https://twitter.com/Marcus_Noble_/status/586829181226524672">
+			<time class="tweetsvg" datetime="2015-04-11T09:52:34Z">9:52 AM · Apr 11, 2015</time>
+		</a>
+	</blockquote>
+</foreignObject>
+</svg>

@@ -15,11 +15,11 @@ This included a whole bunch of Arduinos, some wifi controlled cars, some quad-co
 
 We were given free rain over what we create. Everyone was there to help each other out, in true community spirit.
 
-{{> tweet id='503181282353119232' }}
+[![](/images/tweets/503181282353119232.svg)](https://twitter.com/tweet/status/503181282353119232)
 
 The amount of kit made available to us was incredible. 10 Ardunio Experimentation Kits, a whole host of sensors and motors, boxes full of Lego & k'nex and plenty of varied electronics to build whatever we wanted.
 
-{{> tweet id='502792423152836608' }}
+[Tweet no longer available]
 
 I didn't have any goal going in. I wasn't sure what I wanted to build. A full blown robot was a bit much so I decided to focus on trying my hand at building ancillary systems.
 
@@ -65,7 +65,7 @@ setInterval(function(){
 
 This sets up the board and the sensor and gets the appropriate value from the sensor upon detecting a change in temperature, which is pretty much constant due to how many decimal places it monitors to. I have set up a function that is called every second and outputs current values recorded from the sensor.
 
-{{> tweet id='503494610464047104' }}
+[![](/images/tweets/503494610464047104.svg)](https://twitter.com/tweet/status/503494610464047104)
 
 As you can see, a nice 21°c at the White October offices.
 
@@ -79,7 +79,7 @@ This was good, but it needed something more, something cute. How about an Octoca
 
 So, with a little help of a stepper motor, some k'nex and a GitHub sticker, I had a cute l'il Octocat that greeted people as they passed by my station.
 
-{{> tweet id='503501014792953856' }}
+[![](/images/tweets/503501014792953856.svg)](https://twitter.com/tweet/status/503501014792953856)
 
 My final code can be found below, don't just it wasn't meant to be pretty. You may also notice that I also had a light sensor that turned on a super bright LED when it got too dark. I did have to make sure to move the LED away from the sensor on the breadboard though...
 

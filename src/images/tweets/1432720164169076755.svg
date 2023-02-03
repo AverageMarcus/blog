@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="499px" height="348px">
+<foreignObject x="0" y="0" width="499px" height="100%" fill="#eade52">
+	<style>
+		.tweetsvg{clear:none;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;}
+		.tweetsvg.text{font-size: 23px;}
+		a.tweetsvg{color: rgb(27, 149, 224); text-decoration:none;}
+		.tweetsvg a { color: #1da1f2; }
+		blockquote.tweetsvg{margin:1px; background-color:#fefefe; border-radius:2%; border-style:solid; border-width:.1em; border-color:#ddd; padding:1em; font-family:sans; width:29rem}
+		blockquote.subtweet{width:26rem; padding:0.8em;}
+		.avatar-tweetsvg{float:left; width:4rem; height:4rem; border-radius:50%;margin-right:.5rem;;margin-bottom:.5rem;border-style: solid; border-width:.1em; border-color:#ddd;}
+		h1.tweetsvg{margin:0;font-size:15px;text-decoration:none;color:#000;}
+		h2.tweetsvg{margin:0;font-size:15px;font-weight:normal;text-decoration:none;color:rgb(101, 119, 134);}
+		p.tweetsvg{font-size:1rem; clear:both;}
+		hr.tweetsvg{color:#ddd;}
+		.media-tweetsvg{border-radius:2%; max-width:100%;border-radius: 2%; border-style: solid; border-width: .1em; border-color: #ddd;}
+		time.tweetsvg{font-size:15px;margin:0;margin-left: 2px;padding-bottom:1rem;color:rgb(101, 119, 134);text-decoration:none;}
+		.tweetsvg.reply{font-size:15px;color:rgb(110, 118, 125);}
+		.tweetsvg.footer{display:block;}
+	</style>
+	<blockquote class="tweetsvg" xmlns="http://www.w3.org/1999/xhtml">
+	<a rel="noopener" target="_blank" class="tweetsvg" href="https://twitter.com/QuinnyPig/"><img class="avatar-tweetsvg" alt="" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gKgSUNDX1BST0ZJTEUAAQEAAAKQbGNtcwQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwQVBQTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWxjbXMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtkZXNjAAABCAAAADhjcHJ0AAABQAAAAE53dHB0AAABkAAAABRjaGFkAAABpAAAACxyWFlaAAAB0AAAABRiWFlaAAAB5AAAABRnWFlaAAAB&#43;AAAABRyVFJDAAACDAAAACBnVFJDAAACLAAAACBiVFJDAAACTAAAACBjaHJtAAACbAAAACRtbHVjAAAAAAAAAAEAAAAMZW5VUwAAABwAAAAcAHMAUgBHAEIAIABiAHUAaQBsAHQALQBpAG4AAG1sdWMAAAAAAAAAAQAAAAxlblVTAAAAMgAAABwATgBvACAAYwBvAHAAeQByAGkAZwBoAHQALAAgAHUAcwBlACAAZgByAGUAZQBsAHkAAAAAWFlaIAAAAAAAAPbWAAEAAAAA0y1zZjMyAAAAAAABDEoAAAXj///zKgAAB5sAAP2H///7ov///aMAAAPYAADAlFhZWiAAAAAAAABvlAAAOO4AAAOQWFlaIAAAAAAAACSdAAAPgwAAtr5YWVogAAAAAAAAYqUAALeQAAAY3nBhcmEAAAAAAAMAAAACZmYAAPKnAAANWQAAE9AAAApbcGFyYQAAAAAAAwAAAAJmZgAA8qcAAA1ZAAAT0AAACltwYXJhAAAAAAADAAAAAmZmAADypwAADVkAABPQAAAKW2Nocm0AAAAAAAMAAAAAo9cAAFR7AABMzQAAmZoAACZmAAAPXP/bAEMABQMEBAQDBQQEBAUFBQYHDAgHBwcHDwsLCQwRDxISEQ8RERMWHBcTFBoVEREYIRgaHR0fHx8TFyIkIh4kHB4fHv/bAEMBBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/CABEIADAAMAMBIgACEQEDEQH/xAAaAAADAQADAAAAAAAAAAAAAAAEBgcFAAED/8QAGQEBAAMBAQAAAAAAAAAAAAAABAEDBQAC/9oADAMBAAIQAxAAAAGyhmTCOWzPN1M1rLn9AQTkmrM/j0uM89aBabvv5ukzMHiix1ZU2tK9pkbRD4BvrJ//xAAeEAACAgIDAQEAAAAAAAAAAAADBAECAAUGEBIHFP/aAAgBAQABBQLHWQprPctbKdDkT1CqMDaB19CJMJahZfJELzxgNl3uub2mz1ReVoqW&#43;a2nljrmS4/zMFgYda8JmER2rTGDhXFtdvfbMpeS0XCIGKtrs9PttNWQmKN0XEa8khTC&#43;q2T3L1I/8QAHxEAAQMDBQAAAAAAAAAAAAAAAQAREgIDIQQQFCIx/9oACAEDAQE/AUNMGyqhEsrTSyuviutPCJNIcLlUmzIbf//EAB8RAAIBAwUBAAAAAAAAAAAAAAABEQIDEhATITEyUf/aAAgBAgEBPwEd4pcqSvof0t&#43;SJ4Nt546f/8QAKhAAAgECBAQFBQAAAAAAAAAAAQIDABEEEiFBEBMiMSMyUmGBJEJRcaH/2gAIAQEABj8Cp8RiHyxp3NEYS0EW3Tdq&#43;pfmqdioFLLEbg/zjhYdnl1&#43;KHhLc/laytGlv1WMhBJj0I44OO/SvVb3rnc1tPLbakdXsLaipj6rcUxevMVgnxUQcyZW9HessTy5k8&#43;cWrM33cDLPIsaDuTTxxXGGTyr6velQ2zJsaMmUEnqa29eDIrW7jccA&#43;KmaY37E6Ck2B0q6MVcVHzScl&#43;smgY2s69iDQvJn9nr/8QAJBABAAICAQQCAgMAAAAAAAAAAQARIUExEFFhgXGxocHR4fD/2gAIAQEAAT8hgxCXB2rnIMeVx6hd8Cb7CdqK9rs9QhvjvT&#43;4bXP8MSEONInq8EN/x14s9xbNfUTGACFmFtyQuYrKDvydbvxRTizuXdOp3CXT8OU4x9TEewV8dOZ4bomMz1ilbf6JRS/f7JkUFPOhCkc4v0dOLJVT4Dglh7a9XGGsBh814gdCqCtRMfmNrYmkNTCjNF375n//2gAMAwEAAgADAAAAEP8APT7v90P7/8QAHBEAAgICAwAAAAAAAAAAAAAAAAERITFBUXGh/9oACAEDAQE/EEpcGYE6KItR2OzDcJWTbsL3jsg//8QAGREBAQEBAQEAAAAAAAAAAAAAAQARIUFR/9oACAECAQE/EFw2TeFnTW8ghxFDtjp7JBfYL//EACAQAQEAAgEFAQEBAAAAAAAAAAERACExEEFRYZFxgcH/2gAIAQEAAT8QyhBOK&#43;AA2q6DCSaZCXdgvga8uTlIEx7Ao/tMEoLdHkF2TqlqrH7ofcXQJUg31RjJgcOSSGsHAVKqUQ/an4HV9bbA7grzwMdCSoIPD58YY1xyZTn7jBNMNQESfHrpMhhalRKpNb&#43;4taYGhO3kOd&#43;clngTiKoOP4/3EwBIi05b99DYjYZqz264NuPSaHBLDzfgVcCgVkiCsF/o/uKoBwAJTWtFw/bFEBCVbm&#43;eOnZqAB9fcjxj5bbdwafuI95DYoFRz7YfIFgwAm3kXtDNz1sComxyaw27pJI7dj7n/9kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA=" /></a>
+
+		<a rel="noopener" target="_blank" class="tweetsvg" href="https://twitter.com/QuinnyPig/"><h1 class="tweetsvg">Corey Quinn / @quinnypig@awscommunity.social</h1></a>
+
+		<a rel="noopener" target="_blank" class="tweetsvg" href="https://twitter.com/QuinnyPig/"><h2 class="tweetsvg">@QuinnyPig</h2></a>
+
+		
+
+		<p class="tweetsvg text">So @docker has a new monetization strategy that's definitely innovative. "Docker Desktop requires you pay them if you're at a large company," which they define as over $10 million in revenue or 250 employees.<br /><br /><a rel="noopener" target="_blank" href="https://www.docker.com/blog/updating-product-subscriptions/">docker.com/blog/updating-…</a></p>
+
+		
+
+		
+		
+		
+
+		<a rel="noopener" target="_blank" class="tweetsvg footer" href="https://twitter.com/QuinnyPig/status/1432720164169076755">
+			<time class="tweetsvg" datetime="2021-08-31T15:01:20Z">3:01 PM · Aug 31, 2021</time>
+		</a>
+	</blockquote>
+</foreignObject>
+</svg>

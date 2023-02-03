@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="499px" height="348px">
+<foreignObject x="0" y="0" width="499px" height="100%" fill="#eade52">
+	<style>
+		.tweetsvg{clear:none;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;}
+		.tweetsvg.text{font-size: 23px;}
+		a.tweetsvg{color: rgb(27, 149, 224); text-decoration:none;}
+		.tweetsvg a { color: #1da1f2; }
+		blockquote.tweetsvg{margin:1px; background-color:#fefefe; border-radius:2%; border-style:solid; border-width:.1em; border-color:#ddd; padding:1em; font-family:sans; width:29rem}
+		blockquote.subtweet{width:26rem; padding:0.8em;}
+		.avatar-tweetsvg{float:left; width:4rem; height:4rem; border-radius:50%;margin-right:.5rem;;margin-bottom:.5rem;border-style: solid; border-width:.1em; border-color:#ddd;}
+		h1.tweetsvg{margin:0;font-size:15px;text-decoration:none;color:#000;}
+		h2.tweetsvg{margin:0;font-size:15px;font-weight:normal;text-decoration:none;color:rgb(101, 119, 134);}
+		p.tweetsvg{font-size:1rem; clear:both;}
+		hr.tweetsvg{color:#ddd;}
+		.media-tweetsvg{border-radius:2%; max-width:100%;border-radius: 2%; border-style: solid; border-width: .1em; border-color: #ddd;}
+		time.tweetsvg{font-size:15px;margin:0;margin-left: 2px;padding-bottom:1rem;color:rgb(101, 119, 134);text-decoration:none;}
+		.tweetsvg.reply{font-size:15px;color:rgb(110, 118, 125);}
+		.tweetsvg.footer{display:block;}
+	</style>
+	<blockquote class="tweetsvg" xmlns="http://www.w3.org/1999/xhtml">
+	<a rel="noopener" target="_blank" class="tweetsvg" href="https://twitter.com/manuel_zapf/"><img class="avatar-tweetsvg" alt="" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gKgSUNDX1BST0ZJTEUAAQEAAAKQbGNtcwQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwQVBQTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWxjbXMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtkZXNjAAABCAAAADhjcHJ0AAABQAAAAE53dHB0AAABkAAAABRjaGFkAAABpAAAACxyWFlaAAAB0AAAABRiWFlaAAAB5AAAABRnWFlaAAAB&#43;AAAABRyVFJDAAACDAAAACBnVFJDAAACLAAAACBiVFJDAAACTAAAACBjaHJtAAACbAAAACRtbHVjAAAAAAAAAAEAAAAMZW5VUwAAABwAAAAcAHMAUgBHAEIAIABiAHUAaQBsAHQALQBpAG4AAG1sdWMAAAAAAAAAAQAAAAxlblVTAAAAMgAAABwATgBvACAAYwBvAHAAeQByAGkAZwBoAHQALAAgAHUAcwBlACAAZgByAGUAZQBsAHkAAAAAWFlaIAAAAAAAAPbWAAEAAAAA0y1zZjMyAAAAAAABDEoAAAXj///zKgAAB5sAAP2H///7ov///aMAAAPYAADAlFhZWiAAAAAAAABvlAAAOO4AAAOQWFlaIAAAAAAAACSdAAAPgwAAtr5YWVogAAAAAAAAYqUAALeQAAAY3nBhcmEAAAAAAAMAAAACZmYAAPKnAAANWQAAE9AAAApbcGFyYQAAAAAAAwAAAAJmZgAA8qcAAA1ZAAAT0AAACltwYXJhAAAAAAADAAAAAmZmAADypwAADVkAABPQAAAKW2Nocm0AAAAAAAMAAAAAo9cAAFR7AABMzQAAmZoAACZmAAAPXP/bAEMABQMEBAQDBQQEBAUFBQYHDAgHBwcHDwsLCQwRDxISEQ8RERMWHBcTFBoVEREYIRgaHR0fHx8TFyIkIh4kHB4fHv/bAEMBBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/CABEIADAAMAMBIgACEQEDEQH/xAAaAAACAwEBAAAAAAAAAAAAAAAEBQECBgAD/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAMEAQL/2gAMAwEAAhADEAAAAXtiEWGI0&#43;qSLfq4dwxHmjGRAzPq0nuecjiiEFtZhoL6E9nUVvHXP//EACQQAAICAgIBAwUAAAAAAAAAAAIEAQMABRETFAYQEhUgIiMx/9oACAEBAAEFAi1Q27LYaxZRdjZ/s0DQN3RqB5&#43;jhkqMC76pXYBNOtMR3PVZnRGdEZZEeZuepkq1qhOpeuZ9tswdeUsH5YmXNUEUnDcWTLWMredbQpTRh18kFf5TnGJD8KP7P2f/xAAbEQACAgMBAAAAAAAAAAAAAAABEQAQAgMSIv/aAAgBAwEBPwGHShQhy8u&#43;ilX/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQIQERIx/9oACAECAQE/ARTMUu0jVV//xAAqEAABBAAEBAUFAAAAAAAAAAABAAIDERIhMVEEEBQzEyIyQZIgI2Fxwf/aAAgBAQAGPwIMkkNNjsUvHknLY2&#43;okIjhGWz2L9Summc/h5X&#43;nZyvxnLuuUbOrdb2HzKNjuIdK10jbCoCG2/pQz8O4Y4ZQctV3JPku5L8lEdmldNqQMwmVnaw4bN846Js5LHm51LzRGttk2hhFqrFDk3OmM1X246O/usQy/qxacx&#43;c/q//8QAIhABAAIDAAEEAwEAAAAAAAAAAQARITFBYRBRgZFxobHB/9oACAEBAAE/IdZxLvMSJwyFE1UNL9BqeGcvwZ7CtqvghbavwS1uhhkqsS4NE47Ao4U9E76&#43;FUvkytV89FPdUX8hHbMh9n8hAcCoGaqv9mYFIydlnIMaZLFMDoijawuqt0MtzL/qu912ZUG2dmgUxa9/kbfBD2hCm9qKYFCnwiAs0MVMncr7T8fXn0EJz0Z//9oADAMBAAIAAwAAABCHDxnbrpbL/8QAGREAAgMBAAAAAAAAAAAAAAAAAREAECFB/9oACAEDAQE/EBpjguiRcBgL7GV//8QAGREAAwEBAQAAAAAAAAAAAAAAAAERIRAx/9oACAECAQE/EIkhDawgtwTwywSGlnP/xAAjEAEBAAICAgEFAQEAAAAAAAABEQAhMUFRcWGBkcHR8KGx/9oACAEBAAE/EDJEIIpmNuQHJMH1QCrxDJMFJQEedWx8uc1hALMsIE0YcPm4en46vxgW0Sbwrpxek/qDf8yJJ6wmu51vCu3Cap33jVvTZlKNCpbC8YrSU0aJ11g/9f8AmLeak3gdsc6UM2fswIjWcso27D7NZotEphSaEOd9OBaAHAGD5wXyoGIJk4dfzDYYtQgWhhE8bxY1ZAcm09XEonnZ4awZSz9sAjuiqJ/Dka2DgfK/iYj601vRfk6xLXQVsXVvqn1wNlMIvfrHlgesIKRD2L&#43;oYtQfM/PjKTwY0HrJrGCHaZ//2SAgICAgICAgICAgICAgICAgICAgICAg" /></a>
+
+		<a rel="noopener" target="_blank" class="tweetsvg" href="https://twitter.com/manuel_zapf/"><h1 class="tweetsvg">Manuel Zapf</h1></a>
+
+		<a rel="noopener" target="_blank" class="tweetsvg" href="https://twitter.com/manuel_zapf/"><h2 class="tweetsvg">@manuel_zapf</h2></a>
+
+		
+
+		<p class="tweetsvg text">That whole discussion around <a rel="noopener" target="_blank" href="https://twitter.com/Docker/">@Docker</a>'s pricing change is tiring to me. We owe them a lot, it made all of our devs live much easier. Why should they *NOT* earn money with that? You only got to pay for a nicer experience on certain OS, when you can afford. I see 0 issues with that.</p>
+
+		
+
+		
+		
+		
+
+		<a rel="noopener" target="_blank" class="tweetsvg footer" href="https://twitter.com/manuel_zapf/status/1432974196632604676">
+			<time class="tweetsvg" datetime="2021-09-01T07:50:46Z">7:50 AM · Sep 1, 2021</time>
+		</a>
+	</blockquote>
+</foreignObject>
+</svg>

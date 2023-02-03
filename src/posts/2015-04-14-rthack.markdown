@@ -12,7 +12,7 @@ When we arrived there were many [examples](https://github.com/jsoxford/RTHackPac
 
 After a brief intro a few pitched some ideas they had for the day and we joined into groups. I joined with [Max](https://twitter.com/omgmog) to work on some real time, web connected hardware using Arduino's etc. I had brought along my awesome [Spark Core](https://store.spark.io/?product=spark-core) which is a mini, cloud connected device. I hooked up a [DHT11](http://www.adafruit.com/products/386) temperature/humidity sensor which had a handy Spark Core library available.
 
-{{> tweet id='586829181226524672' }}
+[![](/images/tweets/586829181226524672.svg)](https://twitter.com/tweet/status/586829181226524672)
 
 The data from this sensor was then made available by registering events using the Spark cloud's `publish` function which I then listened for on a server and forwarded all messages to Pusher for use by others. I hooked up a simple web page that would display each of the messages as they came in and cobbled together a [D3](http://d3js.org/) graph that plotted the temperature in real time.
 
@@ -22,26 +22,26 @@ I switched to using a TMP36 temperature sensor, one lacking a handy library. It 
 
 But in the end I prevailed!!!
 
-{{> tweet id='586913832121008129' }}
+[![](/images/tweets/586913832121008129.svg)](https://twitter.com/tweet/status/586913832121008129)
 
 We gave demos at the end of the day. Mine was short and sweet but some of the others were pretty cool.
 
 [Dan](https://twitter.com/danielthepope) made a cool game where you fight to set the background colour.
 
-{{> tweet id='586901707285725185' }}
+[![](/images/tweets/586901707285725185.svg)](https://twitter.com/tweet/status/586901707285725185)
 
 [Ben](https://twitter.com/benjaminbenben) and [Gil](https://twitter.com/LuRsT) made a cool way of displaying what people are tweeting about.
 
-{{> tweet id='586926991020003328' }}
+[![](/images/tweets/586926991020003328.svg)](https://twitter.com/tweet/status/586926991020003328)
 
 We also had a Countdown clone, modern minesweep, twitter walls with flamingos, various chat rooms and an interactive [Ben's mind palace](http://www.bensmindpalace.co.uk/rt/).
 
 When all was done and we had wrapped up a few of us headed over to Joe Perks for some well deserved (custom) cocktails.
 
-{{> tweet id='586955640024788992' }}
+[![](/images/tweets/586955640024788992.svg)](https://twitter.com/tweet/status/586955640024788992)
 
 This did end up turning into a Ruby hack...
 
-{{> tweet id='586994376812933121' }}
+[![](/images/tweets/586994376812933121.svg)](https://twitter.com/tweet/status/586994376812933121)
 
 All-in-all it was a great day! I learned not to muck around with hardware at a JS hack day (although that may change now I've received my [Espruino Pico](http://www.espruino.com/Pico)) and there are some pretty quick and powerful things you can do with technologies like Pusher.

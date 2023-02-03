@@ -12,19 +12,19 @@ Their latest event offering was hackathon going by the name of [Emerging Tech We
 
 The weekend kicked off on Friday with something of a surprise to me...
 
-{{> tweet id='533329134232289281' }}
+[![](/images/tweets/533329134232289281.svg)](https://twitter.com/tweet/status/533329134232289281)
 
 [STFC](http://www.stfc.ac.uk) helped sponsor the event. Who knew? (I know I sure didn't).
 
 After the tech mentors gave their presentation & demos we began mingling over drinks and coming up with ideas for teams to work on. When we all came back together we had a large number of good ideas suggested.
 
-{{> tweet id='533355898086129664' }}
+[![](/images/tweets/533355898086129664.svg)](https://twitter.com/tweet/status/533355898086129664)
 
 We each had two votes we could give to an idea and then teams were formed out of the top voted. I joined the "Dude, where's my cat?" team. The idea was, we never have any idea where our cats are, wouldn't it be great if we could track them somehow?
 
 {{> picture alt="Dude, where's my cat?" caption="Dude, where's my cat?" url="/images/DudeWheresMyCat.jpg" }}
 
-{{> tweet id='533380993265438720' }}
+[![](/images/tweets/533380993265438720.svg)](https://twitter.com/tweet/status/533380993265438720)
 
 So... we discovered pretty quickly that the idea has been done, repeatedly. :disappointed:
 
@@ -32,19 +32,19 @@ So I joined SenseSpace! The ideas was pretty simple, create a gaming platform th
 
 Our final project didn't quite make it that far but we did get enough to convey the basic idea to people.
 
-{{> tweet id='533979636909506560' }}
+[![](/images/tweets/533979636909506560.svg)](https://twitter.com/tweet/status/533979636909506560)
 
 As part of our pitch we did a short example video of us playing tag with our devices. I was even able to make use of a pair of Google Glasses to get some pretty cool point-of-view footage.
 
 I thought Google Glass would be a cool platform to be able to actually play our game on (if you ignore the cost for a moment). Unfortunately...
 
-{{> tweet id='533995183248252929' }}
+[![](/images/tweets/533995183248252929.svg)](https://twitter.com/tweet/status/533995183248252929)
 
 When it came to Sunday evening it was time for the pitching and judging. There was a lot of goo pitches and a lot of impressive work done in just a couple days.
 
 SenseSpace was getting some very positive feedback.
 
-{{> tweet id='534020893203521536' }}
+[![](/images/tweets/534020893203521536.svg)](https://twitter.com/tweet/status/534020893203521536)
 
 There was a lot of good ideas from Queue controlling...
 
@@ -56,7 +56,7 @@ There was a lot of good ideas from Queue controlling...
 
 But my personal favourite, and the one that got my vote during the audience voting, was Team Brush!
 
-{{> tweet id='534030183129702401' }}
+[![](/images/tweets/534030183129702401.svg)](https://twitter.com/tweet/status/534030183129702401)
 
 So... the results are.........
 

@@ -32,14 +32,14 @@ There has been quite a bit of reaction to this news:
 
 <figure class="center" markdown="1">
 
-[![](https://tweet.cluster.fun/1432720164169076755)](https://twitter.com/QuinnyPig/status/1432720164169076755)
+[![](/images/tweets/1432720164169076755.svg)](https://twitter.com/QuinnyPig/status/1432720164169076755)
 
 <figcaption>Corey isn't too impressed with the news</figcaption>
 </figure>
 
 <figure class="center" markdown="1">
 
-[![](https://tweet.cluster.fun/1432974196632604676)](https://twitter.com/manuel_zapf/status/1432974196632604676)
+[![](/images/tweets/1432974196632604676.svg)](https://twitter.com/manuel_zapf/status/1432974196632604676)
 
 <figcaption>Manuel makes a good point about paying for what we rely on</figcaption>
 </figure>
@@ -48,7 +48,7 @@ Depending on which side your opinions lie, you might be looking for alternatives
 
 <figure class="center" markdown="1">
 
-[![](https://tweet.cluster.fun/1432800271873323010)](https://twitter.com/Podman_io/status/1432800271873323010)
+[![](/images/tweets/1432800271873323010.svg)](https://twitter.com/Podman_io/status/1432800271873323010)
 
 <figcaption>Well timed announcement</figcaption>
 </figure>

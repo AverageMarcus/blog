@@ -9,7 +9,7 @@ summary: "Last Sunday I went to a Code Retreat hosted by [JSOxford](http://jsoxf
 
 Last Sunday I went to a Code Retreat hosted by [JSOxford](http://jsoxford.com/). This was a full day event of coding, split into four sections all based around [Conway's Game of Life](http://en.wikipedia.org/wiki/Conway's_Game_of_Life).
 
-{{> tweet id='485697274174275584' }}
+[![](/images/tweets/485697274174275584.svg)](https://twitter.com/tweet/status/485697274174275584)
 
 For those not familiar with Conway's Game Of Life I will be doing another blog post on it shortly. But simply put it is a basic computer model of life.
 
@@ -19,7 +19,7 @@ For the whole day we focused on perfecting code rather than finishing. We didn't
 
 The first round was aimed at getting us familiar with the task at hand. We paired up, as we did with most of the rounds, and tasked with writing out the code we thought would make up the game on pieces of paper. I had paired up with [Dan Pope](https://twitter.com/danielthepope) and we set to work on the writing out our code, *sans-highlighting*.
 
-{{> tweet id='485722324604579840' }}
+[![](/images/tweets/485722324604579840.svg)](https://twitter.com/tweet/status/485722324604579840)
 
 Dan focused on a method that calculates the number of neighbours a given cell has while I focused on the main game loop. The absence of an <abbr title="Integrated development environment">IDE</abbr> is a terrible thing so our code was pseudo-JavaScript/pseudo-Python. We had plenty of time to write out the whole game with a bit of time left at the end to go through and fix a couple of potential bugs!
 
@@ -53,7 +53,7 @@ As you can see, the code doesn't actually work as expected, it just does enough 
 
 ## Lunch
 
-{{> tweet id='485758298755698688' }}
+[![](/images/tweets/485758298755698688.svg)](https://twitter.com/tweet/status/485758298755698688)
 
 Not the best lunch in the world but a free lunch is a free lunch.
 
@@ -61,7 +61,7 @@ Not the best lunch in the world but a free lunch is a free lunch.
 
 The word 'Randori' comes from the martial art Aikido and means many people attacking the same person. In the world of programming this lends itself towards paired programming, but with more partners.
 
-{{> tweet id='485774627139223552' }}
+[![](/images/tweets/485774627139223552.svg)](https://twitter.com/tweet/status/485774627139223552)
 
 Think one laptop, with one person on the keys, and a group of people gathered around telling them what to code. The person typing had no decision over what to write, their partner is the one "driving" with help from the others stood around. This is taken in turns, swapping every 5 minutes.
 

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="499px" height="306px">
+<foreignObject x="0" y="0" width="499px" height="100%" fill="#eade52">
+	<style>
+		.tweetsvg{clear:none;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;}
+		.tweetsvg.text{font-size: 23px;}
+		a.tweetsvg{color: rgb(27, 149, 224); text-decoration:none;}
+		.tweetsvg a { color: #1da1f2; }
+		blockquote.tweetsvg{margin:1px; background-color:#fefefe; border-radius:2%; border-style:solid; border-width:.1em; border-color:#ddd; padding:1em; font-family:sans; width:29rem}
+		blockquote.subtweet{width:26rem; padding:0.8em;}
+		.avatar-tweetsvg{float:left; width:4rem; height:4rem; border-radius:50%;margin-right:.5rem;;margin-bottom:.5rem;border-style: solid; border-width:.1em; border-color:#ddd;}
+		h1.tweetsvg{margin:0;font-size:15px;text-decoration:none;color:#000;}
+		h2.tweetsvg{margin:0;font-size:15px;font-weight:normal;text-decoration:none;color:rgb(101, 119, 134);}
+		p.tweetsvg{font-size:1rem; clear:both;}
+		hr.tweetsvg{color:#ddd;}
+		.media-tweetsvg{border-radius:2%; max-width:100%;border-radius: 2%; border-style: solid; border-width: .1em; border-color: #ddd;}
+		time.tweetsvg{font-size:15px;margin:0;margin-left: 2px;padding-bottom:1rem;color:rgb(101, 119, 134);text-decoration:none;}
+		.tweetsvg.reply{font-size:15px;color:rgb(110, 118, 125);}
+		.tweetsvg.footer{display:block;}
+	</style>
+	<blockquote class="tweetsvg" xmlns="http://www.w3.org/1999/xhtml">
+	<a rel="noopener" target="_blank" class="tweetsvg" href="https://twitter.com/KaiPMDH/"><img class="avatar-tweetsvg" alt="" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gKgSUNDX1BST0ZJTEUAAQEAAAKQbGNtcwQwAABtbnRyUkdCIFhZWiAH4gALABcAEAAdAAhhY3NwQVBQTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWxjbXMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtkZXNjAAABCAAAADhjcHJ0AAABQAAAAE53dHB0AAABkAAAABRjaGFkAAABpAAAACxyWFlaAAAB0AAAABRiWFlaAAAB5AAAABRnWFlaAAAB&#43;AAAABRyVFJDAAACDAAAACBnVFJDAAACLAAAACBiVFJDAAACTAAAACBjaHJtAAACbAAAACRtbHVjAAAAAAAAAAEAAAAMZW5VUwAAABwAAAAcAHMAUgBHAEIAIABiAHUAaQBsAHQALQBpAG4AAG1sdWMAAAAAAAAAAQAAAAxlblVTAAAAMgAAABwATgBvACAAYwBvAHAAeQByAGkAZwBoAHQALAAgAHUAcwBlACAAZgByAGUAZQBsAHkAAAAAWFlaIAAAAAAAAPbWAAEAAAAA0y1zZjMyAAAAAAABDEoAAAXj///zKgAAB5sAAP2H///7ov///aMAAAPYAADAlFhZWiAAAAAAAABvlAAAOO4AAAOQWFlaIAAAAAAAACSdAAAPgwAAtr5YWVogAAAAAAAAYqUAALeQAAAY3nBhcmEAAAAAAAMAAAACZmYAAPKnAAANWQAAE9AAAApbcGFyYQAAAAAAAwAAAAJmZgAA8qcAAA1ZAAAT0AAACltwYXJhAAAAAAADAAAAAmZmAADypwAADVkAABPQAAAKW2Nocm0AAAAAAAMAAAAAo9cAAFR7AABMzQAAmZoAACZmAAAPXP/bAEMABQMEBAQDBQQEBAUFBQYHDAgHBwcHDwsLCQwRDxISEQ8RERMWHBcTFBoVEREYIRgaHR0fHx8TFyIkIh4kHB4fHv/bAEMBBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/CABEIADAAMAMBIgACEQEDEQH/xAAYAAADAQEAAAAAAAAAAAAAAAAFBgcEA//EABgBAQEBAQEAAAAAAAAAAAAAAAMEAQIF/9oADAMBAAIQAxAAAAFllmleJmZhm&#43;UqaS6LlFaGGDSYyP3Bxbg1UQdXafNXcUR1jOvSNJlfcjZMJ6mXM//EAB0QAAMBAQEBAAMAAAAAAAAAAAIDBAEFABETITH/2gAIAQEAAQUC71wSgqvPz7TE7xmMYSx29FoRNX7vPop6WfM9rt9jnCzjmzo&#43;fSKQwzcy5e/Q/lahTFwD350GD8PZxS536To5uAdXpbVysbaiiVbTDynBvoqJVMO92oqENr5ZtJnhz0sDKGdOcJKKBRtE/J1jf//EAB0RAAIDAAIDAAAAAAAAAAAAAAACAQMRBCETIjH/2gAIAQMBAT8BiWE5U1d4S2zoyr48kur6wzJFuZBbWb2F&#43;6f/xAAbEQADAAMBAQAAAAAAAAAAAAAAAQIREiEDMf/aAAgBAgEBPwHSUPwVGvCW3WUKsdK6jRMqF8LXD//EACcQAAIBBAEEAgEFAAAAAAAAAAECAAMREiETBCIxQTJRECNhYnGR/9oACAEBAAY/AmBq51GHYALW/czLqS7r9Azj4no/Tk3/ANnTMe5Uy8e4vUvTtSY2HoQLT6XQ8WYWj8wGYAFlm5ZIG5GuPEoVK7PbQCjSyn6DG05nsQRoy&#43;MOpS5KIya&#43;7SgKRYeDoaWUVDgM1/mYp6W/Efsy0Jtu0TLjFLHbHe9ziWqtP&#43;aC4iLTqCuRb5Iblv6lge0&#43;pufqpneYvaxbI61HppZND4&#43;DDRWoU4e4Nbf5o4&#43;zZtThxUo5DAW8SnknE6v368x1pmnSYr7Np//EACIQAAICAgEFAAMAAAAAAAAAAAERACExQWFRcZGhwRCx0f/aAAgBAQABPyESDJshUqcuw5VH&#43;gD2alnP8nUPjfhKBxxzAr6gmnLmUFAYAUZuiMuDikcqDAzbFqEyceUlj7CuWgVkyk4CDfQRSIo7cAFjqZzWBFQ7/IIalqiwo53BS9mpBSipomLC9vmP38wRWAt0ZSYIivUEl48R2vnbR0gvKEwwbogvcCljJrCH3AFt6Gh09w/1uVhfvMDAOpLEP7FgWtm7H8CRYgfdNqramd4JULY8wTCRGOpuMkSBIRD9z//aAAwDAQACAAMAAAAQlOpLEtVIC//EABwRAQADAQEAAwAAAAAAAAAAAAEAESExUXGRwf/aAAgBAwEBPxA1Lw&#43;pciyleVifsew6zT9xz2WgMvSnJQU2TdFl8j6GbfxP/8QAGhEAAwEBAQEAAAAAAAAAAAAAAAERIUFxYf/aAAgBAgEBPxBrNLpEViGiiYiYBbUM8drXzow370Qovnp//8QAHhABAQACAgMBAQAAAAAAAAAAAREAITFBUWGBcfD/2gAIAQEAAT8Qdy6KqSjwHQFX7jNdRVRpihznFtQg16bL9bOS7MQWBFUQCJ6bfxxH9YwdxRTpZtxbg6ZDWxHralc2YKQIER8Nv3KIXCaT5jUB/qZAD7KF&#43;OvkyaxugINAkIMTfWV/SyUAVOdcLccAKQaSaOZ5xfNkOL5xAZyQNu5iSZAws9jl4SuGzBOtcCbbkauomyaxYC60RyZB31jOABS3sejpMMAJHl04LGyQ0ScebMEs6xTwh2St0D6tfW3DNl61ok6&#43;4y7YFZ7DOSLcxXyKzs&#43;fT7ybSPrZlM8QpQN3zwJg4qUhYCsrsEoSa8AeCBFLRbrp6cIpBKTQbU4J9yVwqKsSHKprBa6WLAQaqgNUPuPAEejABXg8vWBTowWDonJrnNWXDkGavDnXef/ZICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA==" /></a>
+
+		<a rel="noopener" target="_blank" class="tweetsvg" href="https://twitter.com/KaiPMDH/"><h1 class="tweetsvg">Kai @kaipmdh@hachyderm.io</h1></a>
+
+		<a rel="noopener" target="_blank" class="tweetsvg" href="https://twitter.com/KaiPMDH/"><h2 class="tweetsvg">@KaiPMDH</h2></a>
+
+		
+		<p class="tweetsvg reply">Replying to <a rel="noopener" target="_blank" href="https://twitter.com/Marcus_Noble_/">@Marcus_Noble_</a></p>
+		
+
+		<p class="tweetsvg text">Can I add my "please write on this" request? I would very much like something like this with an at-a-glance view, public transport status, etc. Would be helpful as a starting point.</p>
+
+		
+
+		
+		
+		
+
+		<a rel="noopener" target="_blank" class="tweetsvg footer" href="https://twitter.com/KaiPMDH/status/1514576057537605642">
+			<time class="tweetsvg" datetime="2022-04-14T12:07:26Z">12:07 PM · Apr 14, 2022</time>
+		</a>
+	</blockquote>
+</foreignObject>
+</svg>

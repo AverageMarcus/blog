@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="499px" height="320px">
+<foreignObject x="0" y="0" width="499px" height="100%" fill="#eade52">
+	<style>
+		.tweetsvg{clear:none;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;}
+		.tweetsvg.text{font-size: 23px;}
+		a.tweetsvg{color: rgb(27, 149, 224); text-decoration:none;}
+		.tweetsvg a { color: #1da1f2; }
+		blockquote.tweetsvg{margin:1px; background-color:#fefefe; border-radius:2%; border-style:solid; border-width:.1em; border-color:#ddd; padding:1em; font-family:sans; width:29rem}
+		blockquote.subtweet{width:26rem; padding:0.8em;}
+		.avatar-tweetsvg{float:left; width:4rem; height:4rem; border-radius:50%;margin-right:.5rem;;margin-bottom:.5rem;border-style: solid; border-width:.1em; border-color:#ddd;}
+		h1.tweetsvg{margin:0;font-size:15px;text-decoration:none;color:#000;}
+		h2.tweetsvg{margin:0;font-size:15px;font-weight:normal;text-decoration:none;color:rgb(101, 119, 134);}
+		p.tweetsvg{font-size:1rem; clear:both;}
+		hr.tweetsvg{color:#ddd;}
+		.media-tweetsvg{border-radius:2%; max-width:100%;border-radius: 2%; border-style: solid; border-width: .1em; border-color: #ddd;}
+		time.tweetsvg{font-size:15px;margin:0;margin-left: 2px;padding-bottom:1rem;color:rgb(101, 119, 134);text-decoration:none;}
+		.tweetsvg.reply{font-size:15px;color:rgb(110, 118, 125);}
+		.tweetsvg.footer{display:block;}
+	</style>
+	<blockquote class="tweetsvg" xmlns="http://www.w3.org/1999/xhtml">
+	<a rel="noopener" target="_blank" class="tweetsvg" href="https://twitter.com/Podman_io/"><img class="avatar-tweetsvg" alt="" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gKgSUNDX1BST0ZJTEUAAQEAAAKQbGNtcwQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwQVBQTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWxjbXMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtkZXNjAAABCAAAADhjcHJ0AAABQAAAAE53dHB0AAABkAAAABRjaGFkAAABpAAAACxyWFlaAAAB0AAAABRiWFlaAAAB5AAAABRnWFlaAAAB&#43;AAAABRyVFJDAAACDAAAACBnVFJDAAACLAAAACBiVFJDAAACTAAAACBjaHJtAAACbAAAACRtbHVjAAAAAAAAAAEAAAAMZW5VUwAAABwAAAAcAHMAUgBHAEIAIABiAHUAaQBsAHQALQBpAG4AAG1sdWMAAAAAAAAAAQAAAAxlblVTAAAAMgAAABwATgBvACAAYwBvAHAAeQByAGkAZwBoAHQALAAgAHUAcwBlACAAZgByAGUAZQBsAHkAAAAAWFlaIAAAAAAAAPbWAAEAAAAA0y1zZjMyAAAAAAABDEoAAAXj///zKgAAB5sAAP2H///7ov///aMAAAPYAADAlFhZWiAAAAAAAABvlAAAOO4AAAOQWFlaIAAAAAAAACSdAAAPgwAAtr5YWVogAAAAAAAAYqUAALeQAAAY3nBhcmEAAAAAAAMAAAACZmYAAPKnAAANWQAAE9AAAApbcGFyYQAAAAAAAwAAAAJmZgAA8qcAAA1ZAAAT0AAACltwYXJhAAAAAAADAAAAAmZmAADypwAADVkAABPQAAAKW2Nocm0AAAAAAAMAAAAAo9cAAFR7AABMzQAAmZoAACZmAAAPXP/bAEMABQMEBAQDBQQEBAUFBQYHDAgHBwcHDwsLCQwRDxISEQ8RERMWHBcTFBoVEREYIRgaHR0fHx8TFyIkIh4kHB4fHv/bAEMBBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/CABEIADAAMAMBIgACEQEDEQH/xAAbAAADAQEAAwAAAAAAAAAAAAAEBQYDAQACB//EABYBAQEBAAAAAAAAAAAAAAAAAAECAP/aAAwDAQACEAMQAAAB&#43;yq9cKobifx1E2U&#43;5uDkxTjhc9MUpcTYqUtoRwTpqblzPvDS4r//xAAfEAEAAwEAAgIDAAAAAAAAAAADAQIEAAURExQSIiT/2gAIAQEAAQUC5roqvJhIWFrxZMydqW0S8xiwZ1ItGxwt2K/2cma9iTPHrd5m9KhcK31WzmVvEpS674980/Huh4&#43;cHXMtFM9jNSdJ/vq20tYyHI19OKblvBlsOb65eNK9I5hJo/HSPf0vw5yKe//EABsRAAMAAwEBAAAAAAAAAAAAAAABIQIRMRNR/9oACAEDAQE/AVKbyOjpTHaZH08/jIj/xAAaEQACAwEBAAAAAAAAAAAAAAAAAQIRITFR/9oACAECAQE/AVmlyOjV6UxKtIzrC/RyXEf/xAA0EAACAAQCBQoFBQAAAAAAAAABAgADERIEMRMhIkFhEEJRUmKBkaGx0QUUMjPwI1NxweH/2gAIAQEABj8CjQyGKhfuOPSAJvxGeGOS7NfCkWJ8Qn39U0B8KQBNdnlPzmzU8gkyfuvl2R0w2iFW5td7GHks630uLnN&#43;JiVLuRrjUGutabxBSfRiCZb8eMfLTTX9tjzh7xiRvNrd1P8ADEq51Ws5Mz2oM2RJlXONbjfEhcSkoqn0aXOMXYykaQZHsiJK7zNWnr6AxLc5OjKfX3g4nEyr0mD6ztAa9QHdDzFQSke/ZbI0y9odcXtTLLmdlyPRFcJskS79haB&#43;H5wiQLrgksv45f3Csi3MjhqdPT5RSu0M0mKLvOGlS5ctVbq6jBEycqm2h/g98AtjE2lsFFqSMoZnDZBVuztH4eT9RK0yO8RsNp06r6m8YyGHTjQv7DziqrVjmx1k8n//xAAjEAEAAQMEAgMBAQAAAAAAAAABEQAhMUFRgZFhoRBxsfDB/9oACAEBAAE/IaV3qwJHQzrvsfdHEaZU&#43;E6lXQmeP9p01sgIPDYCz&#43;/EEyVzc1H/AF2rSXaS7MvlWpVtLG2w8mmlSJMhM3mFkpj9nG0bdi9SCqJ6y&#43;HvNSQ3pHfAO&#43;yhS0OM0TRPyY8piJncocOXQxZnOTxUCSbMXSrXeekMnoc0D6GLyW&#43;it5rkM0AXj&#43;a1Jp0aLlAYoCBElZsJLGwU0LLoCSqizY7abxwRGk9axSiBkYHZqNp3Y06TzTmIzGLkf8pLzU0fgqwOORELAlloyks8ItpDF34GAM2BNxyV79EP1g890ndQV&#43;0HWsT5S/H/2gAMAwEAAgADAAAAEN/14ddKlTv/xAAeEQACAgICAwAAAAAAAAAAAAABEQAxIUFh8KHR4f/aAAgBAwEBPxAFa9e5kS8Q4sXBwPHyXKORAYI04QMAah2QO6uBBAy&#43;1P/EACIRAAIBAwIHAAAAAAAAAAAAAAERACExQdHwUWFxobHB8f/aAAgBAgEBPxAFa&#43;NZUXoQ0sXG9/YZOTxSEJbtHAXWIQAOBHHOvaKEE//EACEQAQACAgICAgMAAAAAAAAAAAERIQAxQVFhgRCxcZGh/9oACAEBAAE/EMieCGoUrCTpUNHIyH9oB&#43;xC9GOh2XzChQ8xjo1PaqHA8bFUWz4nQMgg6H0TAcgdwzQmKaGC8yS/WNMJkqBRIgUAWEARiyjFBAVBeGVOrFM0Gbw70cEQ6nApumrLbc1j0jsFoRMJW5eAeHn3jbrfCColKC3rIqGxp0pwpq4nbhClDLrVLAwMq6jILGaRV8j5yLACoLWM7H0C7wprLIDGquo/YxgpyAqu0FGAslXROcJ7xTrrYIN0t44p28qJILoZEF24014soxwMhKkIJvE8Z/7qkVoMdq5ogsCUJQkoS4A2sEHMlHwUeHNSQkCQwp9gyYAX7CaFkR3BYfeEiSI5Qr0VIPbjONL0sqqXRuIm1&#43;FfS2OicJ5EwtmPBD4T0kXnKFMb/AYP6PTG3bX&#43;8n1o&#43;P/ZICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg" /></a>
+
+		<a rel="noopener" target="_blank" class="tweetsvg" href="https://twitter.com/Podman_io/"><h1 class="tweetsvg">Podman</h1></a>
+
+		<a rel="noopener" target="_blank" class="tweetsvg" href="https://twitter.com/Podman_io/"><h2 class="tweetsvg">@Podman_io</h2></a>
+
+		
+
+		<p class="tweetsvg text">Happy to announce Podman v3.3.0!  Support for non-Linux machines, restarting containers now supported, checkpoint/restore, and more!  Check out the Release Announcement for details!  <a rel="noopener" target="_blank" href="https://podman.io/releases/2021/08/31/podman-release-v3.3.0.html">podman.io/releases/2021/…</a> <a rel="noopener" target="_blank" href="https://twitter.com/hashtag/podman">#podman</a> <a rel="noopener" target="_blank" href="https://twitter.com/hashtag/Opensource">#Opensource</a></p>
+
+		
+
+		
+		
+		
+
+		<a rel="noopener" target="_blank" class="tweetsvg footer" href="https://twitter.com/Podman_io/status/1432800271873323010">
+			<time class="tweetsvg" datetime="2021-08-31T20:19:39Z">8:19 PM · Aug 31, 2021</time>
+		</a>
+	</blockquote>
+</foreignObject>
+</svg>
