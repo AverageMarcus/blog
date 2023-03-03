@@ -239,11 +239,9 @@ Shortly after I posted this blog post, [Ian Coldwater](https://twitter.com/IanCo
 
 <figure class="center" markdown="1">
 
-```
-kubectl run h0nk  --rm -it --image alpine --privileged --overrides '{"spec":{"hostPID": true}}' --command nsenter -- --mount=/proc/1/ns/mnt -- /bin/bash
-```
+[![](/images/tweets/1545065196561080321.svg)](https://twitter.com/IanColdwater/status/1545065196561080321)
 
-<figcaption>Timely Tweet by Ian Colwater (no longer available)</figcaption>
+<figcaption>Timely Tweet by Ian Colwater</figcaption>
 </figure>
 
 ## #8 - Admission Webhooks
