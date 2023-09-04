@@ -12,9 +12,11 @@ router.all(/.*\.gz$/, blackHole);
 router.all(/.*\.bz2$/, blackHole);
 router.all(/.*\.tar$/, blackHole);
 router.all(/.*\.sql$/, blackHole);
+router.all(/.*\.env$/, blackHole);
+router.all(/.*\.ini$/, blackHole);
 router.all('(/*)?/wp-includes/?(*)?', blackHole);
 router.all('/.git/*?', blackHole);
-router.all('/.env', blackHole);
+router.all('/env.test', blackHole);
 router.all('/data/owncloud.log', blackHole);
 router.all('/autodiscover/autodiscover.xml', blackHole)
 router.all('/.well-known/autoconfig(/.*)?', blackHole)
@@ -43,6 +45,8 @@ router.all(/.*\/dbbackup\/.*/, blackHole);
 router.all('/bak/', blackHole);
 router.all(/.*\/mail\/config-.+\.xml/, blackHole);
 router.all('archive.zip', blackHole);
+router.all('/.aws/', blackHole);
+router.all('/.serverless/', blackHole);
 router.post('*', blackHole);
 router.put('*', blackHole);
 router.delete('*', blackHole);
