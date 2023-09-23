@@ -27,7 +27,7 @@ But before all that we all, obviously, had to do the hardware equivalent of ["He
 
 One of the main things I did learn at this early stage was to make sure Linux is correctly set up. By default the port the Arduino is set to (likely `/dev/ttyacm0`) has permissions that prevent users from accessing it. Resolve this by either adding yourself to the correct group or by `chmod`ing it to be more permissive.
 
-To program against ardunio using JavaScript we were advised to use a library call [johnny-five](ttps://github.com/rwaldron/johnny-five). I highly recommend it is you are planning on doing any hardware programming as it does support a range of different boards. There is also a **LOT** of examples so it is pretty easy to get up and running with whatever you want.
+To program against ardunio using JavaScript we were advised to use a library call [johnny-five](https://github.com/rwaldron/johnny-five). I highly recommend it is you are planning on doing any hardware programming as it does support a range of different boards. There is also a **LOT** of examples so it is pretty easy to get up and running with whatever you want.
 
 So with this all set up I started playing with some of the sensors available. A nice easy one to start with was the temperature sensor. It was easy to wire up, all it needed was 5v in, a ground and a data cable. Once wired up, the code is pretty simple.
 

@@ -10,7 +10,7 @@ For the past week or so (since setting up my new blog) I've been working on a ne
 
 Why have I been doing this you ask? Well, very quickly after putting together the theme for this  [Ghost](https://ghost.org/) blog I notice a small annoyance. The helper used to generate excerpts of post for the main page can only truncate based on character or word count. This seemed like a bit of a shortcoming to me, I wanted to be able to truncate on paragraphs so text isn't cut off mid-sentence.
 
-And so [Truncatise](//github.com/AverageMarcus/Truncatise) was born!
+And so [Truncatise](https://github.com/AverageMarcus/Truncatise) was born!
 
 As this is my first forte into NPMs I used it as a learning experience.
 

@@ -10,15 +10,15 @@ Today I finally got around to modifying my [Ghost](https://ghost.org/) blog to m
 
 This didn't go as smoothly as I hoped.
 
-First, I discovered a [bug](//github.com/AverageMarcus/Truncatise/issues/1) in my module. It was incorrectly handling the combination of `<p>` tags with double newlines when truncating to paragraphs.
+First, I discovered a [bug](https://github.com/AverageMarcus/Truncatise/issues/1) in my module. It was incorrectly handling the combination of `<p>` tags with double newlines when truncating to paragraphs.
 
 To resolve this I needed to determine whether or not to use double newline to indicate a paragraph. This was done by ignoring any newlines between paragraph tags and better regular expression matching.
 
 I also noticed an issue with the suffix, e.g. &hellip;, when used with `<p>` tags, it was rending after the and of the tag and thus display on a new line. _Whoops!_ Not what is expected. A quick little replace when not stripping HTML solved this.
 
-So, finally I published version 0.0.2 of [Truncatise](//npmjs.org/package/truncatise) to the NPM repository (as well as [GitHub](//github.com/AverageMarcus/Truncatise)).
+So, finally I published version 0.0.2 of [Truncatise](https://npmjs.org/package/truncatise) to the NPM repository (as well as [GitHub](https://github.com/AverageMarcus/Truncatise)).
 
-As I was now happy that the issues were resolved, I made progress on modifying the Ghost helper source code to use Truncatise instead of [downsize](//npmjs.org/package/downsize).
+As I was now happy that the issues were resolved, I made progress on modifying the Ghost helper source code to use Truncatise instead of [downsize](https://npmjs.org/package/downsize).
 
 #### Original:
 <pre><code class="javascript">
@@ -73,7 +73,7 @@ coreHelpers.excerpt = function (options) {
 };
 </code></pre>
 
-My changes have been pushed to my [fork of Ghost](//github.com/AverageMarcus/Ghost) if anyone wishes to make use of it.
+My changes have been pushed to my [fork of Ghost](https://github.com/AverageMarcus/Ghost) if anyone wishes to make use of it.
 
 ## On Updating Ghost
 
