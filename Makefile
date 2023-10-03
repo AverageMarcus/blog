@@ -39,7 +39,7 @@ docker-publish:
 
 .PHONY: run # Run the application
 run: docker-build
-	@docker run -p 8000:8000 $(IMAGE)
+	@docker run --rm -it -p 8000:8000 $(IMAGE)
 
 .PHONY: ci # Perform CI specific tasks to perform on a pull request
 ci:
