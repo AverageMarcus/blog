@@ -23,9 +23,10 @@ I found myself staring at this for a while, followed by searching the [Home Assi
 
 And then it dawned on me! As all JSON is valid YAML, and JSON keys can be pretty much any string it makes sense that YAML supports it.
 
-The above example converted to JSON using [json2yaml](https://www.json2yaml.com/convert-yaml-to-json) looks like this:
+The above example converted to JSON using [yq](https://mikefarah.gitbook.io/yq) looks like this:
 
 ```json
+// yq config.yaml -o json
 {
   "automation": "../automations.yaml",
   "automation split": "../automations"
@@ -62,7 +63,7 @@ JSON:
 }
 ```
 
-Depending on the library used, varying results can be generated. For example, [yamlonline](https://yamlonline.com/) returns the following for the same input:
+Depending on the library used, varying results can be generated. For example, yamlonline (update: website no longer online) returns the following for the same input:
 
 ```json
 {
