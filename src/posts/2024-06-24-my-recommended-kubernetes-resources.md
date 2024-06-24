@@ -65,7 +65,7 @@ The following might not be quite beginner friendly and should be picked up after
 * [You Choose](https://www.youtube.com/playlist?list=PLyicRj904Z9-FzCPvGpVHgRQVYJpVmx3Z) - a series of videos going through lots of the CNCF Landscape tools and pitting them against each other.
 * [Enlightning](https://tanzu.vmware.com/content/enlightning) - Whitney does a great job of going through lots of CNCF technologies with the help of her lightboard.
 
-## 📽️ Confernces
+## 📽️ Conferences
 
 * KubeCon + CloudnativeCon is great for meeting people in the community if you have a chance to attend. There are events available in [North America](https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/), [Europe](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe-2025/), [China](https://events.linuxfoundation.org/kubecon-cloudnativecon-open-source-summit-ai-dev-china/) and [India](https://events.linuxfoundation.org/kubecon-cloudnativecon-india/)
 * I'm a huge fan of [Kubernetes Community Days](https://www.cncf.io/kcds/)! These are smaller, local Kubernetes conferences hosted all over the world.
