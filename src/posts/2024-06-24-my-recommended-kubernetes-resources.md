@@ -10,6 +10,13 @@ summary: |
 
 ---
 
+<details>
+<summary>Changelog</summary>
+
+2024-06-24: Added links to video channels DevOpsToolkit, You Choose and Enlightning. Added link to KubeHuddle conference.
+
+</details>
+
 Recently, a friend of mine asked me what resources I'd recommend to start learning about Kubernetes. He was a victim of the layoffs that seem to be so prevalent right now and has experience as a classic SysOps / SysAdmin engineer but no expose to Kubernetes yet and wanted to learn to help improve his job-hunting prospects.
 
 I wasn't sure what to recommend at first, it's been a long time since I was learning Kubernetes for the first time and wasn't sure what was still useful and relevant but what follows is what I ended up sharing with him, and now with all of you.
@@ -48,18 +55,22 @@ The following might not be quite beginner friendly and should be picked up after
 * [Pluralsight](https://www.pluralsight.com) - if you have a subscription there's several good classes on here related to Kubernetes. I can recommend the ones by [Nigel Poulton](https://nigelpoulton.com/).
 * I've previously written a blog post, [Managing Kubernetes without losing your cool](/2022-07-04-managing-kubernetes-without-losing-your-cool/), that has some tools and tips I recommend for everyone working with Kubernetes.
 
-## 📺 YouTube
+## 📺 Videos
 
 * [Rawkode Academy](https://www.youtube.com/@RawkodeAcademy) - David covers more than just Kubernetes and has a lot of useful videos about all things cloud native (and more)!
 * [Kunal Kushwaha](https://www.youtube.com/@KunalKushwaha) - Kunal is a powerhouse when it comes to making super helpful videos. There a lot of stuff here, not just Kubernetes.
 * [Anaïs Urlichs](https://www.youtube.com/@AnaisUrlichs) - Lots of great, beginner friendly video about Kubernetes and related tools. Specifically the [Full Kubernetes tutorial on Docker, KinD, kubectl, Helm, Prometheus, Grafana](https://www.youtube.com/watch?v=SeQevrW176A) which might be helpful.
 * [CNCF](https://www.youtube.com/@cncf/playlists) - Collections of conference talks from previous KubeCon, Kubernetes Community Days and other conferences.
+* [DevOpsToolkit](https://www.youtube.com/@DevOpsToolkit) - Viktor is great at introducing complex topics in an approachable way
+* [You Choose](https://www.youtube.com/playlist?list=PLyicRj904Z9-FzCPvGpVHgRQVYJpVmx3Z) - a series of videos going through lots of the CNCF Landscape tools and pitting them against each other.
+* [Enlightning](https://tanzu.vmware.com/content/enlightning) - Whitney does a great job of going through lots of CNCF technologies with the help of her lightboard.
 
 ## 📽️ Confernces
 
 * KubeCon + CloudnativeCon is great for meeting people in the community if you have a chance to attend. There are events available in [North America](https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/), [Europe](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe-2025/), [China](https://events.linuxfoundation.org/kubecon-cloudnativecon-open-source-summit-ai-dev-china/) and [India](https://events.linuxfoundation.org/kubecon-cloudnativecon-india/)
 * I'm a huge fan of [Kubernetes Community Days](https://www.cncf.io/kcds/)! These are smaller, local Kubernetes conferences hosted all over the world.
 * [Cloud Native Rejekts](https://cloud-native.rejekts.io/) is recent favourite of mine and is set up as the "b-side" conference to KubeCon. This great, community focussed conference runs for 2 days before the main KubeCon conference.
+* [KubeHuddle](https://kubehuddle.com/) - a wonderful community focussed conference
 
 ## 📰 Newsletters
 
