@@ -8,7 +8,7 @@ summary: "I was recently asked by a collegue at work if there are any resource I
 
 I was recently asked by a collegue at work if there are any resource I recommend with getting familiar with Go. It turned into quite a list so I thought i'd share it with everyone (and hopefully keep updating it) in the hopes that others will find it useful.
 
-## 📚 Books 
+## 📚 Books
 
 My favourite book for learning Go is - ✨ **[The Go Programming Language](https://www.gopl.io/)** ✨ by Alan A. A. Donovan & Brian W. Kernighan.
 This was the book I used to pick Go up in the first place. If you already have previous programming experience it's quite a nice book to first read about the specifics of the go language then flip through as needed to the various topics (such as Goroutines) that you might not know about.
@@ -53,5 +53,6 @@ In terms of useful resources, tools and libraries I use a lot:
 * [https://github.com/quii/learn-go-with-tests](https://github.com/quii/learn-go-with-tests) - Learn Go with TDD.
 * [https://gobyexample.com/](https://gobyexample.com/) - Common program examples.
 * [https://changelog.com/gotime](https://changelog.com/gotime) - Good podcast on the Go community.
+* My friend [Michael Cade](https://twitter.com/MichaelCade1) has shared his [Journey To Learning Golang](https://www.upthestack.io/2024/06/24/My-Journey-to-Learning-Golang.html) that has some great tips included!
 
 If anyone has any other resources they recommend I'd love to hear about them and update this list. Please feel free to reach out to me on Twitter at [@Marcus_Noble_](https://twitter.com/Marcus_Noble_).
