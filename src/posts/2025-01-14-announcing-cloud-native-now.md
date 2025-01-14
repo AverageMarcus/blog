@@ -52,6 +52,8 @@ It hasn't been all smooth sailing so far. I had some trial-and-error with OpenTo
 
 One major issue I have experienced a few times other the past week or so is [database connectivity problems](https://bsky.app/profile/cloudnative.now/post/3lfcv22dm722t). It's still unclear exactly what happened and I've been working with Civo support to try and figure this out but it looks like somehow the database was being overwhelmed. I've now got monitoring in place to try and catch this happening again but as of now it hasn't yet occurred again.
 
+It looks like I had also misconfigured the email sending at some point between launching and publishing this blog post. 😅 This is now fixed and sign ups should be working again now.
+
 ### The Future
 
 There's several things I already have planned as well as some vague ideas for things I might do, depending on how popular this ends up becoming.
