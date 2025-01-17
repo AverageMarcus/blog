@@ -8,6 +8,13 @@ summary: |
 
 ---
 
+<details>
+<summary>Changelog</summary>
+
+2025-01-17: Added details about Cloudflare
+
+</details>
+
 Last week I [announced](https://bsky.app/profile/did:plc:mtepw4cvbmdvu7zygmm5xbop/post/3lf5iccpxj22u) the launch of a new project I've been working on - ✨ [Cloud Native Now](https://cloudnative.now/) ✨ - a new monthly newsletter that will provide a roundup of all the happenings in the cloud native world. This newsletter is my attempt at keeping myself, and others, up-to-date on all the latest news, tools and events happening in the cloud native world. A new issue will be published each month on the last Friday of that month and contain a roundup of articles, announcements, tools, tutorials, events and CFPs relating to cloud native technologies and the community.
 
 <figure class="center" markdown="1">
@@ -58,10 +65,22 @@ It looks like I had also misconfigured the email sending at some point between l
 
 There's several things I already have planned as well as some vague ideas for things I might do, depending on how popular this ends up becoming.
 
-Besides improving the monitoring as mentioned above I plan to also implement [Cloudflare](https://www.cloudflare.com/) as a cache in front of the website to ensure the database doesn't get overloaded too much.
+Besides improving the monitoring as mentioned above ~I plan to also implement [Cloudflare](https://www.cloudflare.com/) as a cache in front of the website to ensure the database doesn't get overloaded too much~ (see below).
 
 Eventually, after a couple issues or so to get a feel for what people want, I'm hoping to also set up an accompanying Podcast where I talk with a different guest each month about all the happenings in that months newsletter. I want to use this as a way to talk with all the ✨ wonderful ✨ humans in our cloud native community and get a wide and diverse array of thoughts and opinions to complement (and maybe contrast) with my own. I'm really hoping to not have this just become "another white guy with a podcast" but something that can really show the amazing individuals and efforts without our community.
 
 If things go well and this ends up taking off, I have some loose plans on how to cover the costs as things grow. I guarantee that all newsletter editions will always be freely available without an account but I'm hoping to later introduce paid membership that comes with some extra goodies. Not sure what _exactly_ yet but I'm thinking along the lines of being able to add comments to the posts, the warm good feeling of helping keeping things running and _maybe_ some physical rewards (postcards, stickers, etc.) if I can figure out how to send to the EU. 😅 There's also a possibility to sponsored posts and job listings in the future but I need to come up with some requirements that these would need to meet first to ensure quality.
 
 And who knows... maybe I'll go wild and look at putting together a [conference](https://bsky.app/profile/salisburyheavyindustries.com/post/3lf5j56yo5k2w) that I've always wanted too!
+
+### Updates
+
+I have now switched to using [Cloudflare](https://www.cloudflare.com/) for the nameserver and proxying requests through their edge servers with a 2 hour cache added to most of the site. This should allow the site to remain up, and read-only, during any periods where the database (or other) is having trouble. I did have a small issue when setting this up that resulted in infinite redirects - turns out I needed to switch from "Flexible" to "Full" in the Cloudflare SSL configuration, otherwise nginx kept trying to perform a redirect to the SSL port as Cloudflare was sending traffic to port 80.
+
+For those interested, this is the specific expression I'm using for the caching in Cloudflare with an Edge TTL of 2 hours:
+
+```
+(http.request.full_uri wildcard "https://cloudnative.now/*" and not starts_with(http.request.uri.path, "/ghost/"))
+or
+(http.request.full_uri wildcard "https://www.cloudnative.now/*" and not starts_with(http.request.uri.path, "/ghost/"))
+```
