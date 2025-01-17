@@ -65,7 +65,7 @@ It looks like I had also misconfigured the email sending at some point between l
 
 There's several things I already have planned as well as some vague ideas for things I might do, depending on how popular this ends up becoming.
 
-Besides improving the monitoring as mentioned above ~I plan to also implement [Cloudflare](https://www.cloudflare.com/) as a cache in front of the website to ensure the database doesn't get overloaded too much~ (see below).
+Besides improving the monitoring as mentioned above ~~I plan to also implement [Cloudflare](https://www.cloudflare.com/) as a cache in front of the website to ensure the database doesn't get overloaded too much~~ (see below).
 
 Eventually, after a couple issues or so to get a feel for what people want, I'm hoping to also set up an accompanying Podcast where I talk with a different guest each month about all the happenings in that months newsletter. I want to use this as a way to talk with all the ✨ wonderful ✨ humans in our cloud native community and get a wide and diverse array of thoughts and opinions to complement (and maybe contrast) with my own. I'm really hoping to not have this just become "another white guy with a podcast" but something that can really show the amazing individuals and efforts without our community.
 
