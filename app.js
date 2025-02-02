@@ -91,6 +91,9 @@ Handlebars.registerHelper("buildTitle", function(title, siteTitle){
 Handlebars.registerHelper("jointags", function(tags){
 	return (tags || '').split(' ').join(',');
 });
+Handlebars.registerHelper("encodetitle", function(str){
+	return (str || '').replaceAll(' ', '%2B');
+});
 
 Metalsmith(__dirname)
   .use(define({
