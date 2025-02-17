@@ -1,4 +1,4 @@
-var CACHE = 'v3';
+var CACHE = 'v4';
 
 self.addEventListener('install', function() {
   return self.skipWaiting();
