@@ -8,6 +8,13 @@ summary: |
 
 ---
 
+<details>
+<summary>Changelog</summary>
+
+2025-05-01: Added suggestion from Oriel about going to the toilet before speaking.
+
+</details>
+
 I've been [giving talks](https://youtube.com/playlist?list=PLT41C0Ggz5wa66-AU5xapbOuzkUKUPLzi) at meetups and conferences for a few years now. I started off after the encouragement of my friends giving their own talk and looking so cool doing it! It's taken a while but I think I'm at a stage now where I'm not only good at it (at least I hope so 😅) but I feel confident and comfortable while doing it. I want everyone to have that same confidence and I want to hear ALL OF YOU giving talks too! You have stories to tell, lessons to share and experience to pass on. So here is my learnings on how I approach giving a talk in front of a crowd of techies, mainly focussed on technical talks but most of this should apply to most public speaking.
 
 Before we get into it, I just want to set some expectations.
@@ -83,6 +90,8 @@ Ensure your laptop is **clear of clutter** - arrange the windows you'll need dur
 Just before you step up on to the stage I recommend **removing your conference badge** so it doesn't distract or get caught on anything and **emptying your pockets** to avoid things jingling or distracting you mid-talk.
 
 Be sure to **stay hydrated** while giving your talk. If the organisers don't provide you with a bottle of water be sure to get your own drink to take up with you. Often the stage will be lit by very bright and very hot lights and you will feel your throat going dry in no time!
+
+I can't believe I forgot this, so thank you to [Oriel Jutty](https://infosec.exchange/@barubary/114431272916715726) for reminding me about this one - make sure you **go to the toilet before your talk**! Especially withe the "stay hydrated" tip above you really don't want to get a few minutes into your talk and then be distracted by your bladder. I usually end up going to the toilet several times in the hour running up to my talk! 😅
 
 ### Giving the talk
 
