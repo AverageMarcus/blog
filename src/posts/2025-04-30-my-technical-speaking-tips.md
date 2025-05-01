@@ -11,6 +11,8 @@ summary: |
 <details>
 <summary>Changelog</summary>
 
+2025-05-01: Added advice from Márk Sági-Kazár
+
 2025-05-01: Added suggestion from Oriel about going to the toilet before speaking.
 
 </details>
@@ -163,3 +165,31 @@ Finally I'd like to leave you with a collection of resources I have learnt from 
 ### Videos
 
 * [The art of slide design](https://www.youtube.com/watch?v=AoeeLl5FC-M)
+
+## Advice from Friends
+
+After posting this I started asking for other people's tips and advice. I will update below as I get more to share.
+
+### [Márk Sági-Kazár](https://bsky.app/profile/sagikazarmark.com)
+
+> I see folks sometimes struggling with coming up with the content. They have the title and the topic, they have the thank you slide, but they have trouble with the slides in between. I usually recommend writing a draft first instead of thinking in terms of slides. Number one rule of writing is that you don't write and edit at the same time.
+>
+> Personally, I use pen and paper, because it slows my thoughts and I don't bounce between ideas.
+
+I can totally see how this would be useful for many folks. Myself I actually prefer the opposite, I throw together a bunch of slides with my various points on them and keep rearranging and refining them until they fit the story I want to tell. The key thing is, try various approaches and see what works for you. It might also not be the same approach for each talk you build - creativity can be fickle sometimes.
+
+> Another common mistake is time: less experienced speakers can't estimate how long they are going to talk with a given set of slides. One reason for that is they don't rehearse (I'm not saying it's a must, but it definitely helps). Another reason (even when they rehearse) is they lose focus and they stretch out some of the slides. Rehearse and practice focusing on the key ideas on each slide.
+
+I should have included this in my post initially. Rehearsing a talk is a very personal thing I've found and everyone does it differently but it is very important to have a good idea of how long your talk is going to last. My top tip for this is to open a Google Meet (or your video conference of choice), start the recording and then present the entire talk as though you were giving it in front of a crowd. You don't need anyone else in the call with you, just let the recoding go until your done and then once complete you can look at the timestamp and see how long your talk takes. You don't even have to watch yourself back if you don't want to. 😅
+
+> But my number one tip (or rather the one I keep repeating the most): don't look at the flippin' screen behind you. :smile: If you are not wearing a mic (eg. at a small meetup) noone is going to hear you. If you are wearing a mic, it just looks bad, especially if there is a recording.
+
+😅 Yeah - I'm at fault for this quite often to be honest. I like to point at things and be quite physically expressive.
+
+> Zoom in on your terminal windows.
+
+Bigger is always better here. Assume the person sat at the back of the room also has the worst possible eyesight.
+
+> Disable true tone (sometimes it makes screen recording yellowish)
+
+Solid practical tip if you use true tone on your machine. Not something I've ever thought of before.
