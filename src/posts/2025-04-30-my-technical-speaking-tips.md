@@ -18,7 +18,7 @@ I'm also not going to cover (much) about how to come up with a talk idea or how 
 
 I'm also not a "professional" speaker. This isn't my full-time job, even if I sometimes do it on behalf of my company. But that is also why I think all of you can also be giving talks and sharing your knowledge with the wonderful community.
 
-So, let's dive into is shall we?
+So, let's dive into it shall we?
 
 ## Coming up with the talk
 
