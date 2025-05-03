@@ -11,6 +11,8 @@ summary: |
 <details>
 <summary>Changelog</summary>
 
+2025-05-03: Added some advice from Lobste.rs comments
+
 2025-05-03: Added advice from Aaron Patterson about repeating questions back
 
 2025-05-01: Added advice from Márk Sági-Kazár
@@ -66,6 +68,14 @@ I recommend **including your social media handle** on each of your slides if you
 I also recommend having a final slide with links to get a copy of your slides if possible and where people can get in touch with you to ask questions after the talk.
 
 Always remember that **your slides are only there to reenforce what you're saying** and are not the total content. They should enhance and summarise your points as you go so keep them brief and snappy.
+
+On a similar note to avoiding paragraphs, [stip](https://lobste.rs/~stip) points out on [lobste.rs](https://lobste.rs/s/ioyjfm/my_tips_on_giving_technical_talks#c_jixtpt) that:
+
+> you should limit code on slides as much as possible, ideally only to a few lines. In my opinion, most points can be made with just a function signature or a several-line toy function. Showing the audience more than that risks losing them while they try to figure out what is going on.
+
+> If you really need to put a long function on a slide, try and highlight the relevant section as you’re talking about it so the audience can follow along better.
+
+This is great advice! Techies in the audience will automatically try and read all the code and figure out what it does rather than listen to you talking. For this I like to use contrast of text colour to highlight the bits I want people to focus on and "fade out" the rest of the code that is just boiler plate or will be relevant later. I will often have the same code on multiple slides but each slide highlights a different bit of the code so I can walk the audience through it rather than dumping it on them all in one go.
 
 ### Technical
 
@@ -199,3 +209,11 @@ Bigger is always better here. Assume the person sat at the back of the room also
 > Disable true tone (sometimes it makes screen recording yellowish)
 
 Solid practical tip if you use true tone on your machine. Not something I've ever thought of before.
+
+### [tomhukins](https://lobste.rs/~tomhukins) on [lobste.rs](https://lobste.rs/s/ioyjfm/my_tips_on_giving_technical_talks#c_dklog7)
+
+> In one of my talks, I completely forgot what I wanted to say. I noticed myself panicking, so took a deep breath, paused and looked at the audience. When I watched the video of my talk, it looked like a natural pause in the presentation. Although saying “um” as a pause is okay, silence works better.
+
+> I’m a native English speaker and I often present to people who aren’t. I try to speak slowly and clearly, and to use simple or common words whenever possible. I want to communicate an idea, not to sound clever.
+
+> Sharing links and contact details on a final slide makes sense: include a QR code for the audience to photograph.
