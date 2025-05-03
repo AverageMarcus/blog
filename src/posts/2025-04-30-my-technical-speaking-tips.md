@@ -11,6 +11,8 @@ summary: |
 <details>
 <summary>Changelog</summary>
 
+2025-05-03: Added advice from Aaron Patterson about repeating questions back
+
 2025-05-01: Added advice from Márk Sági-Kazár
 
 2025-05-01: Added suggestion from Oriel about going to the toilet before speaking.
@@ -119,6 +121,10 @@ As said above, end your talk with a "thank you" and let the organiser initiate q
 Be aware that you don't need to be all knowing - if you don't have an answer for a question it is **totally acceptable to say "I don't know"**.
 
 If you think an answer might require considerable time or be confusing to explain from the stage then suggest that the person asking the question meets you after the session to discuss it further.
+
+One thing [Aaron Patterson pointed out on Bluesky](https://bsky.app/profile/tenderlove.dev/post/3lo7btf5gfs2u) that I hadn't included here is:
+
+> during Q&A try to repeat the questions. Audience members don't always have a mic so repeating will help everyone, it makes sure you understand the Q, and buys you time to think of an answer
 
 ## After the talk
 
