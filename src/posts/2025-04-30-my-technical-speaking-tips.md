@@ -11,6 +11,8 @@ summary: |
 <details>
 <summary>Changelog</summary>
 
+2025-05-10: Added advice from Josh Clark
+
 2025-05-03: Added some advice from Lobste.rs comments
 
 2025-05-03: Added advice from Aaron Patterson about repeating questions back
@@ -217,3 +219,13 @@ Solid practical tip if you use true tone on your machine. Not something I've eve
 > I’m a native English speaker and I often present to people who aren’t. I try to speak slowly and clearly, and to use simple or common words whenever possible. I want to communicate an idea, not to sound clever.
 
 > Sharing links and contact details on a final slide makes sense: include a QR code for the audience to photograph.
+
+### [Josh Clark](https://www.linkedin.com/in/je-clark/) on [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7323429734250418176?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7323429734250418176%2C7326995404191870977%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287326995404191870977%2Curn%3Ali%3Aactivity%3A7323429734250418176%29)
+
+> In demos, make sure the relevant info (e.g. terminal commands) is in the middle third of the screen. The top of the projector screen can often be washed out or reflecting the overhead lights in the room, and the bottom is often cut off by people's heads.
+
+This is actually really good advice for all your slides. Having padding around the edges of your presentation theme will help you deal with this issue and any wonky projector issues that you might face.
+
+> And when I'm juggling multiple windows (slides, terminal, wireshark, etc) in a presentation, I like to set them up in individual virtual desktops on my mac. In rehearsals, I make sure the order of those desktops is conducive to swiping between them.
+
+This is a great practical tip for how to handle the "cleaning your desktop" advice I have above! Much slicker than moving around windows or finding the appropriate tab or whatever.
