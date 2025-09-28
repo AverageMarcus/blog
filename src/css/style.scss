@@ -42,6 +42,17 @@
     "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+
+::-moz-selection {
+  background-color: var(--primary);
+  color: var(--primary-inverse);
+}
+
+::selection {
+  background-color: var(--primary);
+  color: var(--primary-inverse);
+}
+
 h2 {
   margin-bottom: 10px;
 }
