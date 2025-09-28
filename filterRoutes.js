@@ -33,6 +33,7 @@ router.all(/.*\.\.\/.*/, blackHole);
 router.all('/__MACOSX/*?', blackHole);
 // Block access to Workdpress files
 router.all('(/*)?/wp-admin/', blackHole);
+router.all('(/*)?/wp-admin/.*', blackHole);
 router.all('(/*)?/wp-includes/?(*)?', blackHole);
 router.all('(/*)?/wp-content/?(*)?', blackHole);
 router.all('/wordpress/', blackHole);
@@ -59,6 +60,7 @@ router.all('/bak/', blackHole);
 router.all('archive.zip', blackHole);
 // Block access to possible credentials
 router.all('/env.test', blackHole);
+router.all('(/.*)?/env$', blackHole);
 router.all('/admin(/.*)?', blackHole)
 router.all('/credentials(/*)?', blackHole);
 router.all(/.*credentials\.json$/, blackHole);
