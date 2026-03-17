@@ -2,7 +2,7 @@
 layout: post.html
 date:  2025-09-28
 title: Investigating and fixing "StopPodSandbox from runtime service failed" Kubelet errors
-tags: Kubernetes, Kubelet, CNI
+tags: Kubernetes Kubelet CNI
 summary: |
   For months now (maybe years, who knows 🤷) I've had the following error sprinkled throughout my Kubelet logs across multiple of my worker nodes:
 

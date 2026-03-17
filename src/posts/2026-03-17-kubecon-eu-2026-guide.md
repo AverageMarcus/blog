@@ -2,7 +2,7 @@
 layout: post.html
 date:  2026-03-17
 title: KubeCon EU Amsterdam 2026 - My Guide to Managing the Chaos
-tags: Kubernetes, KubeCon, Conference
+tags: Kubernetes KubeCon Conference
 summary: |
   With KubeCon just 1 week away I thought it would be good to share some of my tips and suggestions on how to make the most of the week without burning out. I've been to _a few_ KubeCon's now, both EU and US, and I’ve learned a lot about how to make the most of the week and what not to do in order to protect your health!
 
