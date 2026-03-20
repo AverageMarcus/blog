@@ -8,6 +8,17 @@ summary: |
 
 ---
 
+<details>
+<summary>Changelog</summary>
+
+2026-03-20:
+
+* Added note about Maintainer Summit sold out
+* Added Kubernetes Contribution 101
+* Added link to Vlad Mocanu post
+
+</details>
+
 With KubeCon just 1 week away I thought it would be good to share some of my tips and suggestions on how to make the most of the week without burning out. I've been to _a few_ KubeCon's now, both EU and US, and I’ve learned a lot about how to make the most of the week and what not to do in order to protect your health!
 
 > Note: While the official name is KubeCon+CloudNativeCon, that's quite a mouthful so I'll just be referring to it as KubeCon (Sorry, CNCF)
@@ -40,7 +51,7 @@ KubeCon has evolved over the years and has become much more than _just a confere
 
 * **[KubeCon+CloudNativeCon](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/)** - This is the main conference. The number of days varies a little depending on the location (e.g. Asia/India is less days) but it is usually 3 days with keynotes each morning and sessions / workshops throughout the rest of the days.
 * **[Co-Located Events](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/co-located-events/cncf-hosted-co-located-events-overview/)** - This is a collection of several topic-specific conferences hosted by CNCF the day before KubeCon begins. Access to these requires attendees to have an "All-Access Pass" ticket type which then means you're free to come and go between any of the co-located events. For KubeCon Amsterdam 2026 there are [16 co-located conferences](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/co-located-events/cncf-hosted-co-located-events-overview/)
-* **[Maintainer Summit](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/features-add-ons/maintainer-summit/)** - Previously known as Contributor Summit, this is a smaller conference that brings together the builders of Kubernetes and other CNCF projects to discuss the challenges and future of the various projects. This is a great conference to get into some of the nitty-gritty details of cloud native tech but there are some [eligibility requirements](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/features-add-ons/maintainer-summit/#eligibility) you must meet to attend.
+* **[Maintainer Summit](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/features-add-ons/maintainer-summit/)** - Previously known as Contributor Summit, this is a smaller conference that brings together the builders of Kubernetes and other CNCF projects to discuss the challenges and future of the various projects. This is a great conference to get into some of the nitty-gritty details of cloud native tech but there are some [eligibility requirements](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/features-add-ons/maintainer-summit/#eligibility) you must meet to attend. (Note: This is sold out and currently waitlist only)
 
 ### The Unofficial Ones
 
@@ -85,6 +96,8 @@ KubeCon has evolved over the years and has become much more than _just a confere
 
 > My co-speaker Mark has done a fantastic post about [How to KubeCon](https://sagikazarmark.com/blog/posts/how-to-kubecon/) and goes into more detail about a lot of these same points. Highly recommended read!
 
+> In response to this post, [Vlad Mocanu](https://www.linkedin.com/in/vtmocanu/) has written up their own [KubeCon Survival Guide](https://hai.wxs.ro/guides/kubecon-guide/) with lots of amazing extra tips. Well worth a read!
+
 ## KubeCon Points of Interest
 
 KubeCon itself is also more than just the talks...
@@ -126,6 +139,10 @@ KubeCon itself is also more than just the talks...
 * **ContribFest**
 
   Throughout the week there are several CNCF projects hosting [ContribFest session](https://kccnceu2026.sched.com/overview/type/%F0%9F%9A%A8+Contribfest?iframe=no) where anyone is invited to show up and help contributing to the project in a structured way. This is a great way to get some experience with a new technology or to contribute back to a project you rely on.
+
+* **Kubernetes Contribution 101**
+
+  If you're looking to start contributing to open source but not sure where to start then there is a [session Tuesday afternoon](https://kccnceu2026.sched.com/event/2ITlD/kubernetes-contribution-101) dedicated to getting folks ready for their first contribution.
 
 Take a look at the [venue map](https://events.linuxfoundation.org/wp-content/uploads/2026/03/KCEU26-VenueMap.pdf) to find out where the various keynotes, sessions and activities can be found.
 
