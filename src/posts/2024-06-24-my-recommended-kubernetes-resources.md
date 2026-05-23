@@ -13,6 +13,8 @@ summary: |
 <details>
 <summary>Changelog</summary>
 
+2026-05-23: Added iximiuz Labs, Cloud Native Days and CloudNative.Now
+
 2024-06-24: Added links to video channels DevOpsToolkit, You Choose and Enlightning. Added link to KubeHuddle conference.
 
 </details>
@@ -49,6 +51,8 @@ The following might not be quite beginner friendly and should be picked up after
 ## 🔗 Websites / Blog Posts / Tutorials
 
 * [Official Kubernetes tutorials](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
+* [iximiuz Labs](https://labs.iximiuz.com) - Hands-on tutorials, courses and challenges with an interactive Kubernetes environment for you to use all in the browser.
+  * If you want a real deep dive my buddy [Márk](https://bsky.app/profile/sagikazarmark.com) has built as course: [Kubernetes the (Very) Hard Way](https://labs.iximiuz.com/courses/kubernetes-the-very-hard-way-0cbfd997)
 * [Civo Learn](https://www.civo.com/learn) - Tutorials
 * [Civo Academy](https://www.civo.com/academy) - A series of workshops to help beginners learn Kubernetes
 * [Kube Academy](https://kube.academy/) from VMWare has a lot of tutorials to follow
@@ -69,12 +73,14 @@ The following might not be quite beginner friendly and should be picked up after
 
 * KubeCon + CloudnativeCon is great for meeting people in the community if you have a chance to attend. There are events available in [North America](https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/), [Europe](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe-2025/), [China](https://events.linuxfoundation.org/kubecon-cloudnativecon-open-source-summit-ai-dev-china/) and [India](https://events.linuxfoundation.org/kubecon-cloudnativecon-india/)
 * I'm a huge fan of [Kubernetes Community Days](https://www.cncf.io/kcds/)! These are smaller, local Kubernetes conferences hosted all over the world.
+* There's also various [Cloud Native Days](https://cloudnativedays.org) around the world that are similar to KCDs and very community focussed.
 * [Cloud Native Rejekts](https://cloud-native.rejekts.io/) is recent favourite of mine and is set up as the "b-side" conference to KubeCon. This great, community focussed conference runs for 2 days before the main KubeCon conference.
 * [KubeHuddle](https://kubehuddle.com/) - a wonderful community focussed conference
 
 ## 📰 Newsletters
 
 * [KubeWeekly](https://www.cncf.io/kubeweekly/) from CNCF
+* [CloudNative.Now](https://cloudnative.now) - This is my monthly newsletter where I do a roundup of everything going on in the cloud native space in the past month. Lots of Kubernetes resources show up in here.
 
 ---
 
