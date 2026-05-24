@@ -13,6 +13,8 @@ summary: |
 <details>
 <summary>Changelog</summary>
 
+2026-05-24: Added blog posts from Adriana Villela
+
 2026-05-23: Added iximiuz Labs, Cloud Native Days and CloudNative.Now
 
 2024-06-24: Added links to video channels DevOpsToolkit, You Choose and Enlightning. Added link to KubeHuddle conference.
@@ -58,6 +60,9 @@ The following might not be quite beginner friendly and should be picked up after
 * [Kube Academy](https://kube.academy/) from VMWare has a lot of tutorials to follow
 * [Pluralsight](https://www.pluralsight.com) - if you have a subscription there's several good classes on here related to Kubernetes. I can recommend the ones by [Nigel Poulton](https://nigelpoulton.com/).
 * I've previously written a blog post, [Managing Kubernetes without losing your cool](/2022-07-04-managing-kubernetes-without-losing-your-cool/), that has some tools and tips I recommend for everyone working with Kubernetes.
+* [Adriana Villela](https://www.linkedin.com/in/adrianavillela/) wrote a couple fantastic, detailed blog posts when initially learning Kubernetes:
+  * [Just-in-Time Kubernetes: A Beginner’s Guide to Understanding Kubernetes Core Concepts](https://medium.com/dzerolabs/just-in-time-kubernetes-a-beginners-guide-to-kubernetes-core-concepts-19ee7acbafa1)
+  * [Just-in-Time Kubernetes: Namespaces, Labels, Annotations, and Basic Application Deployment](https://medium.com/dzerolabs/just-in-time-kubernetes-namespaces-labels-annotations-and-basic-application-deployment-f62568a9eaaf)
 
 ## 📺 Videos
 
