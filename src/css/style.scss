@@ -184,7 +184,12 @@ hr {
     font-size: 2rem;
     filter: grayscale(70%);
     transform: translateX(-50%);
+
+    @media (max-width:768px){
+      top: -1.2em;
+    }
   }
+
 
   &::before {
     content: ' ';
