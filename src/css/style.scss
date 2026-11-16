@@ -166,20 +166,20 @@ code, kbd, pre {
 }
 
 hr {
-  margin: 1em auto;
+  margin: 2em auto;
   padding: 0;
   border: 0;
   border-top: solid 3px #57688d;
   text-align: center;
   width: 60%;
   position: relative;
-
+  overflow: visible;
 
   &::after {
     content: "✨";
     display: inline-block;
-    position: absolute;
-    top: -0.7em;
+    position: relative;
+    top: -1em;
     padding: 0 5px;
     font-size: 2rem;
     filter: grayscale(70%);
@@ -190,13 +190,13 @@ hr {
     content: ' ';
     background-color: var(--background-color);
     display: inline-block;
-    position: absolute;
-    top: -1.2em;
+    position: relative;
+    top: -1.5em;
     padding: 0;
     width: 50px;
     height: 50px;
     border-radius: 23px;
-    transform: translateX(-50%);
+    transform: translateX(50%);
 
     article & {
       background-color: var(--card-background-color) !important;
@@ -204,7 +204,7 @@ hr {
   }
 }
 
-section:last-of-type hr {
+.home section:last-of-type hr {
   display: none;
 }
 
