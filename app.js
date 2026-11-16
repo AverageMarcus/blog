@@ -165,12 +165,21 @@ function feedPlugin() {
 
     posts.forEach((post) => {
       const postUrl = `https://marcusnoble.co.uk/${post.path}/`;
+
+      const contentKey = post.path + '/index.html';
+      let renderedContent = "";
+      if (files[contentKey]) {
+        const fullHtml = files[contentKey].contents.toString();
+        const articleMatch = fullHtml.match(/<div class="post-body"[^>]*>([\s\S]*?)<\/div/i);
+        renderedContent = articleMatch ? articleMatch[1].trim() : fullHtml;
+      }
+
       feed.item({
         title: post.title,
         url: postUrl,
         guid: postUrl,
         date: post.date.toISOString(),
-        description: post.summary || "",
+        description: renderedContent || post.summary || "",
         categories: (post.tags || "").split(" ").filter(Boolean),
       });
     });
