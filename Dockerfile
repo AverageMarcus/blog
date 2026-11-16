@@ -1,11 +1,11 @@
-FROM node:16.17-alpine
+FROM node:22-alpine
 
 RUN apk update && apk add python3 make gcc g++
 
 WORKDIR /app
 
 ADD package.json .
-RUN npm install
+RUN npm install --production
 
 ADD . .
 
