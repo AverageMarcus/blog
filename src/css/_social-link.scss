@@ -1,0 +1,23 @@
+// Inline social-link component: avatar + link, inline with text
+.social-link {
+  display: inline-flex;
+  align-items: baseline;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--primary-hover);
+    text-decoration: none;
+  }
+
+  &__avatar {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-right: 2px;
+  }
+
+  &__name {
+    font-weight: 500;
+  }
+}

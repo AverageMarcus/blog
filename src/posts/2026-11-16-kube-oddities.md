@@ -16,7 +16,7 @@ summary: |
 </details>
 -->
 
-This blog post comes from a talk me and [Márk Sági-Kazár](https://www.linkedin.com/in/sagikazarmark/) have given a few times now called **[Kube-Oddities: The Quirks That Keep Kubernetes Interesting](https://youtu.be/ueMKtSDVhlw?si=o4cHlTMt1RHQpsxT)**. That talk itself was inspired by a previous talk I had given called **[Pod Deep Dive: The Interesting Bits](https://youtu.be/E_r56x92KZw?si=lQP343hFHrYv2V9J)**. In this post I will go through all the fun, weird and quirky things we found out while putting together both these talk.
+This blog post comes from a talk me and {{> sociallink avatar="/images/avatars/mark.jpg" link="https://www.linkedin.com/in/sagikazarmark/" name="Márk Sági-Kazár" }} have given a few times now called **[Kube-Oddities: The Quirks That Keep Kubernetes Interesting](https://youtu.be/ueMKtSDVhlw?si=o4cHlTMt1RHQpsxT)**. That talk itself was inspired by a previous talk I had given called **[Pod Deep Dive: The Interesting Bits](https://youtu.be/E_r56x92KZw?si=lQP343hFHrYv2V9J)**. In this post I will go through all the fun, weird and quirky things we found out while putting together both these talk.
 
 Over our combined many years of working with Kubernetes, me and Márk have seen some weird things. Many resulting in us scratching our head and going "WTF?". Regardless of if you're brand new to the cloud native world or you're a Kubernetes veteran I hope you'll find something interesting in this post - or at the very least a shared frustration! 😁
 
