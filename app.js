@@ -374,7 +374,7 @@ const ms = Metalsmith(__dirname)
   .use(
     pagination({
       "collections.posts": {
-        perPage: 5,
+        perPage: 25,
         layout: "index.html",
         first: "index.html",
         noPageOne: true,
